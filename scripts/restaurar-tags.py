@@ -43,6 +43,8 @@ def unzip_safe(archive: Path, root: Path, strip_prefix: str) -> None:
                 if not pieces or pieces[0] != strip_prefix:
                     raise ValueError(f'Unexpected ZIP root: {info.filename}')
                 pieces = pieces[1:]
+            if pieces[:2] == ['.github', 'workflows']:
+                pieces = ['docs', 'workflows-originais', *pieces[2:]]
             if not pieces or info.is_dir():
                 continue
             out = root.joinpath(*pieces)
@@ -66,6 +68,9 @@ def main() -> None:
     backup = Path(tempfile.mkdtemp(prefix='axi-drive-history-'))
     shutil.copytree(SOURCE_ROOT, backup / 'versoes')
     tree = backup / 'versoes'
+    workflow_src = REPO / '.github/workflows/restaurar-tags.yml'
+    workflow_backup = backup / 'restaurar-tags.yml'
+    shutil.copy2(workflow_src, workflow_backup)
     git('config', 'user.name', 'github-actions[bot]')
     git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
     git('switch', '-c', 'restauracao-temporaria')
@@ -86,6 +91,9 @@ def main() -> None:
                 'Os documentos disponiveis desta versao foram preservados como registro historico. '
                 '**Nao foi localizada distribuicao instalavel completa no acervo desta versao**. '
                 'Esta tag nao deve ser tratada como release funcional validada.\n', encoding='utf-8')
+        workflow_dst = REPO / '.github/workflows/restaurar-tags.yml'
+        workflow_dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(workflow_backup, workflow_dst)
         git('add', '-A')
         if not git('diff', '--cached', '--name-only'):
             raise RuntimeError(f'Snapshot vazio: {version}')
