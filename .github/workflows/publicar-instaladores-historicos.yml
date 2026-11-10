@@ -1,0 +1,144 @@
+name: AXI - anexar instaladores aos releases historicos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publicar-instaladores-historicos.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: axi-releases-historicos
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.repository == 'wilkermaa/axipesquisa'
+    name: publicar-${{ matrix.tag }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        tag:
+          - v2.0.0
+          - v2.2.0-rc2
+          - v2.2.0-rc3
+          - v2.2.0-rc4
+          - v2.2.1
+    steps:
+      - name: Obter a fonte congelada pela tag original
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.tag }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Auditar fonte, executar testes e gerar instaladores
+        shell: bash
+        env:
+          TAG: ${{ matrix.tag }}
+        run: |
+          set -euo pipefail
+          test "$(git describe --exact-match --tags HEAD)" = "$TAG"
+          mkdir -p upload
+
+          if [[ "$TAG" == "v2.0.0" ]]; then
+            # ZIPs históricos existentes na própria tag; não usar pacote completo.
+            find pacotes -maxdepth 1 -type f -name 'axipesquisa-v2-*.zip' ! -name '*-completo.zip' -exec cp {} upload/ \;
+          else
+            test -f scripts/build.py
+            test -f skill/axipesquisa/SKILL.md
+            python -m pip install -r requirements-dev.txt
+            python scripts/validate.py
+            python -m unittest discover -s tests -v
+            python scripts/build.py
+            python scripts/validate.py
+            cp dist/axipesquisa-*.zip upload/
+          fi
+
+          python - <<'PY'
+          import hashlib
+          import os
+          import re
+          import sys
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          tag = os.environ["TAG"]
+          version = tag.removeprefix("v")
+          packages = sorted(Path("upload").glob("*.zip"))
+          if len(packages) != 8:
+              sys.exit(f"ERRO: {tag}: esperados 8 instaladores, encontrados {len(packages)}")
+          platforms = ["chatgpt", "gemini", "claude", "grok", "codex", "antigravity", "grok-build", "claude-code"]
+          # Verifica o formato e impede o upload de ZIPs de benchmark/código.
+          for path in packages:
+              if any(word in path.name.casefold() for word in ("completo", "github", "benchmark", "experimento")):
+                  sys.exit(f"ERRO: pacote não é instalador: {path.name}")
+          if tag != "v2.0.0":
+              src = Path("scripts/build.py").read_text("utf-8")
+              skill = Path("skill/axipesquisa/SKILL.md").read_text("utf-8")
+              if f'VERSION = "{version}"' not in src or f'version: "{version}"' not in skill:
+                  sys.exit("ERRO: metadados da tag e da Skill divergentes")
+          fingerprints = []
+          for package in packages:
+              with ZipFile(package) as z:
+                  if z.testzip() is not None:
+                      sys.exit("ERRO: arquivo ZIP corrompido: " + package.name)
+                  names = z.namelist()
+                  skills = [n for n in names if n.endswith("/SKILL.md") or n == "SKILL.md"]
+                  if len(skills) != 1:
+                      sys.exit("ERRO: Skill não identificada: " + package.name)
+                  # Arquivos v2.0.0 antigos não foram sanitizados por esta automação.
+                  # Interromper se houver e-mails ou possíveis arquivos de configuração pessoal.
+                  if tag == "v2.0.0":
+                      for name in names:
+                          if name.startswith("/") or ".." in Path(name).parts:
+                              sys.exit("ERRO: caminho inseguro: " + name)
+                          if name.endswith((".md", ".txt", ".json", ".yaml", ".yml", ".env")):
+                              data = z.read(name)
+                              if re.search(rb"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", data):
+                                  sys.exit("BLOQUEIO PII: contato no arquivo " + package.name + "/" + name)
+                              if any(s in name.casefold() for s in ("secret", "config.local", ".env")):
+                                  sys.exit("BLOQUEIO: configuração sensível " + name)
+              fingerprints.append(hashlib.sha256(package.read_bytes()).hexdigest() + "  " + package.name)
+          file = Path("upload") / ("SHA256SUMS-" + tag + ".txt")
+          file.write_text("\n".join(fingerprints) + "\n", encoding="utf-8")
+          print(f"{tag}: 8 instaladores íntegros e somas SHA256 registradas.")
+          PY
+
+      - name: Anexar pacotes ao Release da tag sem substituir existentes
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ matrix.tag }}
+        run: |
+          set -euo pipefail
+          gh release view "$TAG" --repo "$GH_REPO" >/dev/null
+          for file in upload/*; do
+            filename="$(basename "$file")"
+            if gh release view "$TAG" --repo "$GH_REPO" --json assets --jq '.assets[].name' | grep -Fxq "$filename"; then
+              echo "Asset ja publicado (preservado): $filename"
+            else
+              gh release upload "$TAG" "$file" --repo "$GH_REPO"
+              echo "Asset publicado: $filename"
+            fi
+          done
+
+      - name: Reconfirmar assets na plataforma
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ matrix.tag }}
+        run: gh release view "$TAG" --repo "$GH_REPO" --json tagName,assets --jq '{tag:.tagName,assets:[.assets[].name]}'
