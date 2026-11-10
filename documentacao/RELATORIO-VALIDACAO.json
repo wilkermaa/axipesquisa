@@ -1,0 +1,96 @@
+{
+  "nome": "axipesquisa",
+  "versao": "2.0.0",
+  "gerado_em": "2026-11-04",
+  "tipos_de_teste": [
+    "abertura e integridade zip",
+    "estrutura por plataforma",
+    "frontmatter YAML",
+    "módulos de método, fontes e assinatura",
+    "referências presentes"
+  ],
+  "escopo": "validação estática local; não representa aceitação na interface ou comportamento do modelo",
+  "plataformas": [
+    {
+      "plataforma": "ChatGPT Web",
+      "arquivo": "axipesquisa-v2-chatgpt-web.zip",
+      "tamanho_bytes": 15876,
+      "arquivos": 8,
+      "manifesto": "axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Gemini Web",
+      "arquivo": "axipesquisa-v2-gemini-web.zip",
+      "tamanho_bytes": 15662,
+      "arquivos": 8,
+      "manifesto": "SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Grok Web",
+      "arquivo": "axipesquisa-v2-grok-web.zip",
+      "tamanho_bytes": 15646,
+      "arquivos": 8,
+      "manifesto": "SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Claude Web",
+      "arquivo": "axipesquisa-v2-claude-web.zip",
+      "tamanho_bytes": 15823,
+      "arquivos": 8,
+      "manifesto": "axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Codex",
+      "arquivo": "axipesquisa-v2-codex.zip",
+      "tamanho_bytes": 16060,
+      "arquivos": 8,
+      "manifesto": ".agents/skills/axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Antigravity",
+      "arquivo": "axipesquisa-v2-antigravity.zip",
+      "tamanho_bytes": 16077,
+      "arquivos": 8,
+      "manifesto": ".agents/skills/axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Grok Build CLI",
+      "arquivo": "axipesquisa-v2-grok-build-cli.zip",
+      "tamanho_bytes": 16040,
+      "arquivos": 8,
+      "manifesto": ".grok/skills/axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    },
+    {
+      "plataforma": "Claude Code",
+      "arquivo": "axipesquisa-v2-claude-code.zip",
+      "tamanho_bytes": 16056,
+      "arquivos": 8,
+      "manifesto": ".claude/skills/axipesquisa/SKILL.md",
+      "yaml_valido": true,
+      "integridade_zip": true,
+      "status": "estrutura aprovada; não importado ou executado na plataforma"
+    }
+  ],
+  "resultado": "8/8 pacotes com validação estática aprovada"
+}
