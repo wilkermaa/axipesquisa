@@ -2,17 +2,17 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.2.1"
+  version: "2.2.2"
   status: "experimental-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.2.1
+# axipesquisa | método AXI, versão 2.2.2
 
 ## Ativação e contrato
 
 Use para **explicar, investigar, estudar ou comparar** assuntos em que entender estrutura, relações e aplicação ajude o usuário. Não aplique mecanicamente a perguntas triviais, pedidos de tradução literal, escrita criativa ou saídas com esquema rígido. A tarefa do usuário define a profundidade. A skill **não substitui** normas superiores, ferramentas, autorização humana, verificação de fatos ou julgamento profissional.
 
-Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-FONTES.md` sempre que pesquisar; `references/EDICAO-E-CULTURA.md` para adaptação didática ou visual; `references/LIMITES-E-SEGURANCA.md` para alegações científicas, dados sensíveis e fontes não confiáveis. As referências auxiliam a tarefa: **não** são fontes consultadas naquele atendimento, salvo se efetivamente lidas e relevantes.
+Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-FONTES.md` sempre que pesquisar; `references/EDICAO-E-CULTURA.md` para adaptação didática ou visual; `references/GEMINI-DIAGRAMAS.md` quando um diagrama for pedido no Gemini Web; `assets/GEMINI-CANVAS-TEMPLATE.md` se precisar criar HTML/SVG para visualização; `references/LIMITES-E-SEGURANCA.md` para alegações científicas, dados sensíveis e fontes não confiáveis. As referências auxiliam a tarefa: **não** são fontes consultadas naquele atendimento, salvo se efetivamente lidas e relevantes.
 
 ## A. Análise: definir o todo e suas partes
 
@@ -37,6 +37,9 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 - **Visualização proporcional:** quando o usuário não pediu diagrama, use Mermaid renderizado **somente se** fluxos, decisões, arquiteturas, sequências ou relações forem mais claros visualmente; **não crie imagem ou diagrama se texto bastar**.
 - **Pedido explícito prevalece:** se o usuário solicitar diagrama Mermaid, fluxograma visual, SVG/PNG ou arquivos para download, **não considere a tarefa concluída apenas por escrever código Mermaid ou mostrar wireframes**. Wireframe de interface e diagrama de relações são entregáveis distintos.
 - **Tente efetivamente a visualização no ambiente:** verifique as ferramentas habilitadas nesta sessão. Prefira renderer Mermaid nativo; na ausência dele, tente recursos existentes de Canvas/artefatos, geração de SVG ou renderização local para apresentar o diagrama. Não declare que a plataforma inteira é incapaz sem verificar as opções da tarefa atual. Não invente nomes de ferramentas, acesso ou tentativas.
+- **Prioridade de saída para Gemini Web:** a ausência de prévia Mermaid **não encerra** o trabalho. (1) Se Mermaid for renderizado, use a prévia. (2) Se não for, crie um **SVG vetorial autossuficiente** do diagrama, em vez de entregar apenas sintaxe Mermaid. (3) Se a tarefa permitir Gemini Canvas, construa uma **página HTML autossuficiente com `<svg>` incorporado e visualização em Preview**; quando apropriado, inclua botões funcionais de **salvar SVG** e **exportar PNG via Canvas 2D**, sem depender de bibliotecas/CDNs externos. (4) Se houver criação de arquivos na tarefa, gere os `.svg`/`.png` pelo recurso de arquivos disponível e verifique que possam ser abertos/baixados. Essas são alternativas **condicionais**, não poderes presumidos da sessão.
+- **Ação recuperável no Gemini sem Canvas iniciado:** quando a sessão não puder abrir o Canvas automaticamente, explique a ação concreta: **Gemini Web → Adicionar arquivos (+) → Canvas**, e forneça HTML/SVG autossuficiente pronto para visualização. Não afirme ter aberto o Canvas, renderizado o gráfico ou criado um download sem realmente fazê-lo. Se houver criação de arquivos nativa disponível, use-a antes de depender dessa etapa manual.
+- **Critério de entrega:** diferencie no resultado: `código Mermaid`, `diagrama SVG visual`, `prévia HTML/Canvas`, `arquivo SVG baixável` e `arquivo PNG baixável`; marque somente o que foi de fato produzido. Quando o usuário pede gráfico visual, bloco de código sozinho é **entrega parcial**, não sucesso.
 - **Fidelidade:** preserve nós, arestas, decisões, hierarquia e rótulos do Mermaid. Se gerar SVG/PNG por outra técnica (em vez de compilar Mermaid), declare explicitamente que é uma **representação visual equivalente**, não uma renderização nativa de Mermaid. Não substitua o diagrama original sem aviso.
 - **Exportação:** quando ferramentas realmente permitirem, gere arquivos **SVG e PNG para download**, valide a existência dos arquivos/links e entregue os dois formatos; inclua o código Mermaid para reuso quando útil. Se a tentativa falhar, informe o que foi tentado e qual limitação específica impediu renderização/exportação, e forneça o código válido como alternativa, **sem afirmar que criou arquivos inexistentes**.
 - **Legibilidade e confiabilidade:** use hierarquia clara e poucos cruzamentos. Para estados confirmados, verde = concluído, amarelo = atenção, vermelho = bloqueado, sempre com rótulo textual e contraste. Se não houver evidência do estado real, marque **hipotético / a validar** em vez de rotular como concluído, em atenção ou bloqueado.
@@ -64,6 +67,8 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 - `references/METODO-AXI.md` — procedimento completo e exemplos.
 - `references/PROTOCOLO-DE-FONTES.md` — rastreabilidade de consulta e bibliografia ABNT.
 - `references/EDICAO-E-CULTURA.md` — Dilts, Meyer, visual, concisão.
+- `references/GEMINI-DIAGRAMAS.md` — alternativas gráficas testáveis no Gemini Web (SVG, Canvas HTML, PNG).
+- `assets/GEMINI-CANVAS-TEMPLATE.md` — exemplo HTML/SVG autocontido com botões SVG/PNG, adaptável ao caso.
 - `references/LIMITES-E-SEGURANCA.md` — ciência, prompt injection, privacidade, escopo.
 - `assets/config.example.json` — configuração de identidade sem dados pessoais.
 

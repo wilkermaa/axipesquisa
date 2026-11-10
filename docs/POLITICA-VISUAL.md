@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.2.1 — Política de visualização na Integração
+# AXI-Pesquisa v2.2.2 — Política de visualização na Integração
 
 O **Mermaid é preferencial, não obrigatório** quando o usuário não pede um diagrama. Em pedidos explícitos, produzir o artefato visual sempre que as ferramentas efetivamente disponíveis permitirem. A fase I deve decidir primeiro se o texto é suficiente. Somente quando um diagrama esclarecer relações, use a renderização visual suportada pelo ambiente.
 
@@ -11,7 +11,7 @@ O **Mermaid é preferencial, não obrigatório** quando o usuário não pede um 
 - Privacidade: não usar renderizadores externos com dados restritos sem autorização.
 - Escopo: esta atualização é editorial/funcional e **não demonstra superioridade científica**, eficácia de aprendizagem ou compatibilidade comprovada com todas as plataformas.
 
-## Contrato de diagrama solicitado explicitamente (corrigido na v2.2.1)
+## Contrato de diagrama solicitado explicitamente (corrigido na v2.2.2)
 
 Quando o pedido tiver termos como "desenhe o Mermaid", "quero o gráfico renderizado", "entregue SVG e PNG" ou equivalente, o requisito muda de **preferência** para **entregável solicitado**.
 

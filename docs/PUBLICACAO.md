@@ -11,7 +11,7 @@ O repositório foi preparado localmente. **O pacote-fonte não publica automatic
 5. Revisar o resultado dos pacotes e o registro de hashes. Fazer inspeção manual do conteúdo do ZIP.
 6. Criar repositório e fazer commit apenas de documentos, skill, testes e ferramentas sem segredos. Não adicionar `.env`, arquivos pessoais ou o histórico antigo que continha e-mail real.
 7. Adicionar badge/CI apenas após o workflow executar realmente no GitHub; nunca simular testes de plataforma.
-8. Criar a **tag de correção** `v2.2.1` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
+8. Criar a **tag de correção** `v2.2.2` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
 9. Abrir issues separadas para testes reais das oito plataformas, revisão de direitos de terceiros e estudo A/B. O licenciamento MIT + CC BY 4.0 e a autoria pública já foram escolhidos.
 
 ## Exemplo local (execute após conferir a conta e o repositório)
@@ -20,13 +20,13 @@ O repositório foi preparado localmente. **O pacote-fonte não publica automatic
 git init
 git add .
 git status
-git commit -m "fix: AXI-Pesquisa 2.2.1 - renderizacao e exportacao de diagramas"
+git commit -m "fix: AXI-Pesquisa 2.2.2 - renderizacao e exportacao de diagramas"
 # Após criar um repositório vazio no GitHub e confirmar sua URL:
 git remote add origin <URL_DO_SEU_REPOSITORIO>
 git branch -M main
 git push -u origin main
-git tag -a v2.2.1 -m "AXI-Pesquisa v2.2.1 - correcao Mermaid e exportacao SVG/PNG"
-git push origin v2.2.1
+git tag -a v2.2.2 -m "AXI-Pesquisa v2.2.2 - correcao Mermaid e exportacao SVG/PNG"
+git push origin v2.2.2
 ```
 
 Não cole tokens de acesso em comandos, arquivos ou conversas. O acesso ao GitHub requer autenticação por meios oficiais; nunca inclua o token na documentação.

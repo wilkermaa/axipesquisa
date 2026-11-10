@@ -1,0 +1,107 @@
+# Template HTML/SVG verificável para o Gemini Canvas
+
+**Uso:** apenas quando o usuário pedir diagrama visual e o Gemini não apresentar a prévia Mermaid. Crie um HTML com SVG inline seguindo o exemplo abaixo, substituindo nós e relações pelas informações **confirmadas** da tarefa. Este exemplo é ilustrativo e não atesta comportamento real em Gemini.
+
+```html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AXI-Pesquisa · Diagrama demonstrativo para Canvas</title>
+<style>
+ :root{color-scheme:light dark;font-family:system-ui,Arial,sans-serif}
+ body{max-width:860px;margin:0 auto;padding:28px 18px;background:#111827;color:#e5e7eb}
+ .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+ button{border:1px solid #64748b;background:#1e293b;color:white;border-radius:8px;padding:10px 16px;cursor:pointer}
+ button:hover{background:#334155}
+ .visual{background:white;border-radius:14px;padding:15px;overflow:auto}
+ svg{display:block;width:100%;height:auto;max-width:720px;margin:auto}
+ p{line-height:1.45} .muted{font-size:.9rem;color:#94a3b8}
+</style>
+</head>
+<body>
+<h1>Diagrama de exemplo: fluxo de validação</h1>
+<p>Gráfico vetorial construído diretamente em SVG, <strong>não compilado pelo Mermaid</strong>. Estados hipotéticos não são apresentados como concluídos.</p>
+<div class="toolbar">
+  <button id="svgDownload" type="button">Salvar SVG</button>
+  <button id="pngDownload" type="button">Salvar PNG</button>
+</div>
+<div class="visual">
+<svg id="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" role="img" aria-labelledby="title desc">
+<title id="title">Fluxo demonstrativo de validação</title>
+<desc id="desc">Entrada conduz à validação dos dados; Sim leva a Processamento e Saída; Não leva a Solicitar correção e retorna à Entrada.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#475569" stroke-width="1.5"/></marker>
+</defs>
+<rect x="0" y="0" width="720" height="460" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="19" text-anchor="middle" fill="#0f172a">
+ <rect x="295" y="22" width="130" height="56" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2" />
+ <text x="360" y="56">Entrada</text>
+ <path d="M360 78 V126" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+ <path d="M360 130 L460 177 L360 224 L260 177 Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+ <text x="360" y="184">Dados válidos?</text>
+ <path d="M360 224 V280" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+ <text x="385" y="261" font-size="15">Sim</text>
+ <rect x="270" y="284" width="180" height="56" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+ <text x="360" y="317">Processamento</text>
+ <path d="M360 340 V388" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+ <rect x="295" y="393" width="130" height="48" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+ <text x="360" y="423">Saída</text>
+ <path d="M460 177 H536 V237" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+ <text x="499" y="164" font-size="15">Não</text>
+ <rect x="474" y="241" width="189" height="56" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+ <text x="568" y="275">Solicitar correção</text>
+ <path d="M663 269 H694 V48 H425" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</g>
+</svg>
+</div>
+<p class="muted">Demonstração de tecnologia de visualização. Para usos reais, substitua os nós e as conexões pelo conteúdo confirmado do pedido.</p>
+<script>
+(() => {
+ const SVG_NS='http://www.w3.org/2000/svg';
+ const svg=document.getElementById('diagram');
+ function svgText(){
+   const clone=svg.cloneNode(true);
+   clone.setAttribute('xmlns',SVG_NS);
+   clone.setAttribute('width','720');
+   clone.setAttribute('height','460');
+   return new XMLSerializer().serializeToString(clone);
+ }
+ function downloadBlob(blob,filename){
+   const url=URL.createObjectURL(blob);
+   const a=document.createElement('a'); a.href=url; a.download=filename;
+   document.body.appendChild(a); a.click(); a.remove();
+   setTimeout(()=>URL.revokeObjectURL(url),2500);
+ }
+ document.getElementById('svgDownload').addEventListener('click',()=>{
+   downloadBlob(new Blob([svgText()],{type:'image/svg+xml;charset=utf-8'}),'axi-diagrama.svg');
+ });
+ document.getElementById('pngDownload').addEventListener('click',()=>{
+   const image=new Image();
+   const svgBlob=new Blob([svgText()],{type:'image/svg+xml;charset=utf-8'});
+   const url=URL.createObjectURL(svgBlob);
+   image.onload=()=>{
+     const canvas=document.createElement('canvas');
+     canvas.width=1440;canvas.height=920;
+     const ctx=canvas.getContext('2d');
+     if(!ctx){URL.revokeObjectURL(url);alert('Canvas 2D indisponível');return;}
+     ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);
+     ctx.drawImage(image,0,0,canvas.width,canvas.height);
+     canvas.toBlob(blob=>{
+       URL.revokeObjectURL(url);
+       if(blob) downloadBlob(blob,'axi-diagrama.png');
+       else alert('Falha ao gerar PNG neste navegador');
+     },'image/png');
+   };
+   image.onerror=()=>{URL.revokeObjectURL(url);alert('Não foi possível converter SVG para PNG');};
+   image.src=url;
+ });
+})();
+</script>
+</body>
+</html>
+
+```
+
+Se o Gemini puder gerar arquivos, ofereça o `.svg`/`.png` real. Caso contrário, peça ao usuário para abrir **Adicionar arquivos (+) → Canvas** e usar o HTML autocontido com prévia e botões de exportação. Nunca confunda a presença deste exemplo na Skill com sua execução.

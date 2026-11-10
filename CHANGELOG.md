@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.2.2 — 10 nov. 2026
+
+- Corrige a insuficiência visual no Gemini: fallback SVG autossuficiente e HTML/SVG no Canvas quando não houver prévia Mermaid.
+- Recomenda botões reais de exportação SVG e PNG em página Canvas, quando possíveis, sem dependência de CDN nem transmissão de dados privados.
+- Distingue código, prévia renderizada e arquivos efetivamente entregues; proíbe declarar sucesso sem evidências.
+- Acrescenta guia Gemini e testes de aceitação estáticos. **Não constitui teste real no Gemini Web.**
+
+# Changelog
+
 ## 2.2.1 — 2026-11-10
 
 - Correção de versão: abandona o sufixo RC nas distribuições atuais e usa o terceiro segmento (patch) para correções futuras.

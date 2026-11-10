@@ -1,6 +1,6 @@
 # axipesquisa · AXI
 
-**Versão 2.2.1 · software experimental publicado com protocolo de validação científica ainda pendente**
+**Versão 2.2.2 · software experimental publicado com protocolo de validação científica ainda pendente**
 
 Skill de pesquisa e explicação em português que organiza respostas em três operações editoriais:
 
@@ -24,7 +24,7 @@ A skill não é motor de busca, árbitro da verdade, substituto de especialista,
 - A pasta canônica é [`skill/axipesquisa`](skill/axipesquisa), contendo `SKILL.md` e materiais auxiliares.
 - Para ChatGPT Web, Gemini Web, Grok Web, Claude Web, Codex, Antigravity, Grok Build e Claude Code, consulte [compatibilidade e instalações](docs/PLATAFORMAS.md).
 - O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local. **Instalação:** use os pacotes específicos da plataforma, não o ZIP do repositório.
-- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.1.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
+- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.2.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
 
 ## Como responder
 
@@ -38,7 +38,9 @@ Na fase **I**, Mermaid é opcional para explicações comuns. **Quando o usuári
 
 ## Publicação
 
-Tag recomendada: **`v2.2.1`** (correção da linha 2.2.x, sem sufixo RC). Consulte [notas da versão](docs/RELEASE-v2.2.1.md) e [guia de publicação](docs/PUBLICACAO.md). A publicação de código aberto não significa validação científica concluída.
+Tag recomendada: **`v2.2.2`** (correção da linha 2.2.x, sem sufixo RC). Consulte [notas da versão](docs/RELEASE-v2.2.2.md) e [guia de publicação](docs/PUBLICACAO.md). A publicação de código aberto não significa validação científica concluída.
+
+**Gemini sem renderização Mermaid:** veja [SVG + Canvas + exportação PNG](docs/GEMINI-DIAGRAMAS-E-EXPORTACAO.md).
 
 ## Auditoria e testes
 
