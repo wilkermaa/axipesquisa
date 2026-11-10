@@ -27,3 +27,15 @@ Consulta: 10/11/2026. Os caminhos correspondem a arquivos efetivamente recuperad
 | v2.2.2 | `versoes/v2.2.2/00-LEIA-PRIMEIRO.md` | `1atF8BkawzEj2u99p3fD9PfMuBMSmlAUN` |
 
 As pastas do Drive podem conter outros arquivos e instaladores não incluídos neste primeiro lote. O índice não declara captura integral do histórico de revisões do Google Drive. Os ZIPs de código já incluem arquivos de distribuição quando presentes em cada pacote.
+
+## Complemento — snapshot e instaladores v2.2.2
+
+- `versoes/v2.2.2/pacotes/AXI-PESQUISA-v2.2.2-RELEASE-SNAPSHOT.zip` — Drive ID `1Jmv7OOOaWJ1Pg2cHxWvsVKeh69ZkQ7cE`; blob Git SHA `128877547afbd127f59341f75c4d994dff618f66`
+- `versoes/v2.2.2/instaladores/01-CHATGPT-WEB-AXI-v2.2.2.zip` — Drive ID `1oJnnaq89oNGJcZL3_xZ_avIHlu5HkH5x`; blob Git SHA `96fedc059c01811cc180df0dc60c16909569e27d`
+- `versoes/v2.2.2/instaladores/02-GEMINI-WEB-AXI-v2.2.2.zip` — Drive ID `1hzhaAyatzxDzofjSySjOaVTn6tYBRA0u`; blob Git SHA `9f55974423b0cab8f4ece849e560adb06facb3c0`
+- `versoes/v2.2.2/instaladores/03-CLAUDE-WEB-AXI-v2.2.2.zip` — Drive ID `1_HTjORRnqUTxh3PqsYxxQGSve9dBLgh2`; blob Git SHA `96fedc059c01811cc180df0dc60c16909569e27d`
+- `versoes/v2.2.2/instaladores/04-GROK-WEB-AXI-v2.2.2.zip` — Drive ID `1Zdsh_bsfDSJgwxuCR7WtOnoU1_B9cykM`; blob Git SHA `9f55974423b0cab8f4ece849e560adb06facb3c0`
+- `versoes/v2.2.2/instaladores/05-CODEX-AXI-v2.2.2.zip` — Drive ID `1MI8jbbCzM4YIdggty9Qe5nw7twIVbd0q`; blob Git SHA `f06a0e7bf356a860a09d7e79a84f5775eaea1c3f`
+- `versoes/v2.2.2/instaladores/06-CLAUDE-CODE-AXI-v2.2.2.zip` — Drive ID `1N8VsTfVIHgd_pKazJR_DpImW1pL8LoOm`; blob Git SHA `ad22514f4d46dd012d68f66ae401ee6b15c5d85a`
+- `versoes/v2.2.2/instaladores/07-ANTIGRAVITY-AXI-v2.2.2.zip` — Drive ID `1KNukKZIYINTsM4TwAj9nZoHaBU-bslFr`; blob Git SHA `f06a0e7bf356a860a09d7e79a84f5775eaea1c3f`
+- `versoes/v2.2.2/instaladores/08-GROK-BUILD-AXI-v2.2.2.zip` — Drive ID `1K9tzLSkXoBKGfc1d5euOtK5JVzyfoI9E`; blob Git SHA `ab62530754b53396091fd3a4643bd604376af80e`
