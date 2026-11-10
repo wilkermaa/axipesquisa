@@ -12,16 +12,16 @@
 
 | Plataforma | Instalador v2.2.2 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/01-CHATGPT-WEB-AXI-v2.2.2.zip) |
-| Gemini Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/02-GEMINI-WEB-AXI-v2.2.2.zip) |
-| Claude Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/03-CLAUDE-WEB-AXI-v2.2.2.zip) |
-| Grok Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/04-GROK-WEB-AXI-v2.2.2.zip) |
-| Codex | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/05-CODEX-AXI-v2.2.2.zip) |
-| Claude Code | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/06-CLAUDE-CODE-AXI-v2.2.2.zip) |
-| Antigravity | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/07-ANTIGRAVITY-AXI-v2.2.2.zip) |
-| Grok Build | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/08-GROK-BUILD-AXI-v2.2.2.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/01-CHATGPT-WEB-AXI-v2.2.2.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/02-GEMINI-WEB-AXI-v2.2.2.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/03-CLAUDE-WEB-AXI-v2.2.2.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/04-GROK-WEB-AXI-v2.2.2.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/05-CODEX-AXI-v2.2.2.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/06-CLAUDE-CODE-AXI-v2.2.2.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/07-ANTIGRAVITY-AXI-v2.2.2.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/08-GROK-BUILD-AXI-v2.2.2.zip) |
 
-**Importante:** estes links entregam **pacotes de instalação da Skill**, não ZIPs do experimento nem um snapshot de código. Plataformas Web podem exigir acesso habilitado ao recurso de Skills; ambientes de desenvolvimento/CLI podem exigir a extração dos arquivos. [Leia as instruções da versão v2.2.2](versoes/v2.2.2/00-LEIA-PRIMEIRO.md).
+**Importante:** estes links entregam **pacotes de instalação da Skill**, não ZIPs do experimento nem um snapshot de código. Plataformas Web podem exigir acesso habilitado ao recurso de Skills; ambientes de desenvolvimento/CLI podem exigir a extração dos arquivos. [Leia as instruções de plataformas da v2.2.2](https://github.com/wilkermaa/axipesquisa/blob/v2.2.2/docs/PLATAFORMAS.md).
 
 Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). As versões históricas conhecidas vão de v1.0 a v2.2.2. Nem todos os instaladores antigos já estão publicados individualmente no GitHub; o catálogo informa quais ainda estão pendentes. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 
@@ -48,7 +48,8 @@ O desenho experimental anterior prevê comparar respostas sem AXI, com instruç�
 
 ## Código, histórico e direitos
 
-- [Arquivo histórico das versões](versoes/) e [índice de origem](INDICE-ORIGEM.md).
+- [Tags históricas](https://github.com/wilkermaa/axipesquisa/tags), [Releases](https://github.com/wilkermaa/axipesquisa/releases) e [índice de origem](INDICE-ORIGEM.md).
+- [Política visual da Skill](docs/POLITICA-VISUAL.md), [política organizacional](POLITICA-ORGANIZACIONAL.md) e [auditoria das tags](docs/AUDITORIA-TAGS.md).
 - [README anterior, preservado como acervo](docs/ACERVO-HISTORICO.md).
 - Consultar arquivos de licença e atribuição aplicáveis a cada versão. As licenças de código e texto não substituem os direitos de terceiros.
 
