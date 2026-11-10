@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.2.0-rc2"
+VERSION = "2.2.0-rc3"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",
@@ -58,7 +58,7 @@ def build():
         dest = DIST / f"axipesquisa-{VERSION}-{platform}.zip"
         outputs.append({"platform": platform, **write_zip(dest, members)})
     # Independent portable ChatGPT plugin candidate. Not an approved directory listing.
-    # Licensing/author identity deliberately withheld until explicit rights-holder choice.
+    # License scope is documented in LICENSE and LICENSE-CONTENT.md; do not assume manifest license field is accepted by provider.
     plugin = {
         "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
         "name": "axipesquisa", "version": VERSION,

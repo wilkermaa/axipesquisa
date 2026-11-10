@@ -41,7 +41,11 @@ class AXIStaticTests(unittest.TestCase):
         for p in (ROOT/'skill/axipesquisa').rglob('*'):
             if p.is_file():self.assertFalse(validate.EMAIL_PATTERN.findall(p.read_text('utf8')))
     def test_injection_guard(self): self.assertIn('dados não confiáveis',self.skill)
-    def test_license_not_assumed(self): self.assertIn('decisão pendente',(ROOT/'docs/LICENCIAMENTO.md').read_text('utf8'))
+    def test_dual_license_documented(self):
+        self.assertIn('MIT License',(ROOT/'LICENSE').read_text('utf8'))
+        self.assertIn('CC BY 4.0',(ROOT/'LICENSE-CONTENT.md').read_text('utf8'))
+        self.assertIn('CC BY 4.0',(ROOT/'skill/axipesquisa/LICENSE-CONTENT.md').read_text('utf8'))
+        self.assertIn('Wilker M. de Araujo Alexandre',(ROOT/'ATTRIBUTION.md').read_text('utf8'))
     def test_evaluation_vs_validation(self): self.assertIn('Não há',self.critique)
     def test_cases_many(self): self.assertGreaterEqual(len(self.cases),24)
     def test_all_case_ids_unique(self): self.assertEqual(len({x['id'] for x in self.cases}),len(self.cases))

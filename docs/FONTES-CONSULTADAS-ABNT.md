@@ -1,4 +1,6 @@
-# Fontes consultadas e utilizadas na auditoria AXI v2.1.0-rc1
+# Fontes históricas da auditoria AXI v2.1.0-rc1
+
+**Documento histórico:** as datas de acesso a seguir se referem à auditoria de 04/11/2026, não constituem nova consulta.
 
 **Data real da consulta:** 4 de novembro de 2026. Esta bibliografia sustenta a documentação e os critérios da auditoria, **não** prova que o AXI completo funciona. Os links foram identificados em páginas oficiais, editoras ou indexadores acadêmicos. O acesso ao *texto integral* de determinadas obras não foi confirmado; nesses casos, a interpretação limita-se às informações e resumos acessíveis.
 

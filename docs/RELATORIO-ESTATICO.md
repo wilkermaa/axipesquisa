@@ -1,4 +1,6 @@
-# Resultado das verificações locais — AXI v2.1.0-rc1
+# Relatório histórico: verificações locais da AXI v2.1.0-rc1
+
+**Atenção: relatório histórico de 2.1.0-rc1. Não representa o status da release 2.2.0-rc2.**
 
 Data: **04/11/2026**. Este arquivo é um registro de validação estrutural realizada localmente, não auditoria independente de eficácia.
 
@@ -15,6 +17,6 @@ Data: **04/11/2026**. Este arquivo é um registro de validação estrutural real
 1. Que oito plataformas aceitam os ZIPs nas respectivas interfaces.
 2. Que os modelos obedecem aos 36 cenários adversariais.
 3. Que AXI é empiricamente mais eficaz, cientificamente validado ou imune a prompt injection/alucinação.
-4. Que há licença aberta e autorização final de publicação. A decisão é do titular.
+4. Que havia licença aberta e autorização final de publicação naquela versão histórica. A decisão de MIT + CC BY 4.0 e a identificação pública do autor foram registradas posteriormente, na 2.2.0-rc2.
 
-**Recomendação técnica:** publicar, se desejar, como pré-versão **`v2.1.0-rc1` com status de avaliação**, não como produto 'blindado' ou 'comprovado'.
+**Recomendação histórica:** não publicar a 2.1.0-rc1 como produto “blindado” ou “comprovado”. Para o release atual, consultar `STATUS-DAS-PENDENCIAS.md` e `PUBLICACAO.md`.

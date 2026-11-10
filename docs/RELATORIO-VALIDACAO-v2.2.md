@@ -1,4 +1,7 @@
-# Relatório de validação (v2.2.0-rc2)
+# Relatório histórico de validação (v2.2.0-rc2)
+
+Este documento descreve a versão anterior. Para a 2.2.0-rc3, consulte o relatório de testes da distribuição trunk.
+
 
 Data: 04/11/2026. Status: **aprovado estruturalmente, comportamento empírico NÃO verificado**.
 

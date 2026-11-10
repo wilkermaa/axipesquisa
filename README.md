@@ -1,6 +1,6 @@
 # axipesquisa · AXI
 
-**Versão 2.2.0-rc2 · candidata a avaliação pública (não validada cientificamente como método completo)**
+**Versão 2.2.0-rc3 · candidata a avaliação pública (não validada cientificamente como método completo)**
 
 Skill de pesquisa e explicação em português que organiza respostas em três operações editoriais:
 
@@ -21,7 +21,7 @@ A skill não é motor de busca, árbitro da verdade, substituto de especialista,
 - A pasta canônica é [`skill/axipesquisa`](skill/axipesquisa), contendo `SKILL.md` e materiais auxiliares.
 - Para ChatGPT Web, Gemini Web, Grok Web, Claude Web, Codex, Antigravity, Grok Build e Claude Code, consulte [compatibilidade e instalações](docs/PLATAFORMAS.md).
 - O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local.
-- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.0-rc2.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
+- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.0-rc3.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
 
 ## Como responder
 
@@ -29,12 +29,17 @@ Nas explicações, iniciar por `Orientação AXI aplicada` e interpretar o pedid
 
 Bibliografia = fontes **efetivamente consultadas naquela resposta**, não referências incluídas automaticamente neste projeto. Não inventar acesso, títulos, datas, URLs, provas ou dados pessoais. A versão pública contém somente `config.example.json` com campos neutros.
 
+## Integração com diagramas (opcional)
+
+Na fase **I**, a skill prefere Mermaid renderizado somente quando a visualização ajuda a explicar relações, decisões ou fluxos; recomenda rótulos acessíveis e **SVG/PNG para download apenas quando as ferramentas puderem produzi-los de fato**. O código Mermaid é a alternativa quando renderização/exportação não estiver disponível. Veja [política de visualizações](docs/POLITICA-VISUAL.md).
+
 ## Auditoria e testes
 
 - [RED TEAM: riscos, evidências e mitigação](docs/RED-TEAM.md)
 - [Protocolo de experimento A/B](docs/PROTOCOLO-EMPIRICO.md)
 - [Rastreabilidade e fontes](docs/FONTES-CONSULTADAS-ABNT.md)
 - [Guia de publicação no GitHub](docs/PUBLICACAO.md)
+- [Atividade de validação para Rafaell](docs/ENCAMINHAMENTO-RAFAELL.md)
 - [Segurança](SECURITY.md)
 
 ### Reproduzir verificações locais
@@ -46,20 +51,20 @@ python -m unittest discover -s tests -v
 python scripts/build.py
 ```
 
-Esses testes validam **estrutura e regras textuais**, não o comportamento de um modelo. Os 36 cenários têm um executor API em `scripts/run_eval.py` com três condições, avaliações humanas em `scripts/eval_review.py` e verificação parcial em `scripts/check_outputs.py`. **Zero execuções em modelos reais foram realizadas neste ambiente**. Consulte [status](docs/STATUS-DAS-PENDENCIAS.md) e [como executar](docs/EXECUCAO-DO-EXPERIMENTO.md). Testes nativos em plataformas Web e estudo de compreensão com leitores também permanecem necessários.
+Esses testes validam **estrutura e regras textuais**, não o comportamento de um modelo. Os 36 cenários têm um executor API em `scripts/run_eval.py` com três condições, avaliações humanas em `scripts/eval_review.py` e verificação parcial em `scripts/check_outputs.py`. **Os experimentos oficiais desta entrega continuam sem execuções comprovadas em modelos Web independentes.** Consulte [status](docs/STATUS-DAS-PENDENCIAS.md) e [como executar](docs/EXECUCAO-DO-EXPERIMENTO.md). Testes nativos em plataformas Web e estudo de compreensão com leitores também permanecem necessários.
 
 ## Colaboração e autoria
 
-O AXI é uma composição editorial original proposta por seu criador. Citações de Descartes, Gentner, Sweller, Mayer, Meyer e Dilts são **atribuições de influências distintas**, não endosso, parceria ou reivindicação de propriedade sobre suas teorias. Não há licença de redistribuição escolhida nesta versão (veja [opções para decisão](docs/LICENCA-PARA-DECISAO.md)): antes de publicar para reutilização por terceiros, decidir a licença e registrar seu titular em `LICENSE` (veja [licenciamento](docs/LICENCIAMENTO.md)).
+O AXI é uma composição editorial original proposta por seu criador. Citações de Descartes, Gentner, Sweller, Mayer, Meyer e Dilts são **atribuições de influências distintas**, não endosso, parceria ou reivindicação de propriedade sobre suas teorias. A distribuição original foi preparada sob **MIT para software** e **CC BY 4.0 para textos originais da skill e documentação**, com atribuição a **Wilker M. de Araujo Alexandre**, com o nome público confirmado em 04/11/2026. Veja [licenciamento e escopo](docs/LICENCIAMENTO.md), [`LICENSE`](LICENSE), [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) e [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
-**Estado do release:** candidato auditado estruturalmente; sujeito a verificação empírica, compatibilidade e escolha de licença.
+**Estado do release:** candidato auditado estruturalmente, com autoria pública confirmada; sujeito a verificação empírica, compatibilidade e revisão de direitos de terceiros antes da publicação.
 
 ## Verificação científica e distribuições (04/11/2026)
 
 - [Status das quatro pendências](docs/STATUS-DAS-PENDENCIAS.md)
 - [Procedimento de avaliação em modelos reais](docs/EXECUCAO-DO-EXPERIMENTO.md)
 - [Compatibilidade ChatGPT Skill vs Plugin](docs/COMPATIBILIDADE-CHATGPT-2026.md)
-- [Licença: decisão expressa](docs/LICENCA-PARA-DECISAO.md)
+- [Licenciamento e atribuição](docs/LICENCIAMENTO.md)
 - [Instrumentos de avaliação](evals/README.md)
 
 Não há alegação de desempenho, superioridade ou segurança absoluta. O executor é um ensaio **prompt-equivalente sem ferramentas**, diferente da integração nativa da Skill.

@@ -2,11 +2,11 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.2.0-rc2"
+  version: "2.2.0-rc3"
   status: "candidate-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.2.0-rc2
+# axipesquisa | método AXI, versão 2.2.0-rc3
 
 ## Ativação e contrato
 
@@ -34,6 +34,11 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 - Em processos dinâmicos, mostre `entrada → transformação → saída → feedback`. Em objetos estáticos ou abstratos, descreva **relações e condições de validade**, sem inventar movimento ou agente.
 - Forneça cenário prático, sequência de uso, indicadores verificáveis, exceções e riscos quando pertinentes. Retorne ao objetivo do usuário.
 - Não converta correlação em causalidade nem inferência em fato. Declare quando falta evidência para uma aplicação.
+- **Diagramas somente quando agregarem valor:** se um fluxo, decisão, arquitetura, sequência ou conjunto de relações ficar mais compreensível visualmente, prefira **Mermaid renderizado**, quando a interface suportar; caso texto simples seja suficiente, **não crie diagrama nem imagem**.
+- Priorize hierarquia clara, conexões legíveis e poucos cruzamentos; preserve a precisão e a simplicidade. Não invente componentes, transições ou dependências.
+- Em diagramas com estados, use cores semânticas discretas **se houver suporte**: verde = concluído; amarelo = atenção; vermelho = bloqueado. Inclua rótulos textuais dos estados: **não dependa somente das cores**.
+- Quando for possível gerar arquivos reais, disponibilize **SVG e PNG para download**, preferindo SVG para edição/escala; inclua o **código Mermaid** quando útil à reprodução. Se o ambiente não renderizar ou não exportar, entregue a fonte Mermaid e informe a limitação, **sem afirmar que gerou SVG/PNG**.
+- Não envie conteúdo privado a serviços externos de renderização sem autorização; respeite as ferramentas e permissões disponíveis.
 
 ## Qualidade da evidência e segurança
 
@@ -59,3 +64,7 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 - `references/EDICAO-E-CULTURA.md` — Dilts, Meyer, visual, concisão.
 - `references/LIMITES-E-SEGURANCA.md` — ciência, prompt injection, privacidade, escopo.
 - `assets/config.example.json` — configuração de identidade sem dados pessoais.
+
+## Autoria e licença do conteúdo textual
+
+Os textos originais desta skill são atribuídos a **Wilker M. de Araujo Alexandre** e disponibilizados sob **CC BY 4.0**: veja `LICENSE-CONTENT.md`. O crédito se aplica à reutilização dos textos protegidos, não a todas as respostas geradas. A assinatura configurada pelo usuário não substitui a atribuição do criador do material reutilizado.
