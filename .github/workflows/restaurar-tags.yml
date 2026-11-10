@@ -1,0 +1,29 @@
+name: Publicar historico AXI em tags Git reais
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/restaurar-tags.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-tags-axi
+  cancel-in-progress: false
+
+jobs:
+  restaurar:
+    if: github.repository == 'wilkermaa/axipesquisa'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Migrar snapshots e publicar tags sem reescrever o historico remoto
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/restaurar-tags.py
