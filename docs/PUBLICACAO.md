@@ -11,7 +11,7 @@ O repositório foi preparado localmente. **Nada foi enviado para o GitHub nesta 
 5. Revisar o resultado dos pacotes e o registro de hashes. Fazer inspeção manual do conteúdo do ZIP.
 6. Criar repositório e fazer commit apenas de documentos, skill, testes e ferramentas sem segredos. Não adicionar `.env`, arquivos pessoais ou o histórico antigo que continha e-mail real.
 7. Adicionar badge/CI apenas após o workflow executar realmente no GitHub; nunca simular testes de plataforma.
-8. Criar uma **pré-versão** `v2.2.0-rc3` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
+8. Criar uma **pré-versão** `v2.2.0-rc4` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
 9. Abrir issues separadas para testes reais das oito plataformas, revisão de direitos de terceiros e estudo A/B. O licenciamento MIT + CC BY 4.0 e a autoria pública já foram escolhidos.
 
 ## Exemplo local (não executado)
@@ -20,7 +20,7 @@ O repositório foi preparado localmente. **Nada foi enviado para o GitHub nesta 
 git init
 git add .
 git status
-git commit -m "AXI 2.2.0-rc3: versão experimental e protocolos para validação independente"
+git commit -m "AXI 2.2.0-rc4: versão experimental e protocolos para validação independente"
 # Após criar um repositório vazio no GitHub e confirmar sua URL:
 git remote add origin <URL_DO_SEU_REPOSITORIO>
 git branch -M main

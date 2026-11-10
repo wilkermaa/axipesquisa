@@ -1,6 +1,6 @@
 # axipesquisa · AXI
 
-**Versão 2.2.0-rc3 · candidata a avaliação pública (não validada cientificamente como método completo)**
+**Versão 2.2.0-rc4 · candidata a avaliação pública (não validada cientificamente como método completo)**
 
 Skill de pesquisa e explicação em português que organiza respostas em três operações editoriais:
 
@@ -21,7 +21,7 @@ A skill não é motor de busca, árbitro da verdade, substituto de especialista,
 - A pasta canônica é [`skill/axipesquisa`](skill/axipesquisa), contendo `SKILL.md` e materiais auxiliares.
 - Para ChatGPT Web, Gemini Web, Grok Web, Claude Web, Codex, Antigravity, Grok Build e Claude Code, consulte [compatibilidade e instalações](docs/PLATAFORMAS.md).
 - O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local.
-- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.0-rc3.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
+- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.0-rc4.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
 
 ## Como responder
 
@@ -31,7 +31,7 @@ Bibliografia = fontes **efetivamente consultadas naquela resposta**, não refer�
 
 ## Integração com diagramas (opcional)
 
-Na fase **I**, a skill prefere Mermaid renderizado somente quando a visualização ajuda a explicar relações, decisões ou fluxos; recomenda rótulos acessíveis e **SVG/PNG para download apenas quando as ferramentas puderem produzi-los de fato**. O código Mermaid é a alternativa quando renderização/exportação não estiver disponível. Veja [política de visualizações](docs/POLITICA-VISUAL.md).
+Na fase **I**, Mermaid é opcional para explicações comuns. **Quando o usuário pedir expressamente um gráfico Mermaid ou SVG/PNG, a skill deve tentar a produção visual com as ferramentas habilitadas**, não substituindo o pedido apenas por wireframes ou código. O SVG/PNG precisa existir para que um download seja anunciado. Se usar tecnologia diferente de um motor Mermaid, deve identificar a conversão equivalente. Falhas exigem explicação específica, não incapacidade presumida. Veja [política de visualizações](docs/POLITICA-VISUAL.md).
 
 ## Auditoria e testes
 

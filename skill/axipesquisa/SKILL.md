@@ -2,11 +2,11 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.2.0-rc3"
+  version: "2.2.0-rc4"
   status: "candidate-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.2.0-rc3
+# axipesquisa | método AXI, versão 2.2.0-rc4
 
 ## Ativação e contrato
 
@@ -34,11 +34,13 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 - Em processos dinâmicos, mostre `entrada → transformação → saída → feedback`. Em objetos estáticos ou abstratos, descreva **relações e condições de validade**, sem inventar movimento ou agente.
 - Forneça cenário prático, sequência de uso, indicadores verificáveis, exceções e riscos quando pertinentes. Retorne ao objetivo do usuário.
 - Não converta correlação em causalidade nem inferência em fato. Declare quando falta evidência para uma aplicação.
-- **Diagramas somente quando agregarem valor:** se um fluxo, decisão, arquitetura, sequência ou conjunto de relações ficar mais compreensível visualmente, prefira **Mermaid renderizado**, quando a interface suportar; caso texto simples seja suficiente, **não crie diagrama nem imagem**.
-- Priorize hierarquia clara, conexões legíveis e poucos cruzamentos; preserve a precisão e a simplicidade. Não invente componentes, transições ou dependências.
-- Em diagramas com estados, use cores semânticas discretas **se houver suporte**: verde = concluído; amarelo = atenção; vermelho = bloqueado. Inclua rótulos textuais dos estados: **não dependa somente das cores**.
-- Quando for possível gerar arquivos reais, disponibilize **SVG e PNG para download**, preferindo SVG para edição/escala; inclua o **código Mermaid** quando útil à reprodução. Se o ambiente não renderizar ou não exportar, entregue a fonte Mermaid e informe a limitação, **sem afirmar que gerou SVG/PNG**.
-- Não envie conteúdo privado a serviços externos de renderização sem autorização; respeite as ferramentas e permissões disponíveis.
+- **Visualização proporcional:** quando o usuário não pediu diagrama, use Mermaid renderizado **somente se** fluxos, decisões, arquiteturas, sequências ou relações forem mais claros visualmente; **não crie imagem ou diagrama se texto bastar**.
+- **Pedido explícito prevalece:** se o usuário solicitar diagrama Mermaid, fluxograma visual, SVG/PNG ou arquivos para download, **não considere a tarefa concluída apenas por escrever código Mermaid ou mostrar wireframes**. Wireframe de interface e diagrama de relações são entregáveis distintos.
+- **Tente efetivamente a visualização no ambiente:** verifique as ferramentas habilitadas nesta sessão. Prefira renderer Mermaid nativo; na ausência dele, tente recursos existentes de Canvas/artefatos, geração de SVG ou renderização local para apresentar o diagrama. Não declare que a plataforma inteira é incapaz sem verificar as opções da tarefa atual. Não invente nomes de ferramentas, acesso ou tentativas.
+- **Fidelidade:** preserve nós, arestas, decisões, hierarquia e rótulos do Mermaid. Se gerar SVG/PNG por outra técnica (em vez de compilar Mermaid), declare explicitamente que é uma **representação visual equivalente**, não uma renderização nativa de Mermaid. Não substitua o diagrama original sem aviso.
+- **Exportação:** quando ferramentas realmente permitirem, gere arquivos **SVG e PNG para download**, valide a existência dos arquivos/links e entregue os dois formatos; inclua o código Mermaid para reuso quando útil. Se a tentativa falhar, informe o que foi tentado e qual limitação específica impediu renderização/exportação, e forneça o código válido como alternativa, **sem afirmar que criou arquivos inexistentes**.
+- **Legibilidade e confiabilidade:** use hierarquia clara e poucos cruzamentos. Para estados confirmados, verde = concluído, amarelo = atenção, vermelho = bloqueado, sempre com rótulo textual e contraste. Se não houver evidência do estado real, marque **hipotético / a validar** em vez de rotular como concluído, em atenção ou bloqueado.
+- **Privacidade:** não envie dados internos ou pessoais a serviços externos de renderização sem autorização; respeite segurança e ferramentas disponíveis.
 
 ## Qualidade da evidência e segurança
 

@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.2.0-rc4 — 2026-11-10
+
+- Correção do contrato de diagramas na fase I: pedido explícito exige tentativa efetiva de visualização, não só código Mermaid ou wireframes.
+- Ordem de preferência: renderer nativo quando disponível; artefato visual via ferramentas habilitadas; fallback honesto quando impossível.
+- SVG/PNG devem ser arquivos reais, verificáveis; conversão com outro motor deve ser identificada como equivalente.
+- Status de cores apenas quando sustentados por evidência; casos não verificados ficam neutros e "a validar".
+- Documentação baseada na disponibilidade de arquivos SVG/PNG e recursos de Canvas do Gemini, sem alegar que toda sessão tem um parser Mermaid.
+- O benchmark da v2.2.0-rc2 continua congelado. Não há comprovação de superioridade científica.
+
+# Changelog
+
 ## 2.2.0-rc3 — 2026-11-06
 
 - Nova política condicional de diagrama Mermaid na etapa I (Integração): fluxos, decisões, arquiteturas, sequências e relações.
