@@ -58,41 +58,41 @@ jobs:
             # Esta versão possui configuração pessoal embutida. A tag permanece intacta:
             # apenas os ZIPs distribuídos são reempacotados com configuração neutra.
             python - <<'PY'
-            from pathlib import Path
-            from zipfile import ZipFile
-            for source in sorted(Path("upload").glob("*.zip")):
-                sanitized = source.with_name(source.stem + "-sanitizado.zip")
-                found = False
-                with ZipFile(source) as zin, ZipFile(sanitized, "w") as zout:
-                    for member in zin.infolist():
-                        data = zin.read(member.filename)
-                        if member.filename.endswith("assets/CONFIGURACAO-USUARIO.md"):
-                            data = (
-                                "# Configuração de usuário (modelo público)\n"
-                                "Versão: 2.0.0\n"
-                                "A pessoa que instala deve inserir suas próprias preferências.\n"
-                                "- assinatura_preferida: nome\n"
-                                "- nome_usuario: não configurado\n"
-                                "- email_usuario: não configurado\n"
-                                "- idioma: pt-BR\n"
-                                "- estilo: linguagem simples e referências ABNT\n"
-                                "Não presuma ou divulgue dados pessoais sem autorização.\n"
-                            ).encode("utf-8")
-                            found = True
-                        zout.writestr(member, data)
-                if not found:
-                    raise SystemExit("BLOQUEIO: configuração pessoal esperada não localizada em " + source.name)
-                source.unlink()
-            note = Path("upload") / "LEIA-SANITIZACAO-v2.0.0.txt"
-            note.write_text(
-                "AXI Pesquisa v2.0.0: pacotes de instalação reconstruídos a partir da tag\n"
-                "com substituição do arquivo pessoal CONFIGURACAO-USUARIO.md por modelo neutro.\n"
-                "Os ZIPs distribuídos são derivados sanitizados e NÃO são byte a byte\n"
-                "iguais aos pacotes históricos. A tag e os commits originais permanecem\n"
-                "imutáveis. Nenhuma validação funcional Web nem científica é alegada.\n",
-                encoding="utf-8",
-            )
-            PY
+          from pathlib import Path
+          from zipfile import ZipFile
+          for source in sorted(Path("upload").glob("*.zip")):
+              sanitized = source.with_name(source.stem + "-sanitizado.zip")
+              found = False
+              with ZipFile(source) as zin, ZipFile(sanitized, "w") as zout:
+                  for member in zin.infolist():
+                      data = zin.read(member.filename)
+                      if member.filename.endswith("assets/CONFIGURACAO-USUARIO.md"):
+                          data = (
+                              "# Configuração de usuário (modelo público)\n"
+                              "Versão: 2.0.0\n"
+                              "A pessoa que instala deve inserir suas próprias preferências.\n"
+                              "- assinatura_preferida: nome\n"
+                              "- nome_usuario: não configurado\n"
+                              "- email_usuario: não configurado\n"
+                              "- idioma: pt-BR\n"
+                              "- estilo: linguagem simples e referências ABNT\n"
+                              "Não presuma ou divulgue dados pessoais sem autorização.\n"
+                          ).encode("utf-8")
+                          found = True
+                      zout.writestr(member, data)
+              if not found:
+                  raise SystemExit("BLOQUEIO: configuração pessoal esperada não localizada em " + source.name)
+              source.unlink()
+          note = Path("upload") / "LEIA-SANITIZACAO-v2.0.0.txt"
+          note.write_text(
+              "AXI Pesquisa v2.0.0: pacotes de instalação reconstruídos a partir da tag\n"
+              "com substituição do arquivo pessoal CONFIGURACAO-USUARIO.md por modelo neutro.\n"
+              "Os ZIPs distribuídos são derivados sanitizados e NÃO são byte a byte\n"
+              "iguais aos pacotes históricos. A tag e os commits originais permanecem\n"
+              "imutáveis. Nenhuma validação funcional Web nem científica é alegada.\n",
+              encoding="utf-8",
+          )
+          PY
           else
             test -f scripts/build.py
             test -f skill/axipesquisa/SKILL.md
