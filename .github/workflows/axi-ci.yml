@@ -1,0 +1,61 @@
+name: AXI - integridade, testes e versoes
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: axi-qualidade-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validar-skill:
+    name: validar-skill
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obter codigo da versao
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias de validacao
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Conferir versao SemVer, tag e alteracoes do nucleo
+        run: python scripts/verificar_versao.py --bump
+
+      - name: Validar estrutura e seguranca da Skill
+        run: python scripts/validate.py
+
+      - name: Executar testes de regressao
+        run: python -m unittest discover -s tests -v
+
+      - name: Construir instaladores
+        run: python scripts/build.py
+
+      - name: Validar os oito ZIPs e respectivos hashes
+        run: |
+          python scripts/validate.py
+          python scripts/verificar_versao.py --dist
+
+      - name: Preservar manifestos de integridade
+        uses: actions/upload-artifact@v4
+        with:
+          name: axi-manifesto-${{ github.sha }}
+          path: dist/manifest-sha256.json
+          if-no-files-found: error
