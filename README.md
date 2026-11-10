@@ -1,6 +1,6 @@
 # axipesquisa · AXI
 
-**Versão 2.2.0-rc4 · candidata a avaliação pública (não validada cientificamente como método completo)**
+**Versão 2.2.1 · software experimental publicado com protocolo de validação científica ainda pendente**
 
 Skill de pesquisa e explicação em português que organiza respostas em três operações editoriais:
 
@@ -18,10 +18,13 @@ A skill não é motor de busca, árbitro da verdade, substituto de especialista,
 
 ## Instalação
 
+**Arquivo para a comunidade GitHub:** repositório de código e documentação. **Arquivo para usuários finais:** pacote da Skill de sua plataforma, gerado em `dist/`. Não confundir esses dois ZIPs.
+
+
 - A pasta canônica é [`skill/axipesquisa`](skill/axipesquisa), contendo `SKILL.md` e materiais auxiliares.
 - Para ChatGPT Web, Gemini Web, Grok Web, Claude Web, Codex, Antigravity, Grok Build e Claude Code, consulte [compatibilidade e instalações](docs/PLATAFORMAS.md).
-- O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local.
-- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.0-rc4.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
+- O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local. **Instalação:** use os pacotes específicos da plataforma, não o ZIP do repositório.
+- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.1.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
 
 ## Como responder
 
@@ -32,6 +35,10 @@ Bibliografia = fontes **efetivamente consultadas naquela resposta**, não refer�
 ## Integração com diagramas (opcional)
 
 Na fase **I**, Mermaid é opcional para explicações comuns. **Quando o usuário pedir expressamente um gráfico Mermaid ou SVG/PNG, a skill deve tentar a produção visual com as ferramentas habilitadas**, não substituindo o pedido apenas por wireframes ou código. O SVG/PNG precisa existir para que um download seja anunciado. Se usar tecnologia diferente de um motor Mermaid, deve identificar a conversão equivalente. Falhas exigem explicação específica, não incapacidade presumida. Veja [política de visualizações](docs/POLITICA-VISUAL.md).
+
+## Publicação
+
+Tag recomendada: **`v2.2.1`** (correção da linha 2.2.x, sem sufixo RC). Consulte [notas da versão](docs/RELEASE-v2.2.1.md) e [guia de publicação](docs/PUBLICACAO.md). A publicação de código aberto não significa validação científica concluída.
 
 ## Auditoria e testes
 
@@ -57,7 +64,7 @@ Esses testes validam **estrutura e regras textuais**, não o comportamento de um
 
 O AXI é uma composição editorial original proposta por seu criador. Citações de Descartes, Gentner, Sweller, Mayer, Meyer e Dilts são **atribuições de influências distintas**, não endosso, parceria ou reivindicação de propriedade sobre suas teorias. A distribuição original foi preparada sob **MIT para software** e **CC BY 4.0 para textos originais da skill e documentação**, com atribuição a **Wilker M. de Araujo Alexandre**, com o nome público confirmado em 04/11/2026. Veja [licenciamento e escopo](docs/LICENCIAMENTO.md), [`LICENSE`](LICENSE), [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) e [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
-**Estado do release:** candidato auditado estruturalmente, com autoria pública confirmada; sujeito a verificação empírica, compatibilidade e revisão de direitos de terceiros antes da publicação.
+**Estado do release:** pacote estruturalmente testado para publicação como projeto experimental; compatibilidade comportamental e eficácia empírica ainda não comprovadas. Revisar direitos de terceiros antes do envio.
 
 ## Verificação científica e distribuições (04/11/2026)
 

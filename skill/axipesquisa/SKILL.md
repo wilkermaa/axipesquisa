@@ -2,11 +2,11 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.2.0-rc4"
-  status: "candidate-not-empirically-validated"
+  version: "2.2.1"
+  status: "experimental-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.2.0-rc4
+# axipesquisa | método AXI, versão 2.2.1
 
 ## Ativação e contrato
 

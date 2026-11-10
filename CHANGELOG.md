@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.1 — 2026-11-10
+
+- Correção de versão: abandona o sufixo RC nas distribuições atuais e usa o terceiro segmento (patch) para correções futuras.
+- Consolida o ajuste de diagramas Mermaid da rc4: pedido explícito exige tentativa de renderização, não apenas código ou wireframes.
+- Exportações SVG/PNG somente se os arquivos existirem e forem verificáveis; declarar reconstruções com outros motores e limitações reais.
+- Todos os oito instaladores usam o mesmo núcleo SKILL.md e metadado de versão 2.2.1.
+- Nenhuma validação científica independente ou sucesso de renderização no Gemini foi demonstrado por testes estruturais.
+- O benchmark científico iniciado com **2.2.0-rc2 continua congelado**, evitando contaminação experimental.
+
+
 ## 2.2.0-rc4 — 2026-11-10
 
 - Correção do contrato de diagramas na fase I: pedido explícito exige tentativa efetiva de visualização, não só código Mermaid ou wireframes.

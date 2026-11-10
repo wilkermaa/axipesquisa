@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.2.0-rc4"
+VERSION = "2.2.1"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",

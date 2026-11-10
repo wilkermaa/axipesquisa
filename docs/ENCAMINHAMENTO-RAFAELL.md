@@ -2,7 +2,7 @@
 
 **Responsável pelo projeto:** Wilker M. de Araujo Alexandre.
 **Pesquisador convidado:** Rafaell (aluno do autor).
-**Versão congelada para comparação:** 2.2.0-rc2. **Nota (06/11/2026):** a skill para novos usuários passou a 2.2.0-rc3, mas o benchmark original mantém o congelamento rc2; não misturar intervenções entre condições.
+**Versão congelada para comparação:** 2.2.0-rc2. **Situação em 10/11/2026:** a distribuição atual é 2.2.1; o benchmark original mantém o congelamento da rc2. Não misturar intervenções entre condições.
 **Situação científica:** hipótese metodológica, não eficácia comprovada.
 
 ## Objetivo

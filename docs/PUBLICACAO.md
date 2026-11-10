@@ -1,6 +1,6 @@
 # Publicar AXI no GitHub com cautela
 
-O repositório foi preparado localmente. **Nada foi enviado para o GitHub nesta auditoria.** O objetivo desta pasta é permitir inspeção e publicação voluntária posterior.
+O repositório foi preparado localmente. **O pacote-fonte não publica automaticamente arquivos no GitHub.** O objetivo desta pasta é permitir inspeção e publicação voluntária posterior.
 
 ## Checklist antes de tornar público
 
@@ -11,20 +11,22 @@ O repositório foi preparado localmente. **Nada foi enviado para o GitHub nesta 
 5. Revisar o resultado dos pacotes e o registro de hashes. Fazer inspeção manual do conteúdo do ZIP.
 6. Criar repositório e fazer commit apenas de documentos, skill, testes e ferramentas sem segredos. Não adicionar `.env`, arquivos pessoais ou o histórico antigo que continha e-mail real.
 7. Adicionar badge/CI apenas após o workflow executar realmente no GitHub; nunca simular testes de plataforma.
-8. Criar uma **pré-versão** `v2.2.0-rc4` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
+8. Criar a **tag de correção** `v2.2.1` com notas de que compatibilidade comportamental e eficácia permanecem não verificadas.
 9. Abrir issues separadas para testes reais das oito plataformas, revisão de direitos de terceiros e estudo A/B. O licenciamento MIT + CC BY 4.0 e a autoria pública já foram escolhidos.
 
-## Exemplo local (não executado)
+## Exemplo local (execute após conferir a conta e o repositório)
 
 ```bash
 git init
 git add .
 git status
-git commit -m "AXI 2.2.0-rc4: versão experimental e protocolos para validação independente"
+git commit -m "fix: AXI-Pesquisa 2.2.1 - renderizacao e exportacao de diagramas"
 # Após criar um repositório vazio no GitHub e confirmar sua URL:
 git remote add origin <URL_DO_SEU_REPOSITORIO>
 git branch -M main
 git push -u origin main
+git tag -a v2.2.1 -m "AXI-Pesquisa v2.2.1 - correcao Mermaid e exportacao SVG/PNG"
+git push origin v2.2.1
 ```
 
 Não cole tokens de acesso em comandos, arquivos ou conversas. O acesso ao GitHub requer autenticação por meios oficiais; nunca inclua o token na documentação.
@@ -35,3 +37,5 @@ Não cole tokens de acesso em comandos, arquivos ou conversas. O acesso ao GitHu
 - Sem experimento controlado; melhoria de aprendizado não foi demonstrada.
 - Autoria pública confirmada em 04/11/2026. Antes de publicar, verificar licenças e direitos de terceiros.
 - Prompt injection e alucinação não podem ser completamente eliminados por prompt.
+
+> Tag de software **não** implica comprovação científica. A avaliação independente permanece pendente.
