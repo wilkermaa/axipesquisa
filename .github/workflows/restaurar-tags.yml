@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/restaurar-tags.yml
+      - scripts/restaurar-tags.py
   workflow_dispatch:
 
 permissions:
