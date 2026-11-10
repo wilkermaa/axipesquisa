@@ -36,3 +36,13 @@ SEMANTIC VERSIONING. *Semantic Versioning 2.0.0*. [s. d.]. Disponível em: https
 
 ---
 ◌ AXI · instrução personalizada - wilkermaa@gmail.com
+
+## Complemento de distribuição — 10/11/2026
+
+A automação [publicar instaladores históricos](https://github.com/wilkermaa/axipesquisa/actions/workflows/publicar-instaladores-historicos.yml) foi executada com sucesso para as tags `v2.2.0-rc2`, `v2.2.0-rc3`, `v2.2.0-rc4`, `v2.2.1` e `v2.0.0` (sanitizada), cada uma com oito instaladores e SHA256. A v2.0.0 contém uma nota específica de sanitização, e os ZIPs derivados não são idênticos aos originais. Todas as tags históricas permaneceram imutáveis.
+
+As versões `v1.0` e `v2.1.0-rc1` não contêm distribuição instalável completa identificada nas respectivas tags. Não apresentar pacote de estudo ou código-fonte como instalador.
+
+Os testes concluídos são estruturais, de regressão local e integridade de arquivos. Não há comprovação de funcionamento nativo em todas as plataformas nem de eficácia científica da Skill.
+
+**Proteção da `main`:** pendente de configuração administrativa, acompanhada na [issue #1](https://github.com/wilkermaa/axipesquisa/issues/1).
