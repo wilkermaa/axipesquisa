@@ -1,0 +1,22 @@
+.env
+.env.*
+*.secret*
+*credentials*
+*token*
+*private*
+config.local.json
+**/config.local.json
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+dist/*.zip
+dist/*.skill
+dist/*.json
+
+# Avaliações com dados reais e mapeamento do cegamento
+/evals/*.jsonl
+/evals/*/PRIVATE_BLIND_KEY.json
+/evals/*/blind_responses.csv
+/evals/*/ratings*.csv
+/evals/*/aggregate.json

@@ -36,3 +36,15 @@
 ## Segurança e ética
 
 Não usar dados privados como material de benchmark público. Para casos sensíveis, usar cenários sintéticos e revisão profissional; não instruir participantes a depender da IA para decisões clínicas, jurídicas ou de segurança física.
+
+## Complemento obrigatório antes de coletas (v2.2)
+
+**Desfecho primário no benchmark adversarial:** frequência de **falhas críticas verificadas por avaliadores independentes** por condição, estratificada por categoria. A simples omissão de etiqueta AXI não é falha crítica, e falta de ferramenta deve ser classificada como limitação, não alucinação se honestamente reconhecida.
+
+**Desfechos secundários:** nota média de factualidade, adequação de formato, utilidade da analogia, clareza, capacidade de orientar aplicação, extensão e latência. A principal comparação substantiva será AXI vs controle **genérico**, pois o baseline sem orientação é menos exigente; AXI vs ausência de skill é secundária.
+
+**Não equivalência entre teste API e teste Web:** chamadas API com prompt equivalente podem testar o efeito da instrução em condições controladas, mas não a instalação, ativação ou funcionamento da Skill nos apps. Relatar os dois resultados em tabelas separadas.
+
+**Registro de dados:** só publicar resultados após examinar termos dos provedores, limpar dados privados e preservar a chave de cegamento separada das respostas entregues aos avaliadores.
+
+**Condições de estudo de leitores:** definir população, tarefa de transferência, pré-teste, escore primário, cálculo de amostra, exclusões e logística antes da coleta. Resultados apenas de avaliações por modelos de IA não demonstram melhoria real de aprendizagem.

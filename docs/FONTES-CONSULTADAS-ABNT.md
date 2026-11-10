@@ -35,3 +35,19 @@
 - A lista reúne documentos de referência consultados ou recuperados durante esta auditoria. A obra de Descartes (1637) é mencionada com base na análise do verbete da Stanford Encyclopedia of Philosophy, sem alegar leitura integral nesta rodada. Apresentações de outras obras não equivalem a leitura integral.
 - Arquivos da AXI v2.0 foram **inspecionados localmente**, não são publicações externas. A descrição do auditado está em `RED-TEAM.md`.
 - A literatura não foi transformada em suposta validação experimental da skill.
+
+## Atualização técnica de distribuição e licenciamento — 04/11/2026
+
+OPENAI. *Skills no ChatGPT*. 2026. Disponível em: https://help.openai.com/pt-br/articles/20001066-skills-in-chatgpt. Acesso em: 4 nov. 2026.
+
+OPENAI. *Package your plugin*. [s.d.]. Disponível em: https://developers.openai.com/plugins/build/plugins. Acesso em: 4 nov. 2026.
+
+OPENAI. *Upload and submit your plugin*. [s.d.]. Disponível em: https://developers.openai.com/plugins/deploy/submission. Acesso em: 4 nov. 2026.
+
+GITHUB. *Licenciar um repositório*. [s.d.]. Disponível em: https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository. Acesso em: 4 nov. 2026.
+
+CHOOSE A LICENSE. *MIT License*. [s.d.]. Disponível em: https://choosealicense.com/licenses/mit/. Acesso em: 4 nov. 2026.
+
+APACHE SOFTWARE FOUNDATION. *Apache License, Version 2.0*. 2004. Disponível em: https://www.apache.org/licenses/LICENSE-2.0. Acesso em: 4 nov. 2026.
+
+CREATIVE COMMONS. *Attribution 4.0 International (CC BY 4.0)*. [s.d.]. Disponível em: https://creativecommons.org/licenses/by/4.0/. Acesso em: 4 nov. 2026.
