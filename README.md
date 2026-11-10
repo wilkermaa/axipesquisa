@@ -1,79 +1,57 @@
-# axipesquisa · AXI
+# AXI Pesquisa
 
-**Versão 2.2.2 · software experimental publicado com protocolo de validação científica ainda pendente**
+**Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
-Skill de pesquisa e explicação em português que organiza respostas em três operações editoriais:
+> **Projeto experimental e pesquisa em andamento.** O método completo ainda não possui eficácia científica demonstrada. O repositório reúne instaladores, código, histórico e documentação de avaliação.
 
-> **A — Análise:** o que é o todo, quais são as partes, seus limites e suas funções?
->
-> **X — eXpansão:** como suas relações se comparam com outras situações, distinguindo analogia e prova?
->
-> **I — Integração:** como as partes se articulam, em quais condições, com quais resultados e usos?
+**Acesso rápido:** [Baixar instaladores](#baixar-a-skill-axi) · [Todas as versões e situação dos downloads](docs/INSTALADORES.md) · [Pesquisa científica](docs/PESQUISA-CIENTIFICA.md) · [Histórico e rastreabilidade](INDICE-ORIGEM.md)
 
-## Valor, hipótese e restrições
+## Baixar a Skill AXI
 
-O AXI pode ser útil para estruturar uma análise, orientar exemplos e tornar relações mais visíveis. **Não há, até esta versão, experimento que demonstre desempenho superior do AXI em relação a explicações convencionais.** A fundamentação disponível diz respeito a **componentes** análogos (decomposição, analogia, carga cognitiva), e não à eficácia do método completo. Veja [evidências e limites](docs/EMBASAMENTO-CIENTIFICO.md).
+**Versão mais recente disponível para download direto aqui: v2.2.2.** Escolha o ZIP específico do ambiente em que pretende usar a Skill:
 
-A skill não é motor de busca, árbitro da verdade, substituto de especialista, sistema antialucinação nem proteção infalível contra prompt injection. Não inclui scripts executados pelo agente ou acesso ampliado a ferramentas.
+| Plataforma | Instalador v2.2.2 |
+|---|---|
+| ChatGPT Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/01-CHATGPT-WEB-AXI-v2.2.2.zip) |
+| Gemini Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/02-GEMINI-WEB-AXI-v2.2.2.zip) |
+| Claude Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/03-CLAUDE-WEB-AXI-v2.2.2.zip) |
+| Grok Web | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/04-GROK-WEB-AXI-v2.2.2.zip) |
+| Codex | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/05-CODEX-AXI-v2.2.2.zip) |
+| Claude Code | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/06-CLAUDE-CODE-AXI-v2.2.2.zip) |
+| Antigravity | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/07-ANTIGRAVITY-AXI-v2.2.2.zip) |
+| Grok Build | [Baixar ZIP](https://raw.githubusercontent.com/wilkermaa/axipesquisa/main/versoes/v2.2.2/instaladores/08-GROK-BUILD-AXI-v2.2.2.zip) |
 
-## Instalação
+**Importante:** estes links entregam **pacotes de instalação da Skill**, não ZIPs do experimento nem um snapshot de código. Plataformas Web podem exigir acesso habilitado ao recurso de Skills; ambientes de desenvolvimento/CLI podem exigir a extração dos arquivos. [Leia as instruções da versão v2.2.2](versoes/v2.2.2/00-LEIA-PRIMEIRO.md).
 
-**Arquivo para a comunidade GitHub:** repositório de código e documentação. **Arquivo para usuários finais:** pacote da Skill de sua plataforma, gerado em `dist/`. Não confundir esses dois ZIPs.
+Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). As versões históricas conhecidas vão de v1.0 a v2.2.2. Nem todos os instaladores antigos já estão publicados individualmente no GitHub; o catálogo informa quais ainda estão pendentes. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 
+## O que é o AXI?
 
-- A pasta canônica é [`skill/axipesquisa`](skill/axipesquisa), contendo `SKILL.md` e materiais auxiliares.
-- Para ChatGPT Web, Gemini Web, Grok Web, Claude Web, Codex, Antigravity, Grok Build e Claude Code, consulte [compatibilidade e instalações](docs/PLATAFORMAS.md).
-- O script `python scripts/build.py` produz oito pacotes de distribuição em `dist/`; ZIPs são apenas um meio de transporte quando a plataforma exige pasta local. **Instalação:** use os pacotes específicos da plataforma, não o ZIP do repositório.
-- **ChatGPT Web:** contas qualificadas Business/Enterprise/Healthcare/Edu podem carregar Skill do computador em Plugins > Skills; isso é **diferente** de publicar Plugin para o Diretório. O pacote `dist/AXI-ChatGPT-Plugin-v2.2.2.zip` é apenas um candidato para submissão. Para contas sem acesso, há [`alternativas/CHATGPT-INSTRUCOES.md`](alternativas/CHATGPT-INSTRUCOES.md) (dependência da interface).
+| Etapa | Pergunta central | Resultado pretendido |
+|---|---|---|
+| **A — Análise** | O que é o todo? Quais são suas partes? | Identificação, decomposição, funções e limites |
+| **X — eXpansão** | Com o que podemos comparar essas relações? | Analogias úteis, diferenças e limites da comparação |
+| **I — Integração** | Como as partes se articulam e como aplicar isso? | Funcionamento do conjunto, relações e exemplos concretos |
 
-## Como responder
+## A pesquisa científica
 
-Nas explicações, iniciar por `Orientação AXI aplicada` e interpretar o pedido; quando apropriado, usar A/X/I, um exemplo útil, seção **Fontes consultadas (ABNT)** e assinatura **◌ AXI · nome ou e-mail escolhido pelo usuário**. Uma saída estritamente em JSON, CSV, código, SQL ou outro artefato de formato fechado **não** deve ganhar rodapé que a invalide.
+O projeto investiga **o todo e as partes**, a comparação entre estruturas e a recomposição das relações em explicações mediadas por IA. Os referenciais estudados incluem:
 
-Bibliografia = fontes **efetivamente consultadas naquela resposta**, não referências incluídas automaticamente neste projeto. Não inventar acesso, títulos, datas, URLs, provas ou dados pessoais. A versão pública contém somente `config.example.json` com campos neutros.
+- **René Descartes:** divisão dos problemas, ordenação do simples ao complexo e revisão do raciocínio.
+- **AXI, de Wilker M. de Araujo Alexandre:** protocolo autoral A → X → I e suas hipóteses de aplicação.
+- **Erin Meyer:** influência dos contextos culturais sobre comunicação e interpretação, sem presumir características individuais.
+- **Robert B. Dilts:** níveis de contexto, comportamento e propósito como referência conceitual, sem alegação de validação científica da PNL ou do AXI.
 
-## Integração com diagramas (opcional)
+**Leia o [programa científico, hipóteses, metodologia e fontes em ABNT](docs/PESQUISA-CIENTIFICA.md).** O projeto também preserva a [fundamentação científica anterior](versoes/v2.1.0-rc1/AXI-Pesquisa-v2.1.0-rc1-FUNDAMENTACAO.md).
 
-Na fase **I**, Mermaid é opcional para explicações comuns. **Quando o usuário pedir expressamente um gráfico Mermaid ou SVG/PNG, a skill deve tentar a produção visual com as ferramentas habilitadas**, não substituindo o pedido apenas por wireframes ou código. O SVG/PNG precisa existir para que um download seja anunciado. Se usar tecnologia diferente de um motor Mermaid, deve identificar a conversão equivalente. Falhas exigem explicação específica, não incapacidade presumida. Veja [política de visualizações](docs/POLITICA-VISUAL.md).
+O desenho experimental anterior prevê comparar respostas sem AXI, com instruções genéricas e com AXI. **Não há conclusão de superioridade antecipada.** A condição experimental v2.2.0-rc2 permanece congelada para preservar comparabilidade.
 
-## Publicação
+## Código, histórico e direitos
 
-Tag recomendada: **`v2.2.2`** (correção da linha 2.2.x, sem sufixo RC). Consulte [notas da versão](docs/RELEASE-v2.2.2.md) e [guia de publicação](docs/PUBLICACAO.md). A publicação de código aberto não significa validação científica concluída.
+- [Arquivo histórico das versões](versoes/) e [índice de origem](INDICE-ORIGEM.md).
+- [README anterior, preservado como acervo](docs/ACERVO-HISTORICO.md).
+- Consultar arquivos de licença e atribuição aplicáveis a cada versão. As licenças de código e texto não substituem os direitos de terceiros.
 
-**Gemini sem renderização Mermaid:** veja [SVG + Canvas + exportação PNG](docs/GEMINI-DIAGRAMAS-E-EXPORTACAO.md).
+---
 
-## Auditoria e testes
-
-- [RED TEAM: riscos, evidências e mitigação](docs/RED-TEAM.md)
-- [Protocolo de experimento A/B](docs/PROTOCOLO-EMPIRICO.md)
-- [Rastreabilidade e fontes](docs/FONTES-CONSULTADAS-ABNT.md)
-- [Guia de publicação no GitHub](docs/PUBLICACAO.md)
-- [Atividade de validação para Rafaell](docs/ENCAMINHAMENTO-RAFAELL.md)
-- [Segurança](SECURITY.md)
-
-### Reproduzir verificações locais
-
-```bash
-python -m pip install -r requirements-dev.txt
-python scripts/validate.py
-python -m unittest discover -s tests -v
-python scripts/build.py
-```
-
-Esses testes validam **estrutura e regras textuais**, não o comportamento de um modelo. Os 36 cenários têm um executor API em `scripts/run_eval.py` com três condições, avaliações humanas em `scripts/eval_review.py` e verificação parcial em `scripts/check_outputs.py`. **Os experimentos oficiais desta entrega continuam sem execuções comprovadas em modelos Web independentes.** Consulte [status](docs/STATUS-DAS-PENDENCIAS.md) e [como executar](docs/EXECUCAO-DO-EXPERIMENTO.md). Testes nativos em plataformas Web e estudo de compreensão com leitores também permanecem necessários.
-
-## Colaboração e autoria
-
-O AXI é uma composição editorial original proposta por seu criador. Citações de Descartes, Gentner, Sweller, Mayer, Meyer e Dilts são **atribuições de influências distintas**, não endosso, parceria ou reivindicação de propriedade sobre suas teorias. A distribuição original foi preparada sob **MIT para software** e **CC BY 4.0 para textos originais da skill e documentação**, com atribuição a **Wilker M. de Araujo Alexandre**, com o nome público confirmado em 04/11/2026. Veja [licenciamento e escopo](docs/LICENCIAMENTO.md), [`LICENSE`](LICENSE), [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) e [`ATTRIBUTION.md`](ATTRIBUTION.md).
-
-**Estado do release:** pacote estruturalmente testado para publicação como projeto experimental; compatibilidade comportamental e eficácia empírica ainda não comprovadas. Revisar direitos de terceiros antes do envio.
-
-## Verificação científica e distribuições (04/11/2026)
-
-- [Status das quatro pendências](docs/STATUS-DAS-PENDENCIAS.md)
-- [Procedimento de avaliação em modelos reais](docs/EXECUCAO-DO-EXPERIMENTO.md)
-- [Compatibilidade ChatGPT Skill vs Plugin](docs/COMPATIBILIDADE-CHATGPT-2026.md)
-- [Licenciamento e atribuição](docs/LICENCIAMENTO.md)
-- [Instrumentos de avaliação](evals/README.md)
-
-Não há alegação de desempenho, superioridade ou segurança absoluta. O executor é um ensaio **prompt-equivalente sem ferramentas**, diferente da integração nativa da Skill.
+◌ AXI · Wilker M. de Araujo Alexandre
