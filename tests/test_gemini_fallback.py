@@ -3,6 +3,7 @@ import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=(ROOT/'skill/axipesquisa/SKILL.md').read_text('utf-8')
+VERSION=(ROOT/'VERSION').read_text('utf-8').strip()
 REF=(ROOT/'skill/axipesquisa/references/GEMINI-DIAGRAMAS.md').read_text('utf-8')
 DOC=(ROOT/'docs/GEMINI-DIAGRAMAS-E-EXPORTACAO.md').read_text('utf-8')
 
@@ -17,7 +18,7 @@ class GeminiFallbackPolicy(unittest.TestCase):
     def test_template_packaged(self):
         self.assertIn('assets/GEMINI-CANVAS-TEMPLATE.md',SKILL)
         self.assertTrue((ROOT/'skill/axipesquisa/assets/GEMINI-CANVAS-TEMPLATE.md').is_file())
-    def test_current_version(self): self.assertIn('version: "2.2.2"',SKILL)
+    def test_current_version(self): self.assertIn(f'version: "{VERSION}"',SKILL)
     def test_gemini_explicit_branch(self): self.assertIn('Prioridade de saída para Gemini Web', SKILL)
     def test_svg_without_mermaid_renderer(self): self.assertIn('SVG vetorial autossuficiente', SKILL)
     def test_html_canvas_inline(self): self.assertIn('`<svg>` incorporado',SKILL)

@@ -10,7 +10,7 @@
 
 ## Baixar a Skill AXI
 
-**Versão atual para instalação: v2.2.3.** Esta atualização restaura exemplos didáticos, orientações editoriais e testes de preservação. **Não significa validação científica**; as respostas oficiais continuam **sem execuções comprovadas**.
+**Versão atual para instalação: v2.2.3.** Esta atualização restaura exemplos didáticos, orientações editoriais e testes de preservação. **não significa validação científica**; as respostas oficiais continuam **sem execuções comprovadas**.
 
 | Plataforma | Instalador v2.2.3 |
 |---|---|
