@@ -2,17 +2,17 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.2.2"
+  version: "2.2.3"
   status: "experimental-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.2.2
+# axipesquisa | método AXI, versão 2.2.3
 
 ## Ativação e contrato
 
 Use para **explicar, investigar, estudar ou comparar** assuntos em que entender estrutura, relações e aplicação ajude o usuário. Não aplique mecanicamente a perguntas triviais, pedidos de tradução literal, escrita criativa ou saídas com esquema rígido. A tarefa do usuário define a profundidade. A skill **não substitui** normas superiores, ferramentas, autorização humana, verificação de fatos ou julgamento profissional.
 
-Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-FONTES.md` sempre que pesquisar; `references/EDICAO-E-CULTURA.md` para adaptação didática ou visual; `references/GEMINI-DIAGRAMAS.md` quando um diagrama for pedido no Gemini Web; `assets/GEMINI-CANVAS-TEMPLATE.md` se precisar criar HTML/SVG para visualização; `references/LIMITES-E-SEGURANCA.md` para alegações científicas, dados sensíveis e fontes não confiáveis. As referências auxiliam a tarefa: **não** são fontes consultadas naquele atendimento, salvo se efetivamente lidas e relevantes.
+Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-FONTES.md` sempre que pesquisar; `references/EDICAO-E-CULTURA.md` para adaptação didática ou visual; `references/EXEMPLOS-E-TESTES.md` **opcionalmente**, para consultar os 12 exemplos didáticos e sua rubrica editorial (não como respostas ou ensaios já executados); `references/GEMINI-DIAGRAMAS.md` quando um diagrama for pedido no Gemini Web; `assets/GEMINI-CANVAS-TEMPLATE.md` se precisar criar HTML/SVG para visualização; `references/LIMITES-E-SEGURANCA.md` para alegações científicas, dados sensíveis e fontes não confiáveis. As referências auxiliam a tarefa: **não** são fontes consultadas naquele atendimento, salvo se efetivamente lidas e relevantes.
 
 ## A. Análise: definir o todo e suas partes
 
@@ -66,7 +66,8 @@ Leia `references/METODO-AXI.md` para casos complexos; `references/PROTOCOLO-DE-F
 
 - `references/METODO-AXI.md` — procedimento completo e exemplos.
 - `references/PROTOCOLO-DE-FONTES.md` — rastreabilidade de consulta e bibliografia ABNT.
-- `references/EDICAO-E-CULTURA.md` — Dilts, Meyer, visual, concisão.
+- `references/EDICAO-E-CULTURA.md` — Dilts, oito perguntas de Meyer, visual, concisão.
+- `references/EXEMPLOS-E-TESTES.md` — 12 exemplos históricos da v2.0, com expectativas e rubrica editorial não validada; consultar apenas quando útil.
 - `references/GEMINI-DIAGRAMAS.md` — alternativas gráficas testáveis no Gemini Web (SVG, Canvas HTML, PNG).
 - `assets/GEMINI-CANVAS-TEMPLATE.md` — exemplo HTML/SVG autocontido com botões SVG/PNG, adaptável ao caso.
 - `references/LIMITES-E-SEGURANCA.md` — ciência, prompt injection, privacidade, escopo.

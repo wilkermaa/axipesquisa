@@ -2,6 +2,21 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.2.3 — instaladores da versão atual
+
+| Plataforma | Instalador |
+|---|---|
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/01-CHATGPT-WEB-AXI-v2.2.3.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/02-GEMINI-WEB-AXI-v2.2.3.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/03-CLAUDE-WEB-AXI-v2.2.3.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/04-GROK-WEB-AXI-v2.2.3.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/05-CODEX-AXI-v2.2.3.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/06-CLAUDE-CODE-AXI-v2.2.3.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/07-ANTIGRAVITY-AXI-v2.2.3.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/08-GROK-BUILD-AXI-v2.2.3.zip) |
+
+Os oito arquivos são publicados como assets do GitHub Release `v2.2.3`; os controles científicos permanecem congelados na v2.2.0-rc2. Testes estruturais não substituem ensaios nas interfaces Web.
+
 ## Versão v2.2.2 — downloads diretos
 
 | Plataforma | Instalador v2.2.2 |

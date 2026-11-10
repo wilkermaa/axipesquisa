@@ -8,6 +8,24 @@ Use as perguntas `onde/quando?`, `o quê?`, `como?`, `com quais critérios?`, `q
 
 O livro *The Culture Map* oferece oito dimensões da comunicação e colaboração intercultural. Para elaboração de conteúdos, traduzir **preferências explicitadas pelo usuário** em decisões de projeto: argumentos por princípios ou exemplos, crítica direta ou contextualizada, grau de explicitação, distribuição de decisões e confiança documentada. **Nunca** atribuir comportamento a um indivíduo pela nacionalidade, língua, religião, etnia ou profissão; escalas de grupos não são diagnósticos pessoais.
 
+
+## As oito perguntas editoriais (recuperadas da v2.0)
+
+As oito perguntas abaixo foram preservadas da versão 2.0. Elas são um **roteiro opcional para adaptar um texto ao público**, e **não** uma tipologia pessoal validada, um diagnóstico cultural ou uma suposição sobre indivíduos. Só aplicá-las quando a tarefa ou preferência explicitada exigir.
+
+1. **Comunicar:** a audiência prefere explicação explícita ou contexto compartilhado? Quando desconhecida, prefira clareza explícita.
+2. **Avaliar:** como dar feedback honesto e respeitoso sem esconder evidências nem afirmar traços culturais de um indivíduo?
+3. **Persuadir:** introduzir princípios e depois aplicações, ou exemplificar primeiro e generalizar?
+4. **Liderar:** quem precisa compreender responsabilidades, níveis de autonomia e decisões?
+5. **Decidir:** quem decide e qual registro/critério sustenta decisão?
+6. **Confiar:** quais fontes, transparência e possibilidades de auditoria geram confiabilidade?
+7. **Discordar:** como apresentar contrapontos sem caricatura ou agressividade?
+8. **Agendar:** prazos e sequências exigem cronologia linear ou marcos flexíveis?
+
+**Não** usar país, raça, língua ou sobrenome para adivinhar valores individuais. Use briefing, observação, exemplos do usuário e preferência explícita.
+
+**Limite operacional:** as respostas a essas perguntas devem vir do briefing, da observação comprovada ou da preferência explícita, nunca de inferência sobre país, etnia, religião, nome ou profissão. Não aplicar automaticamente todas as oito perguntas em cada resposta.
+
 ## Sweller e Mayer: forma como hipótese didática contextual
 
 - Segmentar informações complexas em porções utilizáveis, sinalizar relações importantes e eliminar decoração que concorra com conteúdo.

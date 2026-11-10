@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.2.3 — 10 nov. 2026
+
+- Restaurados os 12 exemplos didáticos da v2.0 e as oito perguntas editoriais de Erin Meyer.
+- Guia de instalação dentro dos oito pacotes da Skill.
+- Incluídos dez testes locais de regressão e política de atualização de versão e tag.
+- Núcleo A–X–I e 36 cenários experimentais preservados; 71 testes locais aprovados na preparação.
+- Validação científica independente pendente.
+
+
 ## v2.2.2 — 10 nov. 2026
 
 - Corrige a insuficiência visual no Gemini: fallback SVG autossuficiente e HTML/SVG no Canvas quando não houver prévia Mermaid.

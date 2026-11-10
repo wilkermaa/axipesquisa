@@ -1,0 +1,73 @@
+name: AXI — publicar tag e instaladores versionados
+on:
+  push:
+    branches: [main]
+    paths:
+      - VERSION
+      - skill/**
+      - scripts/build.py
+      - tests/**
+      - docs/RELEASE-v*
+      - .github/workflows/publicar-versao.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: axi-release-publication
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.repository == 'wilkermaa/axipesquisa'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependências
+        run: python -m pip install -r requirements-dev.txt
+      - name: Validar fonte, segurança, testes e distribuições
+        run: |
+          python scripts/verificar_versao.py
+          python scripts/check_release.py --source
+          python scripts/validate.py
+          python -m unittest discover -s tests -v
+          python scripts/build.py
+          python scripts/verificar_versao.py --dist
+      - name: Criar tag Git anotada e release com instaladores
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION=$(cat VERSION)
+          TAG="v${VERSION}"
+          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+            TYPE=$(git cat-file -t "refs/tags/${TAG}")
+            COMMIT=$(git rev-parse "${TAG}^{commit}")
+            test "$TYPE" = tag
+            test "$COMMIT" = "$GITHUB_SHA"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "$TAG" -m "AXI-Pesquisa ${TAG}"
+            git push origin "refs/tags/${TAG}"
+          fi
+          mkdir -p release
+          cp "dist/axipesquisa-${VERSION}-chatgpt-web.zip" "release/01-CHATGPT-WEB-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-gemini-web.zip" "release/02-GEMINI-WEB-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-claude-web.zip" "release/03-CLAUDE-WEB-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-grok-web.zip" "release/04-GROK-WEB-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-codex.zip" "release/05-CODEX-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-claude-code.zip" "release/06-CLAUDE-CODE-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-antigravity.zip" "release/07-ANTIGRAVITY-AXI-${TAG}.zip"
+          cp "dist/axipesquisa-${VERSION}-grok-build-cli.zip" "release/08-GROK-BUILD-AXI-${TAG}.zip"
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" release/*.zip --verify-tag --title "AXI-Pesquisa ${TAG}" --notes-file "docs/RELEASE-${TAG}.md"
+          fi

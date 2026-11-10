@@ -1,0 +1,15 @@
+{
+  "version": "2.2.3",
+  "base": "2.2.2",
+  "historic_examples_sha256": "7d5e0a3082de56228d050ebff4c57a39d30ffd03be54d00e8bfafa37569d5f42",
+  "core_sha256": {
+    "skill/axipesquisa/references/METODO-AXI.md": "aabb096170e6b44332be01691bd157c311c2719972be9fe512f16257eab7d459",
+    "skill/axipesquisa/references/PROTOCOLO-DE-FONTES.md": "e2ce4f78f1b71e2162d22ce087fc18c8226fa7cfe2c9ae4f1b3332cf8e77aad2",
+    "skill/axipesquisa/references/LIMITES-E-SEGURANCA.md": "5329aca2b175fa7813bd842247ab21755415f62a94d427859b2fe514c385d938",
+    "tests/cases.json": "5a92d9034c97617f22f1caecd8e98f0f887084ca9cac5f3044dfb44f7eb75b17",
+    "docs/EMBASAMENTO-CIENTIFICO.md": "c5f6d5d8cff0c6dd5f8fbf4d662a172fc220932faa1131b00c5bc777d4fbdc57",
+    "docs/RED-TEAM.md": "bc2bbc3122e1bd78cfb23a01a568f7342179a55f31b26e4b6ce6b44db2a7b998",
+    "scripts/make_cases.py": "74e2024636300a74ab87f15e9b833543808abecfd8ad2fb003c48325d80f654c"
+  },
+  "note": "manifesto de preservação: dados históricos não são execuções de IA"
+}

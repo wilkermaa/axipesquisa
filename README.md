@@ -1,5 +1,7 @@
 # AXI Pesquisa
 
+**Versão 2.2.3 · software experimental; validação científica independente pendente.**
+
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
 > **Projeto experimental e pesquisa em andamento.** O método completo ainda não possui eficácia científica demonstrada. O repositório reúne instaladores, código, histórico e documentação de avaliação.
@@ -8,22 +10,22 @@
 
 ## Baixar a Skill AXI
 
-**Versão mais recente disponível para download direto aqui: v2.2.2.** Escolha o ZIP específico do ambiente em que pretende usar a Skill:
+**Versão atual para instalação: v2.2.3.** Esta atualização restaura exemplos didáticos, orientações editoriais e testes de preservação. **Não significa validação científica**; as respostas oficiais continuam **sem execuções comprovadas**.
 
-| Plataforma | Instalador v2.2.2 |
+| Plataforma | Instalador v2.2.3 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/01-CHATGPT-WEB-AXI-v2.2.2.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/02-GEMINI-WEB-AXI-v2.2.2.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/03-CLAUDE-WEB-AXI-v2.2.2.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/04-GROK-WEB-AXI-v2.2.2.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/05-CODEX-AXI-v2.2.2.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/06-CLAUDE-CODE-AXI-v2.2.2.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/07-ANTIGRAVITY-AXI-v2.2.2.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.2/08-GROK-BUILD-AXI-v2.2.2.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/01-CHATGPT-WEB-AXI-v2.2.3.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/02-GEMINI-WEB-AXI-v2.2.3.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/03-CLAUDE-WEB-AXI-v2.2.3.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/04-GROK-WEB-AXI-v2.2.3.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/05-CODEX-AXI-v2.2.3.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/06-CLAUDE-CODE-AXI-v2.2.3.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/07-ANTIGRAVITY-AXI-v2.2.3.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.2.3/08-GROK-BUILD-AXI-v2.2.3.zip) |
 
-**Importante:** estes links entregam **pacotes de instalação da Skill**, não ZIPs do experimento nem um snapshot de código. Plataformas Web podem exigir acesso habilitado ao recurso de Skills; ambientes de desenvolvimento/CLI podem exigir a extração dos arquivos. [Leia as instruções de plataformas da v2.2.2](https://github.com/wilkermaa/axipesquisa/blob/v2.2.2/docs/PLATAFORMAS.md).
+Os links serão disponibilizados como anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2.
 
-Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas conhecidas vão de v1.0 a v2.2.2. As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
+Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas conhecidas vão de v1.0 a v2.2.3. As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 
 ## O que é o AXI?
 
