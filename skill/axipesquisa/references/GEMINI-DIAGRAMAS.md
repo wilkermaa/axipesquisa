@@ -1,5 +1,7 @@
 # Gemini Web — execução visual obrigatória na microfase I (v2.3.4)
 
+**Capacidade visual:** verificar a capacidade de renderização nesta sessão; o nome do produto não demonstra acesso efetivo a um visualizador.
+
 **Escopo:** somente a microfase **Diagramação do Fluxo de Aplicação**, parte da fase **I — Integração**, nível Gestão e Coordenação. Em um fluxo fielmente representável, **tentar entregar gráfico visível mesmo sem pedido explícito**. A regra central também está no `SKILL.md`, independentemente de o modelo consultar este guia.
 
 ## Procedimento obrigatório de execução no Gemini
