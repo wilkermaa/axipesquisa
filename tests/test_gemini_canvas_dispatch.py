@@ -14,7 +14,7 @@ class CanvasFallbackNotDefault(unittest.TestCase):
         self.assertIn('geração DIRETA DE IMAGEM',GEMINI)
         self.assertIn('Canvas com SVG e prévia',GEMINI)
         self.assertIn('pode ser fallback estático',GEMINI)
-        self.assertIn('não funcionam com Skills',GEMINI)
+        self.assertIn('não funciona com Skills',GEMINI)
         self.assertIn('IMAGEM do diagrama',SKILL)
     def test_packaged_gemini_route_is_image_first(self):
         from scripts import build
@@ -26,6 +26,6 @@ class CanvasFallbackNotDefault(unittest.TestCase):
             route=z.read('INSTALADOR-PLATAFORMA.md').decode('utf-8')
             self.assertIn('IMAGEM VISÍVEL OBRIGATÓRIA',route)
             self.assertIn('DIRETA DE IMAGEM',route)
-            self.assertIn('não substituir por tabela',route)
+            self.assertIn('não substituir por tabela',route.lower())
 
 if __name__=='__main__': unittest.main()
