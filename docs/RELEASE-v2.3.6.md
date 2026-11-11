@@ -13,6 +13,8 @@
 
 ## Testes e riscos residuais
 
+**Homologação funcional e homologação real** dos recursos visuais e da leitura completa permanecem pendentes nas IAs, especialmente no Gemini.
+
 CI e testes avaliam texto, preservação de material histórico, versão e oito ZIPs com SHA-256. **Não demonstram que qualquer modelo leu integralmente todos os arquivos, executou Canvas, gerou figura ou seguiu ABNT em um atendimento real.** Homologação nas IAs continua pendente, especialmente Gemini (Issue #4). Espelhamento Drive permanece Issue #6. Preservar tags anteriores e experimento C0/C1/C2 congelado v2.2.0-rc2.
 
 ## Fontes técnicas consultadas na elaboração (ABNT; não copiar automaticamente às respostas da Skill)
