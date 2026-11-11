@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.5 — 11 nov. 2026 (PATCH)
+
+- Corrige a regressão em pesquisa jurídica: quando a consulta descreve procedimento administrativo específico, pesquisar normas locais e dispositivos legais pertinentes **antes de afirmar etapas obrigatórias ou desenhar o fluxo**.
+- Torna explícita a entrega de **citações próximas das afirmações e referências ABNT efetivamente consultadas**, ou declaração honesta da impossibilidade de verificar; não usar referências imaginárias.
+- Caso de regressão Matinhos: distinguir o art. 57, I e II, da Lei 1.165/2008 (Portaria entre secretarias e Ofício dentro da mesma secretaria), além de § 1º–3º, com confirmação de fonte e da vigência quando disponíveis.
+- Mantém a obrigação de gráfico realmente renderizado no Gemini, sem exigir PDF, e acrescenta verificação independente: legislação, ABNT e visual.
+- Preserva histórico, testes estruturais, autoria, licenças, privacidade e protocolo científico C0/C1/C2 v2.2.0-rc2. Homologação real nas plataformas continua pendente.
+
 ## v2.3.4 — 11 nov. 2026 (PATCH)
 
 - Corrige especificamente a execução da microfase **Diagramação do Fluxo de Aplicação** no Gemini Web: **abrir/renderizar uma prévia visual real antes de finalizar**, com SVG renderizado prioritário quando viável e PNG/visual nativo como alternativas.

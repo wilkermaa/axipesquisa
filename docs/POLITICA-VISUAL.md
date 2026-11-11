@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.4 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.5 — política de entrega visual na microfase da Integração
 
 **Gestão e Coordenação** da microfase **Diagramação do Fluxo de Aplicação**, exclusivamente na **I — Integração**, define o resultado visual; a IA/agente executora seleciona livremente e **aciona concretamente** o mecanismo disponível (prévia, renderer, artefato, SVG, HTML, PNG ou outro). A exigência aplica-se quando existe fluxo fielmente representável **mesmo sem pedido explícito**. Não é regra universal de imagens nas fases A e X.
 
@@ -11,6 +11,10 @@
 - **Economia:** fidelidade e visual primeiro; entre soluções capazes, menor custo real em tokens, chamadas, conversões e passos. Sem HTML/JS excessivo nem exportações desnecessárias.
 - **Confiabilidade:** preservar nós, decisões, lacunas e fontes. Não inventar fatos administrativos; transparência sobre limitações da sessão e consentimento para serviços externos.
 - **Exceções:** instruções superiores, formatos rigidamente solicitados e ausência de fluxo representável; não quebrar saídas fechadas.
+
+## Não substituição da pesquisa e das citações jurídicas
+
+A microfase visual **não dispensa consulta à legislação aplicável nem referências ABNT**. Em procedimento local, identificar lei, artigo, alterações e formalidades diferenciadas **antes** de desenhar; não representar atos administrativos hipotéticos como obrigatórios. Verificação final independente: **fonte normativa confirmada, bibliografia ABNT verificável e figura realmente apresentada** (ou saída parcial com limitações reais). O art. 57 da Lei nº 1.165/2008 em Matinhos é caso de regressão: entre secretarias = Portaria; dentro da mesma secretaria = Ofício, conforme fonte compilada consultada; confirmação oficial continua recomendada.
 
 ## Gemini Web — execução específica
 
