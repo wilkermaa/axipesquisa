@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.10 — 11 nov. 2026 (PATCH URGENTE)
+
+- **Regressão crítica Gemini:** a v2.3.9 devolveu **“Registro de Entrega Visual Parcial” + snippet Mermaid** no caso Guaratuba. A captura textual não comprova tentativa real da ferramenta de imagens; é falha observada de entrega de PNG.
+- **Gate operacional obrigando AÇÃO:** acionar efetivamente a ferramenta de geração de PNG, mostrar a figura, verificar que está desenhada e **só depois** avaliar a estética minimalista e concluir A/X/I + ABNT. O estilo Mermaid nunca pode substituir a produção do PNG.
+- **Proibição explícita de código:** Gemini nunca deve emitir `flowchart TD`, bloco `mermaid`, texto SVG/HTML, tabela ou ASCII como substituto de imagem, **inclusive sob título “entrega parcial”**. Se a imagem falhar após tentativa real + uma alternativa gráfica funcional, relato curto sem snippet; não inventar indisponibilidade/execução.
+- Preservados o padrão Gemini de caixas somente com títulos curtos e sem ícones/descrições, a pesquisa legal e as fontes ABNT, leitura integral progressiva, Mermaid renderizado no ChatGPT e rotas Claude/Grok, histórico de hashes e benchmark C0/C1/C2 congelado.
+- **Limite:** os testes estruturais e oito ZIPs não garantem que o Gemini permita à Skill acionar a ferramenta. Homologação funcional exige evidência real na UI.
+
 ## v2.3.9 — 11 nov. 2026 (PATCH)
 
 - **Gemini: caixas do diagrama APENAS COM TÍTULOS CURTOS**, sem ícones, descrições internas, subtítulos, microtextos ou parágrafos. Visual minimalista equivalente ao Mermaid, sem exigir Mermaid.js na plataforma.

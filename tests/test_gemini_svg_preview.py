@@ -23,9 +23,9 @@ class GeminiSvgPreviewContract(unittest.TestCase):
         self.assertIn('Verifique antes de responder',GEMINI)
         self.assertIn('tente uma alternativa gráfica funcional',SKILL)
     def test_snippet_must_not_pass(self):
-        self.assertIn('Snippet de código',GEMINI)
+        self.assertIn('bloco ```mermaid',GEMINI)
         self.assertIn('flowchart TD',SKILL)
-        self.assertIn('Reprovado',GEMINI)
+        self.assertIn('REPROVADO',GEMINI)
         self.assertIn('somente código',SKILL)
     def test_no_pdf_requirement_or_false_canvas_claim(self):
         self.assertIn('Não exige PDF',SKILL)
@@ -33,7 +33,7 @@ class GeminiSvgPreviewContract(unittest.TestCase):
         self.assertIn('não presumir',SKILL.lower())
     def test_structural_not_product_validation(self):
         self.assertIn('não demonstram renderização real',GEMINI)
-        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.9.md').read_text('utf-8').lower())
+        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.10.md').read_text('utf-8').lower())
     def test_economy_and_privacy(self):
         self.assertIn('minimizar tokens',GEMINI)
         self.assertIn('privacidade',GEMINI.lower())

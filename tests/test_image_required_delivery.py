@@ -1,4 +1,4 @@
-"""AXI v2.3.9: imagem visual exibida é portão da microfase I. Teste de fonte, não de execução de frontend."""
+"""AXI v2.3.10: imagem visual exibida é portão da microfase I. Teste de fonte, não de execução de frontend."""
 import unittest
 from pathlib import Path
 from zipfile import ZipFile
@@ -22,7 +22,7 @@ class RequiredImageDelivery(unittest.TestCase):
         self.assertIn('Arquivo gráfico real e acessível, mas não mostrado em prévia',ROUTE)
         self.assertIn('imagem do fluxograma realmente exibida',POLICY.lower())
     def test_gemini_is_image_first_not_app_first(self):
-        self.assertIn('Solicitar/acionar geração DIRETA DE IMAGEM',GEMINI)
+        self.assertIn('EXECUTAR PNG AGORA',GEMINI)
         self.assertIn('SVG realmente renderizado',GEMINI)
         self.assertIn('PNG',GEMINI)
         self.assertIn('aplicativo interativo apenas se o usuário pedir expressamente',GEMINI)
@@ -30,9 +30,9 @@ class RequiredImageDelivery(unittest.TestCase):
         self.assertIn('não funciona com Skills',GEMINI)
     def test_failure_is_partial_not_success(self):
         self.assertIn('entrega parcial',SKILL)
-        self.assertIn('Sem imagem, registrar',GEMINI)
+        self.assertIn('Entrega visual não realizada',GEMINI)
         self.assertIn('imagem do diagrama',ROUTE.lower())
-        self.assertIn('não demonstram renderização real',(ROOT/'docs/RELEASE-v2.3.9.md').read_text('utf-8'))
+        self.assertIn('não demonstram renderização real',(ROOT/'docs/RELEASE-v2.3.10.md').read_text('utf-8'))
     def test_all_eight_installers_convey_rule(self):
         from scripts import build
         build.build()

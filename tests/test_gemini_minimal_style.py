@@ -1,4 +1,4 @@
-"""Regressão v2.3.9: padrão visual mínimo da imagem no Gemini. Não testa a UI real."""
+"""Regressão v2.3.10: padrão visual mínimo da imagem no Gemini. Não testa a UI real."""
 import unittest
 from pathlib import Path
 from zipfile import ZipFile
@@ -25,7 +25,7 @@ class GeminiMinimalStyle(unittest.TestCase):
     def test_gemini_installer(self):
         from scripts import build
         build.build()
-        with ZipFile(ROOT/'dist'/'axipesquisa-2.3.9-gemini-web.zip') as z:
+        with ZipFile(ROOT/'dist'/'axipesquisa-2.3.10-gemini-web.zip') as z:
             self.assertIsNone(z.testzip())
             self.assertIn('INSTALADOR-PLATAFORMA.md',z.namelist())
             self.assertEqual(z.read('SKILL.md').decode('utf-8'), SKILL)
@@ -33,7 +33,7 @@ class GeminiMinimalStyle(unittest.TestCase):
             for term in ('SOMENTE TÍTULO CURTO','SEM ÍCONES','SEM DESCRIÇÕES'):
                 self.assertIn(term,guide)
     def test_version(self):
-        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.9')
-        self.assertTrue((ROOT/'docs/RELEASE-v2.3.9.md').is_file())
+        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.10')
+        self.assertTrue((ROOT/'docs/RELEASE-v2.3.10.md').is_file())
 
 if __name__=='__main__': unittest.main()
