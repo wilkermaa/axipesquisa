@@ -16,7 +16,7 @@ No procedimento de mudança de lotação em Guaratuba, o Gemini publicou **“Re
 
 ## Limite técnico e aceite
 
-A documentação Google confirma que **Skills não operam com todas as ferramentas**, incluindo Canvas. As fontes consultadas **não estabelecem que o acionamento automático da ferramenta de imagens esteja garantido em todas as sessões com Skill ativa**. Portanto, esta mudança é de contrato e roteamento: **CI de texto não constitui prova de execução no Gemini**. Homologação funcional exige prompt idêntico, versão aprovada, modelo, configuração de esforço, tentativa observável e captura do PNG renderizado. Não prometer 100% de sucesso sem evidência.
+A documentação Google confirma que **Skills não operam com todas as ferramentas**, incluindo Canvas. As fontes consultadas **não estabelecem que o acionamento automático da ferramenta de imagens esteja garantido em todas as sessões com Skill ativa**. Portanto, esta mudança é de contrato e roteamento: **CI de texto **não demonstram renderização real** no Gemini e não constitui prova de execução no Gemini**. Homologação funcional exige prompt idêntico, versão aprovada, modelo, configuração de esforço, tentativa observável e captura do PNG renderizado. Não prometer 100% de sucesso sem evidência.
 
 ## Fontes consultadas (ABNT)
 
