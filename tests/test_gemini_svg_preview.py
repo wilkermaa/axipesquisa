@@ -23,9 +23,9 @@ class GeminiSvgPreviewContract(unittest.TestCase):
         self.assertIn('Verifique antes de responder',GEMINI)
         self.assertIn('tente uma alternativa gráfica funcional',SKILL)
     def test_snippet_must_not_pass(self):
-        self.assertIn('Snippet de código',GEMINI)
+        self.assertIn('bloco ```mermaid',GEMINI)
         self.assertIn('flowchart TD',SKILL)
-        self.assertIn('Reprovado',GEMINI)
+        self.assertIn('REPROVADO',GEMINI)
         self.assertIn('somente código',SKILL)
     def test_no_pdf_requirement_or_false_canvas_claim(self):
         self.assertIn('Não exige PDF',SKILL)
