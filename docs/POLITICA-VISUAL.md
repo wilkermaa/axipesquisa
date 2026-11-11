@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.6 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.7 — política de entrega visual na microfase da Integração
 
 **Gestão e Coordenação** da microfase **Diagramação do Fluxo de Aplicação**, exclusivamente na **I — Integração**, define o resultado visual; a IA/agente executora seleciona livremente e **aciona concretamente** o mecanismo disponível (prévia, renderer, artefato, SVG, HTML, PNG ou outro). A exigência aplica-se quando existe fluxo fielmente representável **mesmo sem pedido explícito**. Não é regra universal de imagens nas fases A e X.
 
@@ -18,11 +18,11 @@ A microfase visual **não dispensa consulta à legislação aplicável nem refer
 
 ## Rotas específicas sem substituir fidelidade e ABNT
 
-**ChatGPT:** Mermaid renderizado com prévia real; **Gemini:** Canvas com SVG inline e prévia do Canvas como rota expressa, quando integrações realmente disponíveis (a ajuda Google de 11/11/2026 indica indisponibilidade de Canvas em Skills, então não anunciar êxito sem prova); **Claude:** visual personalizado HTML/SVG renderizado inline ou Artifact; **Grok:** SVG real com prévia inline ou Projects HTML Preview. O instalador de cada plataforma descreve seu caminho. **Leitura integral da Skill em início→meio→fim, um arquivo por vez, é fundamento.** A rota específica não permite fingir ferramenta e não afasta referências ABNT em todas as explicações.
+**ChatGPT:** Mermaid renderizado com prévia real; **Gemini:** **a Skill chama Canvas como ferramenta de saída para desenhar HTML/SVG inline e abrir a Prévia**, sem ter de executar dentro do Canvas; tentar efetivamente, mas não presumir sucesso (o suporte Google ainda lista Canvas como indisponível para Skills); **Claude:** visual personalizado HTML/SVG renderizado inline ou Artifact; **Grok:** SVG real com prévia inline ou Projects HTML Preview. O instalador de cada plataforma descreve seu caminho. **Leitura integral da Skill em início→meio→fim, um arquivo por vez, é fundamento.** A rota específica não permite fingir ferramenta e não afasta referências ABNT em todas as explicações.
 
 ## Gemini Web — execução específica
 
-Na **microfase Diagramação do Fluxo de Aplicação**, o modelo no Gemini deve **acionar a geração ou abertura da prévia visual na própria sessão** antes de concluir. **Priorizar SVG efetivamente renderizado**, quando viável; caso contrário, **PNG ou gráfico nativo**. Um `flowchart TD` em snippet, texto SVG/HTML ou código Mermaid é falha visual mesmo que esteja sintaticamente correto. **Não exigir PDF nem exportação** se a figura já está na interface. Verificar fidelidade, legibilidade e existência da prévia ou arquivo real; sem sucesso, declarar entrega parcial. Não supor que Canvas da conta esteja disponível dentro da mesma sessão com Skill. Esta prioridade é específica do Gemini: **não prescrever tecnologia às outras IAs**.
+Na **microfase Diagramação do Fluxo de Aplicação**, o modelo no Gemini deve **acionar a geração ou abertura da prévia visual na própria sessão** antes de concluir. **Priorizar SVG efetivamente renderizado**, quando viável; caso contrário, **PNG ou gráfico nativo**. Um `flowchart TD` em snippet, texto SVG/HTML ou código Mermaid é falha visual mesmo que esteja sintaticamente correto. **Não exigir PDF nem exportação** se a figura já está na interface. Verificar fidelidade, legibilidade e existência da prévia ou arquivo real; sem sucesso, declarar entrega parcial. Não confundir a presença da opção Canvas no chat com uma chamada efetiva; a Skill **não precisa executar dentro do Canvas**, somente solicitar/acionar a ferramenta de saída e verificar a Prévia. Não presumir que esse acionamento é suportado nem declarar ausência de opção sem testar. Esta prioridade é específica do Gemini: **não prescrever tecnologia às outras IAs**.
 
 ## Red team
 
