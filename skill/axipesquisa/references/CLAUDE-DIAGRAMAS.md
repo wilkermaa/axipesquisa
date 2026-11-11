@@ -8,7 +8,7 @@
 4. Se só houver código/texto ou recurso indisponível, registrar **entrega parcial**, não declarar renderização. Instruções de Skill não abrem ferramentas indisponíveis.
 5. Preservar ABNT em toda explicação ou pesquisa e a verificação de normas aplicáveis independentemente do gráfico.
 
-**Aceite:** visual personalizado ou Artifact visível. **Não aceito:** bloco de HTML/SVG textual sem prévia.
+**Aceite:** imagem do diagrama realmente desenhada inline ou em prévia Artifact aberta. **Não aceito:** bloco de HTML/SVG textual, tabela, ASCII, widget sem figura ou arquivo criado sem exibição. Interatividade só a pedido explícito; preferir figura estática simples.
 
 **Fonte técnica consultada na elaboração, não repetir automaticamente como fonte de respostas:** ANTHROPIC. *Visuais personalizados no chat e Cowork*. 2026. Disponível em: https://support.claude.com/pt/articles/13979539-visuais-personalizados-no-chat-e-cowork. Acesso em: 11 nov. 2026.
 
