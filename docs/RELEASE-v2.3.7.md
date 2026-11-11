@@ -19,7 +19,7 @@ A ajuda oficial do Google informa que Skills **ainda não funcionam com Canvas**
 
 ## Verificação e governança
 
-CI e testes verificam contrato textual, empacotamento de oito instaladores e hashes. **Não executam o Gemini real** nem provam a chamada Canvas. A **homologação real** e funcional na interface Gemini continua na Issue #4; o espelhamento Drive, na Issue #6. Tags anteriores e protocolo C0/C1/C2 v2.2.0-rc2 intactos.
+CI e testes verificam contrato textual, empacotamento de oito instaladores e hashes. **Não executam o Gemini real** nem provam a chamada Canvas. A **homologação real** e a **homologação funcional** na interface Gemini continuam na Issue #4; o espelhamento Drive, na Issue #6. Tags anteriores e protocolo C0/C1/C2 v2.2.0-rc2 intactos.
 
 ## Fontes técnicas consultadas (ABNT)
 
