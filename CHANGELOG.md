@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.2 — 11 nov. 2026 (PATCH)
+
+- Corrige exclusivamente a microfase **Diagramação do Fluxo de Aplicação**, na fase I — Integração, nível **Gestão e Coordenação**: exigir **entrega visual real** para fluxos fiéis, mesmo sem solicitação explícita.
+- A IA executora escolhe **autonomamente** visualização nativa, Mermaid, SVG, HTML/preview, PNG ou tecnologia futura compatível; nenhuma linguagem ou ordem fixa é obrigatória.
+- Distingue visual exibido, prévia, arquivo acessível e código/texto como resultado parcial; prioriza fidelidade, privacidade e economia real de tokens/passos.
+- Declara **SemVer 2.0.0** como fundamentação técnica normativa de engenharia de software, **não** comprovação acadêmica da eficácia AXI.
+- Mantém histórico da v2.3.1 e benchmark C0/C1/C2 v2.2.0-rc2. Testes estruturais não comprovam renderização nas plataformas.
+
 ## v2.3.1 — 11 nov. 2026 (PATCH)
 
 - Corrige a omissão de diagramas na Integração com a microfase Diagramação do Fluxo de Aplicação.

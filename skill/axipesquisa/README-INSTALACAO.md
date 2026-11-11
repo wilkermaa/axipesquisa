@@ -1,4 +1,4 @@
-# Instalação da Skill AXI-Pesquisa v2.3.1
+# Instalação da Skill AXI-Pesquisa v2.3.2
 
 **Objeto:** instalar o método editorial AXI-Pesquisa. **Não é o ZIP do repositório nem o pacote de benchmark experimental.**
 
@@ -8,8 +8,8 @@
 4. **Claude Web:** use o pacote Claude com a pasta `axipesquisa/` e carregue na área de Skills disponível.
 5. **Grok Web:** use `SKILL.md` como referência quando a interface não aceitar importação de ZIP; o suporte exato do formato depende da conta.
 6. **Codex / Antigravity:** extraia a pasta `.agents/skills/axipesquisa/` no projeto. **Claude Code:** `.claude/skills/axipesquisa/`. **Grok Build CLI:** `.grok/skills/axipesquisa/`.
-7. Para confirmar a função visual, peça a explicação de um processo sem solicitar fluxograma e, em outro teste, peça um gráfico numérico, verificando se a Skill escolhe renderer realmente disponível sem criar arquivos supérfluos. Este teste em conta real ainda é pendente.
-8. Verifique em teste simples o identificador `2.3.1` e as fases A, X e I, sem presumir que a Skill tenha sido acionada apenas por estar instalada.
+7. Para confirmar a microfase **Diagramação do Fluxo de Aplicação**, peça a explicação de um processo sem solicitar fluxograma; se houver fluxo fiel, a Skill deve tentar entregar **visual real**. A IA executora escolhe a tecnologia disponível; código ou texto apenas são entrega parcial. Teste real em conta continua pendente.
+8. Verifique em teste simples o identificador `2.3.2` e as fases A, X e I, sem presumir que a Skill tenha sido acionada apenas por estar instalada.
 9. Para experimentos C0/C1/C2 comparativos, **não deixe a Skill AXI ativável nas condições de controle**. O benchmark original usa texto congelado da versão 2.2.0-rc2.
 
 **Fontes de apoio:** documentação de plataformas em `docs/PLATAFORMAS.md` no repositório-fonte. Não há garantia de funcionamento nas interfaces sem teste real.

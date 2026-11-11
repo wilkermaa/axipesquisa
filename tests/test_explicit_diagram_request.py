@@ -10,11 +10,11 @@ class ExplicitDiagramTests(unittest.TestCase):
         self.assertIn('Pedido explícito prevalece', SKILL)
         self.assertIn('não considere a tarefa concluída apenas por escrever código Mermaid', SKILL)
     def test_attempt_native_then_available_fallback(self):
-        self.assertIn('renderer Mermaid nativo', SKILL)
-        self.assertIn('Canvas/artefatos', SKILL)
+        self.assertIn('visualização nativa, Mermaid', SKILL)
+        self.assertIn('HTML com prévia', SKILL)
         self.assertIn('tentativa concreta', REF)
     def test_exports_are_real(self):
-        self.assertIn('valide a existência dos arquivos/links', SKILL)
+        self.assertIn('validar a existência dos arquivos/links', SKILL)
         self.assertIn('SVG e PNG para download', SKILL)
     def test_not_mislabel_equivalent_render(self):
         self.assertIn('representação visual equivalente', SKILL)

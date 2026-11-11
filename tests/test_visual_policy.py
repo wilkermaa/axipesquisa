@@ -14,7 +14,7 @@ class VisualPolicyTests(unittest.TestCase):
         self.assertIn('Diagramação do Fluxo de Aplicação', SKILL)
     def test_conditional_rendering(self):
         self.assertIn('mesmo sem pedido explícito', SKILL)
-        self.assertIn('recursos existentes de Canvas', SKILL)
+        self.assertIn('autonomamente', SKILL)
     def test_exports_not_promised(self):
         for item in ('SVG', 'PNG', 'sem afirmar que criou arquivos inexistentes'):
             self.assertIn(item, SKILL)
@@ -22,7 +22,7 @@ class VisualPolicyTests(unittest.TestCase):
         for item in ('verde = concluído', 'amarelo = atenção', 'vermelho = bloqueado', 'sempre com rótulo textual'):
             self.assertIn(item, SKILL)
     def test_privacy_and_fallback(self):
-        self.assertIn('serviços externos de renderização', SKILL)
+        self.assertIn('renderizadores externos', SKILL)
         self.assertIn('código Mermaid válido', REF)
     def test_visual_policy_reference(self):
         self.assertIn('docs/POLITICA-VISUAL.md', (ROOT/'README.md').read_text('utf-8'))
