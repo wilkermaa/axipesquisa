@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.4 — SVG em prévia no Gemini, com fallback visual
+
+Correção PATCH específica da microfase I no Gemini: **acionar e verificar a visualização**, priorizando SVG realmente renderizado quando disponível; fallback PNG/visual nativo. Um snippet Mermaid/SVG sem figura é falha. [Release v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4). Os oito instaladores são gerados e anexados pelo fluxo de publicação após CI aprovado. A homologação real das interfaces permanece pendente.
+
 ## Versão v2.3.3 — diagrama visual real; PDF opcional
 
 A correção PATCH documenta a obrigatoriedade de uma **ação concreta de renderização** na microfase I, sem obrigatoriedade de PDF/arquivo quando a imagem já é exibida na tela. [Release v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3). A homologação real permanece pendente.

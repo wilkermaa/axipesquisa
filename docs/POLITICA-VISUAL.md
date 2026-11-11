@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.3 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.4 — política de entrega visual na microfase da Integração
 
 **Gestão e Coordenação** da microfase **Diagramação do Fluxo de Aplicação**, exclusivamente na **I — Integração**, define o resultado visual; a IA/agente executora seleciona livremente e **aciona concretamente** o mecanismo disponível (prévia, renderer, artefato, SVG, HTML, PNG ou outro). A exigência aplica-se quando existe fluxo fielmente representável **mesmo sem pedido explícito**. Não é regra universal de imagens nas fases A e X.
 
@@ -11,6 +11,10 @@
 - **Economia:** fidelidade e visual primeiro; entre soluções capazes, menor custo real em tokens, chamadas, conversões e passos. Sem HTML/JS excessivo nem exportações desnecessárias.
 - **Confiabilidade:** preservar nós, decisões, lacunas e fontes. Não inventar fatos administrativos; transparência sobre limitações da sessão e consentimento para serviços externos.
 - **Exceções:** instruções superiores, formatos rigidamente solicitados e ausência de fluxo representável; não quebrar saídas fechadas.
+
+## Gemini Web — execução específica
+
+Na **microfase Diagramação do Fluxo de Aplicação**, o modelo no Gemini deve **acionar a geração ou abertura da prévia visual na própria sessão** antes de concluir. **Priorizar SVG efetivamente renderizado**, quando viável; caso contrário, **PNG ou gráfico nativo**. Um `flowchart TD` em snippet, texto SVG/HTML ou código Mermaid é falha visual mesmo que esteja sintaticamente correto. **Não exigir PDF nem exportação** se a figura já está na interface. Verificar fidelidade, legibilidade e existência da prévia ou arquivo real; sem sucesso, declarar entrega parcial. Não supor que Canvas da conta esteja disponível dentro da mesma sessão com Skill. Esta prioridade é específica do Gemini: **não prescrever tecnologia às outras IAs**.
 
 ## Red team
 

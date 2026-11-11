@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.4 — 11 nov. 2026 (PATCH)
+
+- Corrige especificamente a execução da microfase **Diagramação do Fluxo de Aplicação** no Gemini Web: **abrir/renderizar uma prévia visual real antes de finalizar**, com SVG renderizado prioritário quando viável e PNG/visual nativo como alternativas.
+- Reprova explicitamente `flowchart TD`, Mermaid ou XML SVG exibidos apenas como texto em **Snippet de código**. Código não substitui gráfico.
+- Define verificação de figura/prévia/arquivo real e tentativa de uma alternativa visual funcional; falha deve ser marcada como entrega parcial, não sucesso presumido.
+- Preserva a autonomia de escolha de tecnologia em outras plataformas, a economia de tokens, a privacidade, a não obrigatoriedade de PDF e as versões anteriores.
+- Reforça teste independente no Gemini com versão ativa identificada. CI estrutural não prova funcionamento da interface e o protocolo C0/C1/C2 v2.2.0-rc2 permanece congelado.
+
 ## v2.3.3 — 11 nov. 2026 (PATCH)
 
 - Corrige o acionamento real de renderização na microfase **Diagramação do Fluxo de Aplicação**, fase I — Integração: não basta escrever código; a IA deve tentar uma prévia ou entrega gráfica efetiva.
