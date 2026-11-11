@@ -14,7 +14,7 @@
 
 ## Validação e integridade
 
-Testes de regressão, build dos oito instaladores, hashes SHA-256 e tag anotada são verificados no GitHub Actions antes da publicação. **Não comprovam que o modelo Gemini desenhou corretamente**; homologação funcional com imagem e auditoria jurídica continuam na Issue #4.
+Testes de regressão, build dos oito instaladores, hashes SHA-256 e tag anotada são verificados no GitHub Actions antes da publicação. **Não demonstram renderização real** no Gemini. A **homologação real** e funcional da imagem ainda precisa comprovar que o modelo desenhou corretamente; homologação funcional com imagem e auditoria jurídica continuam na Issue #4.
 
 O experimento C0/C1/C2 da v2.2.0-rc2 e os arquivos históricos protegidos por hashes não foram alterados. Espelho GitHub/Drive corresponde ao commit/versionamento quando verificado em ambas as plataformas.
 
