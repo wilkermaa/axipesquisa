@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.7 — Canvas como ferramenta de saída para Prévia SVG
+
+A Skill AXI no Gemini **não precisa funcionar dentro do Canvas**: ela prepara o fluxograma e deve **solicitar/acionar o Canvas para construir SVG inline e abrir a Prévia**. A chamada ainda requer teste funcional, pois a ajuda oficial Google informa que Canvas não funciona com Skills; não declarar sucesso sem retorno observável. Preservados ABNT, leitura integral e roteamento das outras IAs. O ZIP Gemini v2.3.7 inclui guia específico. [Release v2.3.7](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.7). Homologação na interface e espelhamento Drive pendentes.
+
 ## Versão v2.3.6 — leitura integral AXI e rotas visuais específicas
 
 Restaura a instrução fundamental de leitura completa **arquivo por arquivo, em A → X → I**, ABNT em todas as explicações/pesquisas e comparações da v2.0.0. Cada um dos **oito ZIPs** contém **`INSTALADOR-PLATAFORMA.md` específico**: Gemini = Canvas com SVG e prévia (bloqueio Skills+Canvas registrado, alternativa SVG real se possível), ChatGPT = Mermaid renderizado, Claude = visual HTML/SVG inline/Artifact, Grok = SVG inline/Projects Preview e orientações próprias para as quatro CLIs. **Sem homologação funcional de interface**. [Release v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6).

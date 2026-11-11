@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.3.6"
+VERSION = "2.3.7"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",
@@ -24,7 +24,7 @@ PLATFORMS = {
 
 PLATFORM_GUIDES = {
     "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
-    "gemini-web": ("Gemini Web", "Canvas com SVG inline e Prévia real é a rota requerida; a ajuda Google de 11/11/2026 informa que Skills ainda não operam com Canvas. Não alegar que abriu o recurso; se não acionável, produzir SVG visual/arquivo real acessível ou declarar parcial.", "references/GEMINI-DIAGRAMAS.md"),
+    "gemini-web": ("Gemini Web", "Rota Canvas com SVG: a Skill coordena no chat e deve SOLICITAR/ACIONAR o Canvas como ferramenta de SAÍDA para criar HTML com SVG inline e mostrar Prévia; não executar a Skill dentro do Canvas. Não exigir interação posterior. A ajuda Google diz que Canvas ainda não funciona com Skills, logo a chamada não é garantida: testar efetivamente antes de alegar sucesso. Se falhar, usar imagem/arquivo gráfico real ou declarar parcial.", "references/GEMINI-DIAGRAMAS.md"),
     "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
     "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
     "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),

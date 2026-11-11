@@ -1,4 +1,4 @@
-# Contrato de leitura integral e progressiva — fundamento AXI v2.3.6
+# Contrato de leitura integral e progressiva — fundamento AXI v2.3.7
 
 **Regra obrigatória quando `axipesquisa` estiver ativa:** executar o método ao mesmo tempo que lê **todo o pacote textual instalado** de forma sequencial e integral. Não ler apenas sumário, seções convenientes, pesquisa por trechos, uma versão lembrada ou parte inicial. A leitura de cada arquivo indicado deve alcançar até sua última linha antes de marcar `lido integralmente`. Usar as ferramentas da plataforma para abrir os arquivos como instruções; a Skill não cria permissões.
 
@@ -16,7 +16,7 @@
 
 5. Ler integralmente, um arquivo por vez: `references/ROTEAMENTO-VISUAL.md`, `references/CHATGPT-DIAGRAMAS.md`, `references/GEMINI-DIAGRAMAS.md`, `references/CLAUDE-DIAGRAMAS.md`, `references/GROK-DIAGRAMAS.md` e `references/PLATAFORMAS-VISUAIS.md`. Conhecer as rotas não implica executar recursos de outra plataforma. Só **acionar efetivamente** o mecanismo apropriado à plataforma atual.
 6. Ler integralmente os anexos textuais restantes: `assets/GEMINI-CANVAS-TEMPLATE.md`, `assets/config.example.json`, `README-INSTALACAO.md` e `LICENSE-CONTENT.md`. Template Canvas é um exemplo: não equivale a Canvas aberto; configuração de exemplo é neutra, não substitui identidade explicitamente escolhida.
-7. Concluir I com relações, aplicação prática e, se houver fluxo fiel, **uma figura renderizada ou arquivo visual real e verificável**. **Gemini: Canvas + SVG** quando utilizável na mesma sessão; Claude: HTML/SVG inline ou Artifact; Grok: SVG com prévia de arquivo ou HTML Preview; ChatGPT: Mermaid com prévia. Não apresentar texto Mermaid/XML/HTML como gráfico.
+7. Concluir I com relações, aplicação prática e, se houver fluxo fiel, **uma figura renderizada ou arquivo visual real e verificável**. **Gemini: a Skill solicita/chama Canvas como saída para SVG com Prévia, sem precisar executar dentro do Canvas; tentar e observar o resultado, sem garantia de integração;** Claude: HTML/SVG inline ou Artifact; Grok: SVG com prévia de arquivo ou HTML Preview; ChatGPT: Mermaid com prévia. Não apresentar texto Mermaid/XML/HTML como gráfico.
 8. Revisar o resultado: (a) arquivos lidos integralmente, sem alegação falsa; (b) todo/partes, comparações e integração coerentes; (c) fontes jurídicas verificadas onde aplicável; (d) **Fontes consultadas (ABNT) em toda explicação ou pesquisa**, incluindo `Nenhuma fonte externa consultada nesta resposta.` se não houve consulta externa; (e) assinatura no formato autorizado; (f) visual executado/estado parcial verdadeiro.
 
 ## Gate de execução honesto

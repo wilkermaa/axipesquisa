@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.3.7 — 11 nov. 2026 (PATCH)
+
+- Corrige confusão conceitual na microfase do Gemini: **a Skill coordena no chat e solicita/aciona o Canvas como ferramenta de saída** para gerar SVG inline com Prévia; **não é necessário executar a Skill dentro do Canvas nem interagir após a criação**.
+- Reforça **tentativa observável e verificação da Prévia**: o botão Canvas visível não basta, assim como a ausência de confirmação documental de integração não prova que o botão desapareceu. Não afirmar que o envio Skill → Canvas funciona sem ensaio real; o Google ainda lista Canvas como não suportado em Skills.
+- Mantém fallback real SVG/PNG, ABNT em todas as explicações, pesquisa jurídica verificada, leitura integral progressiva, Mermaid no ChatGPT e rotas de Claude/Grok. Nenhum PDF exigido.
+- Preserva material histórico, 12 exemplos por SHA e C0/C1/C2 v2.2.0-rc2. Homologação funcional no Gemini pendente na Issue #4.
+
 ## v2.3.6 — 11 nov. 2026 (PATCH)
 
 - **Restaura fundamento integral da v2.0.0:** leitura completa do `SKILL.md` e **de todos os arquivos textuais do pacote, um por vez e conforme execução início/A → meio/X → fim/I**, sem uso de resumos em lugar de documentos; marcar limitações de acesso honestamente.
