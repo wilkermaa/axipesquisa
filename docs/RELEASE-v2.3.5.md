@@ -13,6 +13,8 @@ Resposta do Gemini ao pedido de mudança de lotação de servidor em Matinhos ap
 - **Diagramação I:** se o rito foi verificado e existe fluxo fiel, acionar efetivamente visual no Gemini (SVG renderizado quando possível, alternativa PNG/nativa); não aceitar código ou setas textuais como figura; PDF opcional. **Pesquisa, ABNT e visual são deveres independentes**.
 - **Caso de regressão:** a Lei nº 1.165/2008 de Matinhos, art. 57, distingue portaria para remoção entre secretarias e ofício dentro da mesma secretaria; §§ 1º–3º estabelecem qualificações importantes. A confirmação municipal oficial do texto atualizado não foi obtida nesta revisão; a comparação foi feita com compilação externa.
 
+O arquivo histórico protegido por hash `skill/axipesquisa/references/PROTOCOLO-DE-FONTES.md` foi **preservado sem alteração**; o novo complemento fica em `PROTOCOLO-JURIDICO-ABNT.md`. **Homologação funcional** do Gemini, das consultas jurídicas reais e do gráfico continua pendente.
+
 ## Testes, limitações e governança
 
 CI verifica contrato textual, regressões e integridade de oito ZIPs. **Não prova que o Gemini navegou em fonte oficial, verificou a legislação ou renderizou o gráfico em sua UI**. Homologação real pendente na Issue #4. As tags/ativos anteriores permanecem íntegros; referência SemVer 2.0.0 técnica; protocolo científico C0/C1/C2 v2.2.0-rc2 inalterado.

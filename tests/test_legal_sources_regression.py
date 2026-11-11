@@ -3,7 +3,7 @@ from pathlib import Path
 import unittest
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=(ROOT/'skill/axipesquisa/SKILL.md').read_text('utf-8')
-SOURCES=(ROOT/'skill/axipesquisa/references/PROTOCOLO-DE-FONTES.md').read_text('utf-8')
+SOURCES=(ROOT/'skill/axipesquisa/references/PROTOCOLO-JURIDICO-ABNT.md').read_text('utf-8')
 GEMINI=(ROOT/'skill/axipesquisa/references/GEMINI-DIAGRAMAS.md').read_text('utf-8')
 VISUAL=(ROOT/'docs/POLITICA-VISUAL.md').read_text('utf-8')
 
