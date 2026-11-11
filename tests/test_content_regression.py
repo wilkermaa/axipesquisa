@@ -38,7 +38,7 @@ class ContentPreservationTests(unittest.TestCase):
         from scripts import build
         build.build()
         for platform,prefix in build.PLATFORMS.items():
-            p=ROOT/'dist'/f'axipesquisa-2.3.3-{platform}.zip'
+            p=ROOT/'dist'/f'axipesquisa-2.3.4-{platform}.zip'
             with self.subTest(platform=platform), ZipFile(p) as z:
                 self.assertIsNone(z.testzip())
                 for name in ['SKILL.md','README-INSTALACAO.md','references/EXEMPLOS-E-TESTES.md','references/EDICAO-E-CULTURA.md']:
@@ -55,7 +55,7 @@ class ContentPreservationTests(unittest.TestCase):
             self.assertIn(k,t)
     def test_source_release_consistency(self):
         from scripts.check_release import check_source
-        self.assertEqual(check_source(),'2.3.3')
+        self.assertEqual(check_source(),'2.3.4')
     def test_no_premature_scientific_validation(self):
         t=(ROOT/'README.md').read_text('utf-8')
         self.assertIn('sem execuções comprovadas',t)
