@@ -30,7 +30,7 @@ class VisualRoutingContract(unittest.TestCase):
         self.assertIn('não uma ordem fixa',GEMINI)
     def test_safety_and_economy(self):
         self.assertIn('tokens de saída/código',SKILL)
-        self.assertIn('uma tentativa principal',ROUTER)
+        self.assertIn('Uma tentativa principal',ROUTER)
         self.assertIn('Privacidade',SKILL)
         for name in ('Claude Web','Grok Web','Codex CLI','Claude Code','Antigravity','Grok Build'):
             self.assertIn(name,REST)
