@@ -11,7 +11,7 @@ class CanvasFallbackNotDefault(unittest.TestCase):
     def test_old_design_remains_versioned(self):
         self.assertIn('Canvas como ferramenta de saída',HISTORY)
     def test_image_first_supersedes_canvas(self):
-        self.assertIn('geração DIRETA DE IMAGEM',GEMINI)
+        self.assertIn('EXECUTAR PNG AGORA',GEMINI)
         self.assertIn('Canvas com SVG e prévia',GEMINI)
         self.assertIn('pode ser fallback estático',GEMINI)
         self.assertIn('não funciona com Skills',GEMINI)
@@ -25,7 +25,7 @@ class CanvasFallbackNotDefault(unittest.TestCase):
             self.assertEqual(z.read('SKILL.md').decode('utf-8'),SKILL)
             route=z.read('INSTALADOR-PLATAFORMA.md').decode('utf-8')
             self.assertIn('IMAGEM VISÍVEL OBRIGATÓRIA',route)
-            self.assertIn('DIRETA DE IMAGEM',route)
+            self.assertIn('ACIONAR EFETIVAMENTE',route)
             self.assertIn('não substituir por tabela',route.lower())
 
 if __name__=='__main__': unittest.main()
