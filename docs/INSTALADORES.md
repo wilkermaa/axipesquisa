@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.10 — Gemini PNG primeiro, NUNCA snippet Mermaid
+
+Correção crítica da falha relatada em Guaratuba: **ACIONAR geração de PNG de fato e exibi-lo antes da resposta final**, com caixas minimalistas (títulos curtos, sem ícones/descrições). É proibido entregar código `mermaid`, SVG/HTML textual ou tabela/ASCII como alternativa, mesmo intitulada “entrega parcial”. Se a ferramenta falhar após tentativa real e fallback, declarar a impossibilidade observada em uma frase, sem código. [Release v2.3.10](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.10). Aceite no Gemini ainda depende de teste funcional na conta.
+
 ## Versão v2.3.9 — Gemini minimalista, caixas apenas com títulos
 
 Preserva a **imagem de fluxograma obrigatória** e estabelece, especificamente no Gemini, **caixas SOMENTE COM TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES**, estilo visual simples do Mermaid. Apenas setas, decisões e rótulos breves; detalhes jurídicos e ABNT fora da imagem. [Release v2.3.9](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.9). Homologação no Gemini e espelhamento Drive sujeitos a evidência.
