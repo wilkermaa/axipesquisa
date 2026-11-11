@@ -44,6 +44,6 @@ class VisualRoutingContract(unittest.TestCase):
         self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.3')
         self.assertTrue((ROOT/'docs/RELEASE-v2.3.3.md').is_file())
         self.assertIn('não constitui evidência experimental',(ROOT/'docs/FUNDAMENTACAO-TECNICA.md').read_text('utf-8'))
-        self.assertIn('testes estruturais',(ROOT/'docs/POLITICA-VISUAL.md').read_text('utf-8').casefold()) if False else self.assertIn('homologação', (ROOT/'docs/RELEASE-v2.3.3.md').read_text('utf-8').casefold())
+        self.assertIn('homologação',(ROOT/'docs/RELEASE-v2.3.3.md').read_text('utf-8').casefold())
 
 if __name__=='__main__': unittest.main()
