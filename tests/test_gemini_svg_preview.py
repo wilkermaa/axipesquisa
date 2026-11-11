@@ -33,7 +33,7 @@ class GeminiSvgPreviewContract(unittest.TestCase):
         self.assertIn('não presumir',SKILL.lower())
     def test_structural_not_product_validation(self):
         self.assertIn('não demonstram renderização real',GEMINI)
-        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.6.md').read_text('utf-8').lower())
+        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.7.md').read_text('utf-8').lower())
     def test_economy_and_privacy(self):
         self.assertIn('minimizar tokens',GEMINI)
         self.assertIn('privacidade',GEMINI.lower())
