@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.3.7"
+VERSION = "2.3.8"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",
@@ -24,7 +24,7 @@ PLATFORMS = {
 
 PLATFORM_GUIDES = {
     "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
-    "gemini-web": ("Gemini Web", "Rota Canvas com SVG: a Skill coordena no chat e deve SOLICITAR/ACIONAR o Canvas como ferramenta de SAÍDA para criar HTML com SVG inline e mostrar Prévia; não executar a Skill dentro do Canvas. Não exigir interação posterior. A ajuda Google diz que Canvas ainda não funciona com Skills, logo a chamada não é garantida: testar efetivamente antes de alegar sucesso. Se falhar, usar imagem/arquivo gráfico real ou declarar parcial.", "references/GEMINI-DIAGRAMAS.md"),
+    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar/acionar a geração DIRETA DE IMAGEM do Gemini (PNG ou SVG já desenhado), exibir na própria conversa e conferir blocos, setas e rótulos. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.", "references/GEMINI-DIAGRAMAS.md"),
     "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
     "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
     "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),
@@ -40,7 +40,7 @@ def platform_guide(platform):
             '**Leitura integral obrigatória:** comece por `SKILL.md` completo; continue um arquivo por vez, de A até X e I, conforme `references/FLUXO-LEITURA-INTEGRAL.md`. '
             'Todas as respostas explicativas ou de pesquisa devem registrar `Fontes consultadas (ABNT)` e fontes efetivamente consultadas ou ausência de consulta.\n\n'
             f'**Manual da plataforma:** `{reference}`. '
-            'A existência da instrução não prova que a interface abriu a prévia; testar e registrar o estado real. PDF não obrigatório.\n').encode('utf-8')
+            '**Critério de aceite:** fluxo representável exige IMAGEM renderizada na tela ou em prévia; arquivo não aberto, tabela, ASCII, HTML, código ou só promessa não bastam. A instrução não prova execução, testar e registrar o estado real. PDF não obrigatório.\n').encode('utf-8')
 
 def info(name):
 

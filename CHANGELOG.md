@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.8 — 11 nov. 2026 (PATCH)
+
+- **Fundamento aprovado pelo autor:** quando a microfase I identificar fluxo real e fiel, **a AXI Pesquisa deve ENTREGAR IMAGEM do diagrama realmente visível na tela ou em prévia aberta**; sem figura, apenas entrega parcial. O requisito vale para as oito plataformas e independe de pedido explícito de fluxograma.
+- **Gemini imagem primeiro:** solicitar/acionar imagem direta (SVG já renderizado ou PNG) com blocos, setas e bifurcações legíveis; não pedir app HTML, widget, checklist ou tabela como substituto. Interatividade só se o usuário pedir expressamente. Canvas permanece opção subsidiária se disponibilizar prévia real, sem prometer compatibilidade com Skills.
+- **Não aprovar** tabela, ASCII, lista com setas, código Mermaid/HTML/SVG, promessa de geração ou arquivo gráfico criado sem exibição. Verificar também fidelidade semântica e jurídica da imagem gerada, sem inventar normas.
+- Mantém obrigatoriedade de leitura integral da Skill, fontes ABNT em explicações/pesquisas, Mermaid renderizado no ChatGPT, visuais Claude/Grok, PDF opcional, testes de preservação e C0/C1/C2 congelado na v2.2.0-rc2.
+- Homologação funcional e real nas interfaces permanece pendente; testes estáticos e CI não comprovam geração da imagem por Skill ativa no Gemini.
+
 ## v2.3.7 — 11 nov. 2026 (PATCH)
 
 - Corrige confusão conceitual na microfase do Gemini: **a Skill coordena no chat e solicita/aciona o Canvas como ferramenta de saída** para gerar SVG inline com Prévia; **não é necessário executar a Skill dentro do Canvas nem interagir após a criação**.

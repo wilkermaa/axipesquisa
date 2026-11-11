@@ -8,7 +8,7 @@ Na microfase **Diagramação do Fluxo de Aplicação**, fase I — Integração,
 4. Validar fidelidade, legibilidade e privacidade; diferenciar um Mermaid realmente renderizado de diagrama equivalente gerado por outro motor.
 5. Não exigir PNG/SVG/PDF ou download adicional se a figura já está visível. Não criar três alternativas em paralelo sem necessidade.
 
-**Resultado:** visual real no chat, prévia verificável ou arquivo gráfico real acessível; código Mermaid isolado é **entrega parcial**.
+**Resultado:** imagem do fluxograma Mermaid **efetivamente visível no chat ou em prévia aberta** é obrigatória quando houver fluxo fiel. Código Mermaid isolado, HTML em texto ou arquivo sem prévia = **entrega parcial**, não conclusão. Se a prévia Mermaid não funcionar, gerar imagem verdadeira por outro mecanismo acessível. Não fabricar gráficos para objetos sem fluxo.
 
 OPENAI. *Como trabalhar com blocos de escrita e blocos de código no ChatGPT*. [s.d.]. Disponível em: https://help.openai.com/pt-br/articles/20001246-working-with-writing-blocks-and-code-blocks-in-chatgpt. Acesso em: 11 nov. 2026.
 

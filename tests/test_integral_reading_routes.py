@@ -23,8 +23,8 @@ class IntegralReadingAndRoutes(unittest.TestCase):
         self.assertIn('toda explicação ou pesquisa',compact)
     def test_platform_routes(self):
         self.assertIn('Mermaid renderizado',GPT)
-        self.assertIn('Canvas + SVG',GEMINI)
-        self.assertIn('Skills ainda não operam com Canvas',(ROOT/'README.md').read_text('utf-8')) if False else self.assertIn('não funcionam com Canvas',GEMINI)
+        self.assertIn('IMAGEM',GEMINI)
+        self.assertIn('Skills ainda não operam com Canvas',(ROOT/'README.md').read_text('utf-8')) if False else self.assertIn('não funciona com Skills',GEMINI)
         self.assertIn('visual personalizado HTML/SVG',CLAUDE)
         self.assertIn('arquivo SVG real com prévia inline',GROK)
     def test_distinct_platform_guides(self):
@@ -42,7 +42,7 @@ class IntegralReadingAndRoutes(unittest.TestCase):
                 self.assertIn('Fontes consultadas (ABNT)',guide)
                 names[platform]=guide
         self.assertEqual(len(set(names.values())),8)
-        self.assertIn('Canvas com SVG',names['gemini-web'])
+        self.assertIn('IMAGEM VISÍVEL OBRIGATÓRIA',names['gemini-web'])
         self.assertIn('Mermaid renderizado',names['chatgpt-web'])
         self.assertIn('HTML/SVG inline',names['claude-web'])
         self.assertIn('prévia inline',names['grok-web'])

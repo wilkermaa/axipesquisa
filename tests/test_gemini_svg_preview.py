@@ -16,7 +16,7 @@ class GeminiSvgPreviewContract(unittest.TestCase):
     def test_svg_priority_not_dogma(self):
         self.assertIn('SVG realmente renderizado',SKILL)
         self.assertIn('PNG ou uma visualização nativa',SKILL)
-        self.assertIn('escolha tecnológica permanece da IA executora',GEMINI)
+        self.assertIn('SVG já renderizado ou PNG',GEMINI)
         self.assertIn('não prescrever tecnologia às outras IAs',POLICY)
     def test_rendering_before_finish(self):
         self.assertIn('Acione a geração ou abertura da prévia',SKILL)
@@ -33,7 +33,7 @@ class GeminiSvgPreviewContract(unittest.TestCase):
         self.assertIn('não presumir',SKILL.lower())
     def test_structural_not_product_validation(self):
         self.assertIn('não demonstram renderização real',GEMINI)
-        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.7.md').read_text('utf-8').lower())
+        self.assertIn('homologação funcional', (ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8').lower())
     def test_economy_and_privacy(self):
         self.assertIn('minimizar tokens',GEMINI)
         self.assertIn('privacidade',GEMINI.lower())

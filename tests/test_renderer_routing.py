@@ -27,7 +27,7 @@ class VisualRoutingContract(unittest.TestCase):
         self.assertIn('decide autonomamente',SKILL)
         self.assertIn('tecnologia futura',SKILL)
         self.assertIn('não sequência obrigatória',ROUTER)
-        self.assertIn('decide livremente',GEMINI)
+        self.assertIn('SVG já renderizado ou PNG',GEMINI)
     def test_concrete_render_and_pdf_optional(self):
         self.assertIn('Ação concreta antes de concluir',SKILL)
         self.assertIn('PDF não é obrigatório',SKILL)
@@ -41,9 +41,9 @@ class VisualRoutingContract(unittest.TestCase):
         for name in ('Claude Web','Grok Web','Codex CLI','Claude Code','Antigravity','Grok Build'):
             self.assertIn(name,REST)
     def test_version_and_scientific_limits(self):
-        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.7')
-        self.assertTrue((ROOT/'docs/RELEASE-v2.3.7.md').is_file())
+        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.8')
+        self.assertTrue((ROOT/'docs/RELEASE-v2.3.8.md').is_file())
         self.assertIn('não constitui evidência experimental',(ROOT/'docs/FUNDAMENTACAO-TECNICA.md').read_text('utf-8'))
-        self.assertIn('homologação',(ROOT/'docs/RELEASE-v2.3.7.md').read_text('utf-8').casefold())
+        self.assertIn('homologação',(ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8').casefold())
 
 if __name__=='__main__': unittest.main()

@@ -8,7 +8,7 @@
 4. Sem prévia ou arquivo visual real acessível, classificar **entrega parcial**, informando bloqueio observado sem inventar ferramenta ou URL.
 5. Não substituir leitura integral, pesquisa de fatos ou seção ABNT com diagrama.
 
-**Aceite:** SVG com visualização real no cartão de arquivo ou HTML renderizado no Projects. **Não aceito:** XML/HTML isolado como texto.
+**Aceite:** IMAGEM SVG/PNG do fluxograma exibida inline no cartão visual ou prévia aberta no Projects. **Não aceito:** XML/HTML isolado como texto, tabela, ASCII, HTML/app sem solicitação ou arquivo sem prévia. Interatividade só a pedido explícito.
 
 **Fontes técnicas consultadas na elaboração, não replicar automaticamente nas respostas:**
 GROK. *Release Notes — Sep 19, 2026*. 2026. Disponível em: https://grok.com/release-notes/sep-19-2026. Acesso em: 11 nov. 2026.
