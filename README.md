@@ -1,6 +1,6 @@
 # AXI Pesquisa
 
-**Versão 2.3.8 · software experimental; validação científica independente pendente.**
+**Versão 2.3.9 · software experimental; validação científica independente pendente.**
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -10,23 +10,23 @@
 
 ## Baixar a Skill AXI
 
-**v2.3.8 — IMAGEM OBRIGATÓRIA NA ENTREGA AXI quando a microfase I identificar fluxo real.** A imagem do fluxograma deve aparecer **na própria resposta ou em prévia gráfica aberta**; tabela, ASCII, lista, código Mermaid/SVG/HTML e arquivo não mostrado são **entrega parcial**, não resultado concluído. A regra aplica-se às oito plataformas, sem inventar fluxos em conceitos estáticos ou quebrar formatos estritos.
+**v2.3.9 — imagem obrigatória e GEMINI COM CAIXAS SÓ DE TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES.** Mantido o princípio: quando a microfase I identificar fluxo real, a AXI entrega uma imagem visível. A imagem do fluxograma deve aparecer **na própria resposta ou em prévia gráfica aberta**; tabela, ASCII, lista, código Mermaid/SVG/HTML e arquivo não mostrado são **entrega parcial**, não resultado concluído. A regra aplica-se às oito plataformas, sem inventar fluxos em conceitos estáticos ou quebrar formatos estritos.
 
-**Gemini:** primeiro pedir/acionar **geração direta de imagem (SVG efetivamente renderizado ou PNG exibido)**, com diagrama de blocos e setas; não pedir HTML, aplicativo ou interatividade por padrão. Canvas/SVG é apenas alternativa quando criar realmente uma figura visível; a documentação do Google ainda restringe Canvas com Skills. **ChatGPT:** Mermaid com prévia desenhada. **Claude:** visual HTML/SVG inline ou Artifact visível. **Grok:** SVG/PNG com prévia inline ou imagem visível no Projects. **PDF e downloads não são obrigatórios**; a figura visual, sim. A criação da imagem no Gemini com Skill ativa precisa de homologação em produto, não é garantida só por esta instrução.
+**Gemini:** primeiro pedir/acionar **geração direta de imagem (SVG efetivamente renderizado ou PNG exibido)**, com diagrama de blocos e setas **no estilo visual simples do Mermaid: caixas apenas com títulos curtos, sem ícones, sem descrições dentro das caixas**; não pedir HTML, aplicativo ou interatividade por padrão. Canvas/SVG é apenas alternativa quando criar realmente uma figura visível; a documentação do Google ainda restringe Canvas com Skills. **ChatGPT:** Mermaid com prévia desenhada. **Claude:** visual HTML/SVG inline ou Artifact visível. **Grok:** SVG/PNG com prévia inline ou imagem visível no Projects. **PDF e downloads não são obrigatórios**; a figura visual, sim. A criação da imagem no Gemini com Skill ativa precisa de homologação em produto, não é garantida só por esta instrução.
 **Toda resposta explicativa ou de pesquisa deve ter `Fontes consultadas (ABNT)`**, registrando as fontes efetivamente consultadas ou `Nenhuma fonte externa consultada nesta resposta.`. **A leitura integral dos materiais da Skill, arquivo por arquivo e na sequência A → X → I, é obrigatória quando ativada.** Em temas legais e administrativos específicos, é obrigatório consultar fontes normativas verificáveis quando houver acesso e apresentar referências ABNT reais. Lei, artigo, competência e procedimento não podem ser presumidos nem afirmados obrigatórios sem fonte; o diagrama não substitui a pesquisa.
 
-**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.7](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.7), [v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6), [v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5), [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
+**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8), [v2.3.7](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.7), [v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6), [v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5), [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
 
-| Plataforma | Instalador v2.3.8 |
+| Plataforma | Instalador v2.3.9 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/01-CHATGPT-WEB-AXI-v2.3.8.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/02-GEMINI-WEB-AXI-v2.3.8.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/03-CLAUDE-WEB-AXI-v2.3.8.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/04-GROK-WEB-AXI-v2.3.8.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/05-CODEX-AXI-v2.3.8.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/06-CLAUDE-CODE-AXI-v2.3.8.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/07-ANTIGRAVITY-AXI-v2.3.8.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/08-GROK-BUILD-AXI-v2.3.8.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/01-CHATGPT-WEB-AXI-v2.3.9.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/02-GEMINI-WEB-AXI-v2.3.9.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/03-CLAUDE-WEB-AXI-v2.3.9.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/04-GROK-WEB-AXI-v2.3.9.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/05-CODEX-AXI-v2.3.9.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/06-CLAUDE-CODE-AXI-v2.3.9.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/07-ANTIGRAVITY-AXI-v2.3.9.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/08-GROK-BUILD-AXI-v2.3.9.zip) |
 
 Os links são destinados aos anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
 

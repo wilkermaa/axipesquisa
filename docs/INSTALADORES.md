@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.9 — Gemini minimalista, caixas apenas com títulos
+
+Preserva a **imagem de fluxograma obrigatória** e estabelece, especificamente no Gemini, **caixas SOMENTE COM TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES**, estilo visual simples do Mermaid. Apenas setas, decisões e rótulos breves; detalhes jurídicos e ABNT fora da imagem. [Release v2.3.9](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.9). Homologação no Gemini e espelhamento Drive sujeitos a evidência.
+
 ## Versão v2.3.8 — IMAGEM OBRIGATÓRIA na microfase I
 
 A Skill deve mostrar **imagem de fluxograma realmente visível na resposta ou em prévia aberta** quando houver fluxo representável. No Gemini, o instalador prioriza **geração direta de imagem SVG renderizado/PNG**, não aplicativo HTML/Canvas como primeira opção; tabela, ASCII, código ou arquivo sem prévia são falha/entrega parcial. ChatGPT mantém Mermaid com prévia, Claude/Grok seus recursos visuais. Testes de fonte e empacotamento não comprovam suporte do Gemini à chamada de Imagens com Skill ativa. [Release v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8). Homologação na Issue #4, Drive Issue #6.
