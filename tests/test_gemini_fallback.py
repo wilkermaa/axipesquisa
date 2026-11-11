@@ -28,7 +28,7 @@ class GeminiFallbackPolicy(unittest.TestCase):
     def test_privacy(self): self.assertIn('Não inventar prévias',REF)
     def test_source_guide(self): self.assertIn('support.google.com/gemini',DOC)
     def test_model_status_unverified(self): self.assertIn('não declarar impossível',REF)
-    def test_canvas_user_action(self): self.assertIn('conversa separada',REF)
+    def test_no_default_html_app(self): self.assertIn('aplicativo interativo apenas se o usuário pedir expressamente',REF)
     def test_app_not_assumed(self): self.assertIn('Não inventar telas abertas',SKILL)
 
 if __name__=='__main__':unittest.main()
