@@ -1,10 +1,10 @@
-# Fase I — roteamento visual por capacidades (AXI v2.3.0)
+# Fase I — roteamento visual por capacidades (AXI v2.3.1)
 
 **Âmbito:** instrução funcional adaptativa; não instala nem ativa renderizadores. Aplicar antes de construir diagramas ou gráficos, sem pesquisas pagas para descobrir ferramentas. Resultado sempre condicionado às capacidades reais da sessão.
 
 ## Pré-verificação de custo mínimo (sem chamadas externas)
 
-1. **Necessidade:** pedido explícito de visualização? Se não, desenhar somente quando explicar relações melhor que texto; em dúvidas simples, responder sem gráfico.
+1. **Necessidade:** aplicar a Diagramação do Fluxo de Aplicação. Se houver fluxo identificável e representável com fidelidade, desenhar mesmo sem pedido explícito. Para outros visuais, considerar o pedido e a utilidade. Sinalizar lacunas pertinentes e preservar relações estáticas sem inventar sequência.
 2. **Tipo:** fluxo, árvore, sequência ou arquitetura = diagrama; valores e séries numéricas = gráfico quantitativo; exploração com controles solicitada = interativo. Não inventar dados, estados nem conexões.
 3. **Capacidades atuais:** conferir somente ferramentas, recursos ou prévias que a própria sessão realmente apresenta. Nome da plataforma, marketing, documentação ou modelo não comprovam disponibilidade nesta conta. Não executar sucessivas pesquisas, instalar extensões, abrir sites ou sondar provedores externos só para escolher um renderer.
 4. **Restrições:** verificar se há dados sensíveis, preferência por formato, acessibilidade, necessidade real de SVG/PNG e permissão para arquivos, execução local e rede.

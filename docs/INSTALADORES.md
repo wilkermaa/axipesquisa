@@ -2,9 +2,13 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
-## Versão v2.3.0 — nova funcionalidade visual (publicação condicionada)
+## Versão v2.3.1 — Diagramação do Fluxo de Aplicação
 
-O código-fonte prepara oito instaladores pelo workflow `publicar-versao.yml`. Os links devem ser tratados como disponíveis **somente depois de confirmados** no Release `v2.3.0`. O teste de aceite nas oito IAs continua pendente.
+Consulte os anexos da [release v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) após a publicação.
+
+## Versão v2.3.0 — roteamento visual
+
+Oito instaladores estão disponíveis na [release v2.3.0](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.0). O teste de aceite nas oito IAs continua pendente.
 
 | Plataforma | Nome esperado do ZIP |
 |---|---|

@@ -25,7 +25,7 @@ class ExplicitDiagramTests(unittest.TestCase):
         self.assertIn('Wireframe de interface e diagrama de relações', SKILL)
     def test_missing_tools_reported_specifically(self):
         self.assertIn('qual limitação específica', SKILL)
-    def test_optional_is_maintained_for_unrequested(self):
-        self.assertIn('não crie imagem ou diagrama se texto bastar', SKILL)
+    def test_flow_diagram_without_explicit_request(self):
+        self.assertIn('mesmo sem pedido explícito', SKILL)
 
 if __name__=='__main__': unittest.main()

@@ -1,6 +1,6 @@
 # AXI Pesquisa
 
-**Versão 2.3.0 · software experimental; validação científica independente pendente.**
+**Versão 2.3.1 · software experimental; validação científica independente pendente.**
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -10,22 +10,22 @@
 
 ## Baixar a Skill AXI
 
-**Versão proposta para distribuição: v2.3.0.** A fase I incorpora seleção econômica de renderizador por capacidade real: Gemini, ChatGPT e os outros seis ambientes. A publicação dos ZIPs requer que o fluxo de testes e release seja concluído. A alteração **não significa validação científica**; as respostas oficiais continuam **sem execuções comprovadas**.
+**v2.3.1 — Diagramação do Fluxo de Aplicação.** A Integração inclui um diagrama sempre que houver um fluxo de funcionamento ou aplicação que possa ser representado fielmente, mesmo sem pedido explícito.
 
-| Plataforma | Instalador v2.3.0 (após publicação do Release) |
+| Plataforma | Instalador v2.3.1 (após publicação do Release) |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/01-CHATGPT-WEB-AXI-v2.3.0.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/02-GEMINI-WEB-AXI-v2.3.0.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/03-CLAUDE-WEB-AXI-v2.3.0.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/04-GROK-WEB-AXI-v2.3.0.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/05-CODEX-AXI-v2.3.0.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/06-CLAUDE-CODE-AXI-v2.3.0.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/07-ANTIGRAVITY-AXI-v2.3.0.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.0/08-GROK-BUILD-AXI-v2.3.0.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/01-CHATGPT-WEB-AXI-v2.3.1.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/02-GEMINI-WEB-AXI-v2.3.1.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/03-CLAUDE-WEB-AXI-v2.3.1.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/04-GROK-WEB-AXI-v2.3.1.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/05-CODEX-AXI-v2.3.1.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/06-CLAUDE-CODE-AXI-v2.3.1.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/07-ANTIGRAVITY-AXI-v2.3.1.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/08-GROK-BUILD-AXI-v2.3.1.zip) |
 
-Os links serão disponibilizados como anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2.
+Os links serão disponibilizados como anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
 
-Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas documentadas vão de v1.0 a v2.2.3; v2.3.0 aguarda fechamento de publicação. As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
+Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas documentadas vão de v1.0 a v2.2.3; a [v2.3.0 tem oito instaladores publicados](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.0). As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 
 Veja a [matriz de renderização v2.3.0](docs/DECISAO-RENDERIZACAO-v2.3.0.md) para o reconhecimento de capacidades e os testes de aceite da fase I.
 
@@ -48,7 +48,7 @@ O projeto investiga **o todo e as partes**, a comparação entre estruturas e a 
 
 **Leia o [programa científico, hipóteses, metodologia e fontes em ABNT](docs/PESQUISA-CIENTIFICA.md).** O projeto também preserva a [fundamentação científica anterior](versoes/v2.1.0-rc1/AXI-Pesquisa-v2.1.0-rc1-FUNDAMENTACAO.md).
 
-O desenho experimental anterior prevê comparar respostas sem AXI, com instruções genéricas e com AXI. **Não há conclusão de superioridade antecipada.** A condição experimental v2.2.0-rc2 permanece congelada para preservar comparabilidade.
+O desenho experimental anterior prevê comparar respostas sem AXI, com instruções genéricas e com AXI. **Não há conclusão de superioridade antecipada.** A condição experimental v2.2.0-rc2 permanece congelada para preservar comparabilidade. A publicação da Skill não significa validação científica.
 
 ## Código, histórico e direitos
 

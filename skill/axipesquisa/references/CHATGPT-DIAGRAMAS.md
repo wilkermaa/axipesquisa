@@ -2,7 +2,7 @@
 
 Aplicar após `references/ROTEAMENTO-VISUAL.md`. **Não confundir disponibilidade anunciada com recurso presente na sessão.** A prévia pode depender de dispositivo, plano e workspace.
 
-1. **Texto suficiente e sem pedido explícito:** não criar imagem/diagrama.
+1. **Acionamento:** aplicar a Diagramação do Fluxo de Aplicação mesmo sem pedido explícito quando o fluxo puder ser desenhado com fidelidade.
 2. **Fluxo, sequência, arquitetura, grafo de relações:** quando a interface habilitar prévia de bloco Mermaid, gerar **um bloco Mermaid mínimo e válido** e usar a prévia. Não criar HTML, PNG e SVG em paralelo sem pedido.
 3. **Dados quantitativos:** quando disponível, preferir gráfico integrado ou **Vega/Vega-Lite** com unidades, legendas e escalas verificáveis; não forçar Mermaid para números.
 4. **Interatividade expressamente necessária:** preferir visualização interativa nativa habilitada, com controles reais; não criar aplicação somente por ser tecnicamente possível.

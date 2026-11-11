@@ -24,7 +24,7 @@ class GeminiFallbackPolicy(unittest.TestCase):
     def test_html_canvas_inline(self): self.assertIn('`<svg>` incorporado',SKILL)
     def test_png_local_canvas_export(self): self.assertIn('Canvas 2D',SKILL)
     def test_no_lies_about_execution(self): self.assertIn('não encerra',SKILL)
-    def test_renderer_is_not_mandatory_if_text_better(self): self.assertIn('não crie imagem ou diagrama se texto bastar',SKILL)
+    def test_flow_diagram_without_explicit_request(self): self.assertIn('mesmo sem pedido explícito',SKILL)
     def test_privacy(self): self.assertIn('Não use `fetch` externo',REF)
     def test_source_guide(self): self.assertIn('support.google.com/gemini',DOC)
     def test_model_status_unverified(self): self.assertIn('sem evidência específica',REF)

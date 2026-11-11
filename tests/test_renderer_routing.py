@@ -17,8 +17,14 @@ class VisualRoutingContract(unittest.TestCase):
         self.assertIn('renderizadores **realmente habilitados nesta sessão**', SKILL)
         self.assertIn('ROTEAMENTO-VISUAL.md', SKILL)
 
-    def test_no_visual_for_trivial_text(self):
-        self.assertIn('não crie imagem ou diagrama se texto bastar', SKILL)
+    def test_required_application_flow_and_static_relations(self):
+        self.assertIn("Diagramação do Fluxo de Aplicação", SKILL)
+        self.assertIn("Não invente etapas, ordem ou conexões", SKILL)
+        self.assertIn("Preserve relações estáticas como estáticas", SKILL)
+        self.assertIn("Respeite formatos estritos solicitados", SKILL)
+        for guide in (ROUTER, GEMINI, CHATGPT):
+            self.assertIn("mesmo sem pedido explícito", guide)
+        self.assertIn('mesmo sem pedido explícito', SKILL)
         self.assertIn('Sem necessidade visual', ROUTER)
 
     def test_type_aware_rendering(self):
@@ -50,8 +56,8 @@ class VisualRoutingContract(unittest.TestCase):
         self.assertIn('não inventar', ROUTER)
 
     def test_version_and_release_policy(self):
-        self.assertEqual((ROOT / 'VERSION').read_text('utf-8').strip(), '2.3.0')
-        self.assertIn('v2.3.0', (ROOT / 'CHANGELOG.md').read_text('utf-8'))
-        self.assertTrue((ROOT / 'docs/RELEASE-v2.3.0.md').is_file())
+        self.assertEqual((ROOT / 'VERSION').read_text('utf-8').strip(), '2.3.1')
+        self.assertIn('v2.3.1', (ROOT / 'CHANGELOG.md').read_text('utf-8'))
+        self.assertTrue((ROOT / 'docs/RELEASE-v2.3.1.md').is_file())
 
 if __name__ == '__main__': unittest.main()

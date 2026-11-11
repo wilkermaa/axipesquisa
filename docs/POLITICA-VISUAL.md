@@ -1,8 +1,8 @@
-# AXI-Pesquisa v2.3.0 — Política de visualização na Integração
+# AXI-Pesquisa v2.3.1 — Política de visualização na Integração
 
 **Novo contrato funcional:** verifique sem custo externo a capacidade real do ambiente e o tipo de informação antes de gerar o visual. Fluxos com renderer Mermaid disponível preferem Mermaid; números com gráfico nativo preferem esse gráfico; se a prévia não estiver habilitada, considerar SVG local ou Canvas. Entre meios equivalentes, minimizar passos, conversões, chamadas e dependências. Não prometer valores de economia ainda não medidos. Consulte `docs/DECISAO-RENDERIZACAO-v2.3.0.md` e `skill/axipesquisa/references/ROTEAMENTO-VISUAL.md`.
 
-O **Mermaid é preferencial para fluxos com prévia comprovada, não obrigatório** quando o usuário não pede um diagrama. Em pedidos explícitos, produzir o artefato visual sempre que as ferramentas efetivamente disponíveis permitirem. A fase I deve decidir primeiro se o texto é suficiente. Somente quando um diagrama esclarecer relações, use a renderização visual suportada pelo ambiente.
+A microfase **Diagramação do Fluxo de Aplicação** exige um diagrama de funcionamento ou aplicação sempre que o fluxo puder ser representado com fidelidade. O roteamento determina como entregar o visual, conforme a capacidade real do ambiente.
 
 - Aplicações: fluxos, árvores de decisão, arquiteturas, diagramas de sequência e redes de relações.
 - Clareza: hierarquia legível, poucas conexões cruzadas, nomes precisos, sem efeitos ou relações inventadas.

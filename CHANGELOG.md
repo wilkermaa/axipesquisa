@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.3.1 — 11 nov. 2026 (PATCH)
+
+- Corrige a omissão de diagramas na Integração com a microfase Diagramação do Fluxo de Aplicação.
+- Exige o diagrama quando houver fluxo fielmente representável, mesmo sem pedido explícito. Sinaliza lacunas e preserva relações estáticas.
+- Alinha as referências por plataforma e os testes de regressão ao requisito.
+
 ## v2.3.0 — 11 nov. 2026 (MINOR; fechamento de distribuição condicionado)
 
 - Nova funcionalidade da fase I: reconhecimento gratuito das capacidades da sessão e seleção adaptativa do renderer com menor custo incremental observável.
@@ -27,6 +33,12 @@
 
 # Changelog
 
+## v2.3.1 — 11 nov. 2026 (PATCH)
+
+- Corrige a omissão de diagramas na Integração com a microfase Diagramação do Fluxo de Aplicação.
+- Exige o diagrama quando houver fluxo fielmente representável, mesmo sem pedido explícito. Sinaliza lacunas e preserva relações estáticas.
+- Alinha as referências por plataforma e os testes de regressão ao requisito.
+
 ## 2.2.1 — 2026-11-10
 
 - Correção de versão: abandona o sufixo RC nas distribuições atuais e usa o terceiro segmento (patch) para correções futuras.
@@ -47,6 +59,12 @@
 - O benchmark da v2.2.0-rc2 continua congelado. Não há comprovação de superioridade científica.
 
 # Changelog
+
+## v2.3.1 — 11 nov. 2026 (PATCH)
+
+- Corrige a omissão de diagramas na Integração com a microfase Diagramação do Fluxo de Aplicação.
+- Exige o diagrama quando houver fluxo fielmente representável, mesmo sem pedido explícito. Sinaliza lacunas e preserva relações estáticas.
+- Alinha as referências por plataforma e os testes de regressão ao requisito.
 
 ## 2.2.0-rc3 — 2026-11-06
 

@@ -4,7 +4,7 @@ Aplicar depois de `references/ROTEAMENTO-VISUAL.md`. O suporte documentado do pr
 
 ## Prioridade adaptativa Gemini (fase I)
 
-1. **Sem necessidade visual:** resposta textual. Se o usuário não pedir gráfico e o texto resolver, não criar diagrama.
+1. **Acionamento:** aplicar a Diagramação do Fluxo de Aplicação mesmo sem pedido explícito quando o fluxo puder ser desenhado com fidelidade.
 2. **Gráfico quantitativo:** utilizar visualização/gráfico integrado do Gemini **somente quando a sessão realmente oferecer**; não usar Deep Research exclusivamente para renderizar um gráfico. Preservar eixos, unidades, escalas e fonte dos números.
 3. **Fluxo ou relações:** se houver visualizador Mermaid verificável nesta sessão, usar a prévia nativa. Não presumir que um bloco `mermaid` será renderizado só por ter sintaxe válida.
 4. **Sem prévia Mermaid:** se a tarefa aceitar arquivo `.svg`, construir um **SVG vetorial autossuficiente** fiel aos nós, arestas e condições. Preferir SVG simples a imagem generativa ou múltiplos serviços externos; abrir a prévia quando possível e verificar o arquivo.

@@ -29,7 +29,7 @@ As oito perguntas abaixo foram preservadas da versão 2.0. Elas são um **roteir
 ## Sweller e Mayer: forma como hipótese didática contextual
 
 - Segmentar informações complexas em porções utilizáveis, sinalizar relações importantes e eliminar decoração que concorra com conteúdo.
-- Diagramas: A = estrutura/partes; X = matriz de correspondências; I = fluxo ou rede de interações. Só apresentar visual se ele representar informação que texto isolado explicaria pior.
+- Diagramas: A = estrutura/partes; X = matriz de correspondências; I = fluxo ou rede de interações. Na fase I, aplicar a Diagramação do Fluxo de Aplicação sempre que houver fluxo representável com fidelidade. Nos demais casos, ajustar o visual ao pedido e à utilidade.
 - Preferir tabelas apenas para critérios comparáveis. Não converter números em gráficos sem dados, nem usar cores como única codificação.
 - Usar texto alternativo, títulos claros, hierarquia visual e acessibilidade.
 - Não deduzir estilos fixos visual/auditivo/cinestésico; não afirmar que um diagrama melhora toda aprendizagem em todo público.
@@ -37,11 +37,11 @@ As oito perguntas abaixo foram preservadas da versão 2.0. Elas são um **roteir
 
 ## Diagramas na fase I: Mermaid, renderização real e exportação
 
-**Regra v2.3.0:** aplicar primeiro `references/ROTEAMENTO-VISUAL.md`. Um renderer Mermaid nativo é adequado a fluxos se existir; gráficos de valores podem usar visualização quantitativa integrada. Verificar capacidade local sem pesquisa externa; uma tentativa principal e uma alternativa viável bastam. A ordem abaixo é histórico do fallback e não obriga Mermaid em todas as plataformas.
+**Roteamento visual:** aplicar primeiro `references/ROTEAMENTO-VISUAL.md`. Um renderer Mermaid nativo é adequado a fluxos se existir; gráficos de valores podem usar visualização quantitativa integrada. Verificar capacidade local sem pesquisa externa; uma tentativa principal e uma alternativa viável bastam. A ordem abaixo é histórico do fallback e não obriga Mermaid em todas as plataformas.
 
 **Dois cenários distintos**
 
-1. **Diagrama não solicitado:** escolha visualização apenas quando aumentar a compreensão. Não substitua uma resposta breve por um esquema decorativo.
+1. **Diagrama sem pedido explícito:** desenhe os fluxos de funcionamento ou aplicação identificados e representáveis com fidelidade. Preserve lacunas e evite esquemas decorativos.
 2. **Diagrama solicitado explicitamente:** o resultado esperado é um gráfico visual real, quando as ferramentas habilitadas permitirem. Um bloco `mermaid` não é, por si só, prova de que o gráfico foi renderizado. Wireframes representam telas; não substituem diagrama de arquitetura, fluxo, decisões ou relações.
 
 **Procedimento objetivo para pedido explícito:**

@@ -1,6 +1,6 @@
 # Template HTML/SVG verificável para o Gemini Canvas
 
-**Uso:** apenas quando o usuário pedir diagrama visual e o Gemini não apresentar a prévia Mermaid. Crie um HTML com SVG inline seguindo o exemplo abaixo, substituindo nós e relações pelas informações **confirmadas** da tarefa. Este exemplo é ilustrativo e não atesta comportamento real em Gemini.
+**Uso:** quando o diagrama for obrigatório ou solicitado, o Gemini não apresentar a prévia Mermaid e o Canvas for a alternativa viável. Crie um HTML com SVG inline seguindo o exemplo abaixo, substituindo nós e relações pelas informações **confirmadas** da tarefa. Este exemplo é ilustrativo e não atesta comportamento real em Gemini.
 
 ```html
 <!doctype html>

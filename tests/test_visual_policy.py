@@ -10,10 +10,10 @@ class VisualPolicyTests(unittest.TestCase):
     def test_current_patch_version(self):
         self.assertIn(f'version: "{VERSION}"', SKILL)
     def test_mermaid_integration(self):
-        self.assertLess(SKILL.index('## I. Integração'), SKILL.index('Mermaid renderizado'))
-        self.assertIn('fluxos, decisões, arquiteturas, sequências', SKILL)
+        self.assertLess(SKILL.index('## I. Integração'), SKILL.index('Diagramação do Fluxo de Aplicação'))
+        self.assertIn('Diagramação do Fluxo de Aplicação', SKILL)
     def test_conditional_rendering(self):
-        self.assertIn('não crie imagem ou diagrama se texto bastar', SKILL)
+        self.assertIn('mesmo sem pedido explícito', SKILL)
         self.assertIn('recursos existentes de Canvas', SKILL)
     def test_exports_not_promised(self):
         for item in ('SVG', 'PNG', 'sem afirmar que criou arquivos inexistentes'):
