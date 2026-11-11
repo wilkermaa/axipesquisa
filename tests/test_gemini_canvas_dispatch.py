@@ -15,18 +15,18 @@ class CanvasDispatchContract(unittest.TestCase):
         self.assertIn('solicitar/acionar expressamente o Canvas como ferramenta de saída',SKILL)
         self.assertIn('Não é necessário executar a Skill dentro do Canvas',SKILL)
         self.assertIn('Não colocar a Skill para funcionar dentro do Canvas',GEMINI)
-        self.assertIn('sem precisar executar dentro do Canvas',ROUTER)
+        self.assertIn('a Skill não executa dentro do Canvas',ROUTER)
     def test_preview_not_interaction_or_code(self):
         self.assertIn('Não é necessária interação após a geração',GEMINI)
         self.assertIn('abrir a Prévia',GEMINI)
-        self.assertIn('verificar que a Prévia está visível',SKILL)
+        self.assertIn('verifique que está visível',SKILL)
         self.assertIn('Snippet de código',GEMINI)
-        self.assertIn('não é necessário exportar PDF',RELEASE.lower())
+        self.assertIn('não é necessário exportar pdf',RELEASE.lower())
     def test_gemini_compatibility_is_uncertain_not_promised(self):
         self.assertIn('não comprova que o modelo possa encaminhar automaticamente',GEMINI)
         self.assertIn('hipótese operacional a testar',GEMINI)
         self.assertIn('não presumir',SKILL.lower())
-        self.assertIn('não executam o Gemini real',RELEASE)
+        self.assertIn('não executam o gemini real',RELEASE.lower())
     def test_other_platforms_and_abnt_unchanged(self):
         for text in ('ChatGPT → Mermaid renderizado','Claude Web → visual personalizado','Grok Web → arquivo SVG','Fontes consultadas (ABNT)'): self.assertIn(text,SKILL)
         self.assertIn('leitura integral',SKILL)
