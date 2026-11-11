@@ -2,7 +2,7 @@
 
 **Responsável pelo projeto:** Wilker M. de Araujo Alexandre.
 **Pesquisador convidado:** Rafaell (aluno do autor).
-**Versão congelada para comparação:** 2.2.0-rc2. **Situação em 10/11/2026:** a distribuição atual é 2.2.3; o benchmark original mantém o congelamento da rc2. Não misturar intervenções entre condições.
+**Versão congelada para comparação:** 2.2.0-rc2. **Situação em 11/11/2026:** a distribuição atual é 2.3.0; o benchmark original mantém o congelamento da rc2. Não misturar intervenções entre condições.
 **Situação científica:** hipótese metodológica, não eficácia comprovada.
 
 ## Objetivo

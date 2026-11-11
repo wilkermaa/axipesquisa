@@ -37,6 +37,8 @@ As oito perguntas abaixo foram preservadas da versão 2.0. Elas são um **roteir
 
 ## Diagramas na fase I: Mermaid, renderização real e exportação
 
+**Regra v2.3.0:** aplicar primeiro `references/ROTEAMENTO-VISUAL.md`. Um renderer Mermaid nativo é adequado a fluxos se existir; gráficos de valores podem usar visualização quantitativa integrada. Verificar capacidade local sem pesquisa externa; uma tentativa principal e uma alternativa viável bastam. A ordem abaixo é histórico do fallback e não obriga Mermaid em todas as plataformas.
+
 **Dois cenários distintos**
 
 1. **Diagrama não solicitado:** escolha visualização apenas quando aumentar a compreensão. Não substitua uma resposta breve por um esquema decorativo.

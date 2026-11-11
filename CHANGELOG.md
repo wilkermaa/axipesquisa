@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.3.0 — 11 nov. 2026 (MINOR; fechamento de distribuição condicionado)
+
+- Nova funcionalidade da fase I: reconhecimento gratuito das capacidades da sessão e seleção adaptativa do renderer com menor custo incremental observável.
+- Implementação em ordem Gemini Web, ChatGPT e lote das seis outras plataformas, preservando Mermaid/SVG/Canvas e distinguindo prévia, código e exportação.
+- Um visual principal por padrão; gráficos quantitativos usam visualização quantitativa quando disponível; sem rede ou plugins apenas para renderizar.
+- Acrescentadas referências específicas e testes estruturais de roteamento; testes reais de interfaces, custos mensurados e validação científica continuam pendentes.
+- Experimento C0/C1/C2 v2.2.0-rc2 inalterado.
+
+
 ## v2.2.3 — 10 nov. 2026
 
 - Restaurados os 12 exemplos didáticos da v2.0 e as oito perguntas editoriais de Erin Meyer.
