@@ -1,4 +1,4 @@
-# Gemini Web — execução visual obrigatória na microfase I (v2.3.4)
+# Gemini Web — execução visual obrigatória na microfase I (v2.3.5)
 
 **Capacidade visual:** verificar a capacidade de renderização nesta sessão; o nome do produto não demonstra acesso efetivo a um visualizador.
 
@@ -6,6 +6,7 @@
 
 ## Procedimento obrigatório de execução no Gemini
 
+0. **Priorize a pesquisa aplicável antes do visual:** em procedimentos jurídicos/administrativos municipais, consultar lei local, artigos e modificações relevantes; citar a fonte e preparar referências ABNT. Não afirmar que pesquisou se não houve consulta. Diagrama, pesquisa e ABNT são deveres independentes: **não sacrificar fundamentação legal por apresentação gráfica**.
 1. **Identifique o fluxo e prepare a estrutura:** nós, rótulos, setas, bifurcações e lacunas confirmados. Não inventar etapas, condições, datas, autoridades nem base jurídica.
 2. **Selecione e ACIONE a visualização na sessão corrente:** preferir **SVG efetivamente renderizado na própria tela ou em prévia gráfica** quando o Gemini disponibilizar esse recurso. Se SVG não for renderizável/exibível, usar **PNG ou visualização nativa** realmente acessível. Formatos são meios, não fins; a IA **decide livremente** qual recurso realmente utilizável produz a figura; a escolha tecnológica permanece da IA executora. Não recorrer a Mermaid.js embarcado se a Skill não puder executar JavaScript.
 3. **Produza a figura, não somente a fonte:** não finalizar emitindo `graph TD`, `flowchart TD`, XML `<svg>`, código Mermaid, HTML ou um bloco **“Snippet de código”** como se isso fosse desenho. **Gerar um arquivo SVG não equivale a abrir uma prévia**; se for criado, solicitar sua exibição ou conferir que o arquivo gráfico real está acessível.
@@ -27,6 +28,6 @@
 
 **Caso de regressão:** `@axipesquisa procedimento para mudar a lotação do funcionario na prefeitura de matinhos`. Aplicar esta regra somente quando o modelo puder definir fluxo fiel com dados verificados; a geração de fluxograma não valida a exatidão jurídica das etapas. **O autor relatou todos os recursos disponíveis no teste**, mas a captura apresentou código e não o desenho. O diagnóstico editorial deve avaliar o acionamento do mecanismo de prévia, sem presumir ausência de ferramentas. A versão da Skill ativa na captura não foi comprovada.
 
-**Validação:** registrar modelo, data, versão ativa da Skill, prompt, captura da resposta, recurso realmente acionado e presença de figura, sem exigir PDF. Testes estáticos e CI não demonstram renderização real no Gemini.
+**Validação:** registrar modelo, data, versão ativa da Skill, prompt, captura da resposta, recurso realmente acionado, **fontes normativas consultadas, dispositivos citados, bibliografia ABNT** e presença de figura, sem exigir PDF. Testes estáticos e CI não demonstram renderização real no Gemini.
 
 GOOGLE. *Sobre a transição dos Gems para habilidades*. [s.d.]. Disponível em: https://support.google.com/gemini/answer/18560919?hl=pt-BR. Acesso em: 11 nov. 2026.

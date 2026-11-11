@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.5 — pesquisa jurídica, citações ABNT e visual preservados
+
+PATCH para restaurar o portão de pesquisa legal e fontes verificáveis em ABNT **sem enfraquecer a renderização**. Exige distinguir regras locais por artigos; casos sem consulta são preliminares e declarados. [Release v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5). Instalações continuam sujeitas a testes reais nas oito IAs; espelho do Drive pendente de verificação.
+
 ## Versão v2.3.4 — SVG em prévia no Gemini, com fallback visual
 
 Correção PATCH específica da microfase I no Gemini: **acionar e verificar a visualização**, priorizando SVG realmente renderizado quando disponível; fallback PNG/visual nativo. Um snippet Mermaid/SVG sem figura é falha. [Release v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4). Os oito instaladores são gerados e anexados pelo fluxo de publicação após CI aprovado. A homologação real das interfaces permanece pendente.

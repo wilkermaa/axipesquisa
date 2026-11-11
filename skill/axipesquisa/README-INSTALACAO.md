@@ -1,4 +1,4 @@
-# Instalação da Skill AXI-Pesquisa v2.3.4
+# Instalação da Skill AXI-Pesquisa v2.3.5
 
 **Objeto:** instalar o método editorial AXI-Pesquisa. **Não é o ZIP do repositório nem o pacote de benchmark experimental.**
 
@@ -9,8 +9,9 @@
 5. **Grok Web:** use `SKILL.md` como referência quando a interface não aceitar importação de ZIP; o suporte exato do formato depende da conta.
 6. **Codex / Antigravity:** extraia a pasta `.agents/skills/axipesquisa/` no projeto. **Claude Code:** `.claude/skills/axipesquisa/`. **Grok Build CLI:** `.grok/skills/axipesquisa/`.
 7. **Gemini:** confirme com um teste de fluxo que a IA **aciona e mostra um gráfico SVG em prévia**, quando renderizável, ou **PNG/visual nativo** equivalente; `flowchart TD` em snippet não atende. PDF não é obrigatório. Para confirmar a microfase **Diagramação do Fluxo de Aplicação**, peça a explicação de um processo sem solicitar fluxograma; se houver fluxo fiel, a Skill deve tentar entregar **visual real**. A IA executora escolhe a tecnologia disponível; **uma imagem realmente visível ou prévia é suficiente** e PDF não é exigido. Código ou texto apenas são entrega parcial. Teste real em conta continua pendente.
-8. Verifique em teste simples o identificador `2.3.4` e as fases A, X e I, sem presumir que a Skill tenha sido acionada apenas por estar instalada.
-9. Para experimentos C0/C1/C2 comparativos, **não deixe a Skill AXI ativável nas condições de controle**. O benchmark original usa texto congelado da versão 2.2.0-rc2.
+8. **Regressão jurídica ABNT:** peça o procedimento de mudança de lotação em Matinhos. A resposta deve efetivamente pesquisar a legislação local, identificar o artigo 57 da Lei 1.165/2008 com distinção Portaria/Ofício **quando confirmado na fonte**, apresentar fontes ABNT e tentar a figura. **ABNT, pesquisa e diagramação não se substituem.**
+9. Verifique em teste simples o identificador `2.3.5` e as fases A, X e I, sem presumir que a Skill tenha sido acionada apenas por estar instalada.
+10. Para experimentos C0/C1/C2 comparativos, **não deixe a Skill AXI ativável nas condições de controle**. O benchmark original usa texto congelado da versão 2.2.0-rc2.
 
 **Fontes de apoio:** documentação de plataformas em `docs/PLATAFORMAS.md` no repositório-fonte. Não há garantia de funcionamento nas interfaces sem teste real.
 

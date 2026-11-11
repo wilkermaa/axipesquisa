@@ -1,9 +1,10 @@
-# Microfase Diagramação do Fluxo de Aplicação — contrato de execução e aceite (v2.3.4)
+# Microfase Diagramação do Fluxo de Aplicação — contrato de execução e aceite (v2.3.5)
 
 **Exclusividade:** fase I — Integração, nível Gestão e Coordenação. Exigir diagrama **mesmo sem pedido explícito** quando existir fluxo fielmente representável. Não impor nas fases A e X nem fabricar movimento em relações estáticas. Instruções de formato fechado prevalecem.
 
 ## Portas de execução
 
+0. **Em tema legal:** conferir fontes normativas e artigos antes de diagramar. Exigir citações e ABNT além do visual, sem inventar rito administrativo.
 1. **Detectar:** existe fluxo, decisão, sequência ou dependência funcional representável com elementos confirmados? Se não, encerrar microfase sem diagrama obrigatório.
 2. **Escolher:** a IA/agente usa autonomamente a superfície visual efetivamente acessível nesta sessão (qualquer renderer nativo, Mermaid, SVG, HTML/Preview, imagem, tecnologia futura). São exemplos, não sequência obrigatória. Não inferir capacidade apenas pelo modelo.
 3. **Executar:** realmente invocar a opção de renderização/prévia ou produzir imagem/arquivo, se o recurso permitir; não apenas apresentar `graph TD` como texto.
