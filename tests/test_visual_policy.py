@@ -10,7 +10,7 @@ class VisualPolicyTests(unittest.TestCase):
     def test_current_patch_version(self):
         self.assertIn(f'version: "{VERSION}"', SKILL)
     def test_mermaid_integration(self):
-        self.assertLess(SKILL.index('## I. Integração'), SKILL.index('Diagramação do Fluxo de Aplicação'))
+        self.assertLess(SKILL.index('## I. Integração'), SKILL.index('Microfase exclusiva da Integração'))
         self.assertIn('Diagramação do Fluxo de Aplicação', SKILL)
     def test_conditional_rendering(self):
         self.assertIn('mesmo sem pedido explícito', SKILL)
