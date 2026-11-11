@@ -1,14 +1,14 @@
-# ChatGPT — escolha livre de tecnologia na microfase I
+# ChatGPT Web — Mermaid como caminho padrão da microfase I
 
-**Somente na microfase Diagramação do Fluxo de Aplicação**, nível de Gestão e Coordenação, fase **I — Integração**. Desenhar fluxo fiel **mesmo sem pedido explícito**; sem fluxo, não impor diagrama.
+Na microfase **Diagramação do Fluxo de Aplicação**, fase I — Integração, **preferir Mermaid renderizado e com prévia visual verificada** para fluxos reais, **mesmo sem pedido explícito**. Preservar A/X/I, leitura integral progressiva e fontes ABNT. O usuário escolheu Mermaid como padrão do ChatGPT.
 
-- A IA executora escolhe autonomamente a melhor **prévia realmente disponível**: Mermaid, Vega/Vega-Lite, gráficos nativos, SVG, HTML/Artifact, PNG ou outro mecanismo futuro. Nenhuma linguagem tem prioridade obrigatória.
-- As tecnologias são exemplos, não restrições. Mostrar fluxo com nós e arestas corretos; números com unidades e escalas. Não converter relações estáticas em fluxo.
-- Entre soluções que exibem gráfico real, minimizar tokens, código, conversões, chamadas e passos; não criar HTML, PNG e SVG em paralelo por padrão.
-- Confirmar prévia ou arquivo realmente acessível. Código Mermaid ou SVG sem visualização é entrega parcial. Não fingir que o usuário viu gráfico ou que um link existe.
-- Manter privacidade, legibilidade e segurança; sem plugin ou serviço externo adicionado sem autorização.
+1. Preparar apenas nós, conexões e decisões verificadas e escrever Mermaid sintaticamente correto.
+2. **Acionar o recurso de Prévia** quando disponível na interface. O código `flowchart TD` ou `graph TD` **sem desenho visível não é entrega visual**. O próprio ChatGPT pode exibir uma prévia compatível; conferir que ela foi criada.
+3. Se a prévia Mermaid não puder ser acionada, tentar **um mecanismo gráfico realmente habilitado** (SVG/HTML ou arquivo gráfico verdadeiro) sem prometer o que não existe.
+4. Validar fidelidade, legibilidade e privacidade; diferenciar um Mermaid realmente renderizado de diagrama equivalente gerado por outro motor.
+5. Não exigir PNG/SVG/PDF ou download adicional se a figura já está visível. Não criar três alternativas em paralelo sem necessidade.
 
-**Teste real:** uma explicação de fluxo sem pedido explícito e um gráfico quantitativo, com registro do renderer realmente usado.
+**Resultado:** visual real no chat, prévia verificável ou arquivo gráfico real acessível; código Mermaid isolado é **entrega parcial**.
 
-OPENAI. *Working with writing blocks and code blocks in ChatGPT*. [s.d.]. Disponível em: https://help.openai.com/en/articles/20001246-working-with-writing-blocks-in-chatgpt. Acesso em: 11 nov. 2026.
+OPENAI. *Como trabalhar com blocos de escrita e blocos de código no ChatGPT*. [s.d.]. Disponível em: https://help.openai.com/pt-br/articles/20001246-working-with-writing-blocks-and-code-blocks-in-chatgpt. Acesso em: 11 nov. 2026.
 
