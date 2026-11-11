@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.3.8"
+VERSION = "2.3.9"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",
@@ -24,7 +24,7 @@ PLATFORMS = {
 
 PLATFORM_GUIDES = {
     "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
-    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar/acionar a geração DIRETA DE IMAGEM do Gemini (PNG ou SVG já desenhado), exibir na própria conversa e conferir blocos, setas e rótulos. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.", "references/GEMINI-DIAGRAMAS.md"),
+    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar geração DIRETA DE IMAGEM SVG/PNG no estilo Mermaid minimalista: cada caixa SOMENTE TÍTULO CURTO (uma linha, até duas curtas), SEM ÍCONES e SEM DESCRIÇÕES internas; setas e decisões curtas. Detalhamento e ABNT fora da imagem. Exibir e conferir a prévia. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.", "references/GEMINI-DIAGRAMAS.md"),
     "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
     "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
     "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),

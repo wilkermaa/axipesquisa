@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.8 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.9 — política de entrega visual na microfase da Integração
 
 **Imagem obrigatória na entrega AXI Pesquisa:** toda microfase I acionada por um fluxo fiel exige **figura estática real do diagrama visível na resposta ou em prévia aberta**; arquivo apenas criado sem exibição NÃO conclui. Não fabricar imagem de fluxo em objetos estáticos ou quando a saída rígida do usuário a impedir.
 
@@ -21,6 +21,10 @@ A microfase visual **não dispensa consulta à legislação aplicável nem refer
 ## Rotas específicas sem substituir fidelidade e ABNT
 
 **ChatGPT:** Mermaid efetivamente desenhado em prévia como imagem; **Gemini:** **geração direta de imagem SVG/PNG e exibição na conversa**, sem app/HTML por padrão, com fallback estático somente se renderizar de fato; Canvas continua com restrição de Skills documentada; **Claude:** visual personalizado HTML/SVG renderizado inline ou Artifact; **Grok:** SVG real com prévia inline ou Projects HTML Preview. O instalador de cada plataforma descreve seu caminho. **Leitura integral da Skill em início→meio→fim, um arquivo por vez, é fundamento.** A rota específica não permite fingir ferramenta e não afasta referências ABNT em todas as explicações.
+
+## Gemini Web — estética minimalista v2.3.9
+
+**Cada caixa somente com título curto (preferir uma linha, no máximo duas curtas), sem ícones, sem descrições internas, parágrafos ou microtextos.** Padrão visual semelhante ao Mermaid, mantendo conectores e rótulos de decisões curtos. Conteúdo explicativo, fundamentação e Fontes consultadas (ABNT) permanecem fora da figura. Se o Gemini produzir caixas carregadas, tentar uma única regeneração simplificada, preservando a verdade jurídica e todas as relações verificadas. Não impor Mermaid.js nem aplicativo interativo.
 
 ## Gemini Web — execução específica
 

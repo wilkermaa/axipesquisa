@@ -1,4 +1,4 @@
-"""AXI v2.3.8: imagem visual exibida é portão da microfase I. Teste de fonte, não de execução de frontend."""
+"""AXI v2.3.9: imagem visual exibida é portão da microfase I. Teste de fonte, não de execução de frontend."""
 import unittest
 from pathlib import Path
 from zipfile import ZipFile
@@ -32,7 +32,7 @@ class RequiredImageDelivery(unittest.TestCase):
         self.assertIn('entrega parcial',SKILL)
         self.assertIn('Sem imagem, registrar',GEMINI)
         self.assertIn('imagem do diagrama',ROUTE.lower())
-        self.assertIn('não demonstram renderização real',(ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8'))
+        self.assertIn('não demonstram renderização real',(ROOT/'docs/RELEASE-v2.3.9.md').read_text('utf-8'))
     def test_all_eight_installers_convey_rule(self):
         from scripts import build
         build.build()

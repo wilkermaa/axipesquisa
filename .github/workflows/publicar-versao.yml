@@ -71,3 +71,26 @@ jobs:
           if ! gh release view "$TAG" >/dev/null 2>&1; then
             gh release create "$TAG" release/*.zip --verify-tag --title "AXI-Pesquisa ${TAG}" --notes-file "docs/RELEASE-${TAG}.md"
           fi
+
+      - name: Preparar espelho da versão para Google Drive
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION=$(cat VERSION)
+          TAG="v${VERSION}"
+          mkdir -p drive-snapshot
+          git archive --format=zip --output="drive-snapshot/AXI-Pesquisa-${TAG}-FONTE-INTEGRAL.zip" HEAD
+          cp release/*.zip drive-snapshot/
+          cp "docs/RELEASE-${TAG}.md" drive-snapshot/
+          (
+            cd drive-snapshot
+            sha256sum *.zip > SHA256SUMS.txt
+          )
+          printf 'Git commit: %s\nGit tag: %s\nFonte: https://github.com/wilkermaa/axipesquisa\n' "$GITHUB_SHA" "$TAG" > drive-snapshot/MANIFESTO-ORIGEM.txt
+      - name: Disponibilizar snapshot para espelho Drive
+        uses: actions/upload-artifact@v4
+        with:
+          name: axi-drive-snapshot
+          path: drive-snapshot/
+          if-no-files-found: error
+          retention-days: 90
