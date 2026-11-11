@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.5 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.6 — política de entrega visual na microfase da Integração
 
 **Gestão e Coordenação** da microfase **Diagramação do Fluxo de Aplicação**, exclusivamente na **I — Integração**, define o resultado visual; a IA/agente executora seleciona livremente e **aciona concretamente** o mecanismo disponível (prévia, renderer, artefato, SVG, HTML, PNG ou outro). A exigência aplica-se quando existe fluxo fielmente representável **mesmo sem pedido explícito**. Não é regra universal de imagens nas fases A e X.
 
@@ -15,6 +15,10 @@
 ## Não substituição da pesquisa e das citações jurídicas
 
 A microfase visual **não dispensa consulta à legislação aplicável nem referências ABNT**. Em procedimento local, identificar lei, artigo, alterações e formalidades diferenciadas **antes** de desenhar; não representar atos administrativos hipotéticos como obrigatórios. Verificação final independente: **fonte normativa confirmada, bibliografia ABNT verificável e figura realmente apresentada** (ou saída parcial com limitações reais). O art. 57 da Lei nº 1.165/2008 em Matinhos é caso de regressão: entre secretarias = Portaria; dentro da mesma secretaria = Ofício, conforme fonte compilada consultada; confirmação oficial continua recomendada.
+
+## Rotas específicas sem substituir fidelidade e ABNT
+
+**ChatGPT:** Mermaid renderizado com prévia real; **Gemini:** Canvas com SVG inline e prévia do Canvas como rota expressa, quando integrações realmente disponíveis (a ajuda Google de 11/11/2026 indica indisponibilidade de Canvas em Skills, então não anunciar êxito sem prova); **Claude:** visual personalizado HTML/SVG renderizado inline ou Artifact; **Grok:** SVG real com prévia inline ou Projects HTML Preview. O instalador de cada plataforma descreve seu caminho. **Leitura integral da Skill em início→meio→fim, um arquivo por vez, é fundamento.** A rota específica não permite fingir ferramenta e não afasta referências ABNT em todas as explicações.
 
 ## Gemini Web — execução específica
 

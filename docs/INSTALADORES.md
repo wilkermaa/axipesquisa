@@ -2,7 +2,12 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
-## Versão v2.3.5 — pesquisa jurídica, citações ABNT e visual preservados
+## Versão v2.3.6 — leitura integral AXI e rotas visuais específicas
+
+Restaura a instrução fundamental de leitura completa **arquivo por arquivo, em A → X → I**, ABNT em todas as explicações/pesquisas e comparações da v2.0.0. Cada um dos **oito ZIPs** contém **`INSTALADOR-PLATAFORMA.md` específico**: Gemini = Canvas com SVG e prévia (bloqueio Skills+Canvas registrado, alternativa SVG real se possível), ChatGPT = Mermaid renderizado, Claude = visual HTML/SVG inline/Artifact, Grok = SVG inline/Projects Preview e orientações próprias para as quatro CLIs. **Sem homologação funcional de interface**. [Release v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6).
+
+## Versão v2.3.5
+ — pesquisa jurídica, citações ABNT e visual preservados
 
 PATCH para restaurar o portão de pesquisa legal e fontes verificáveis em ABNT **sem enfraquecer a renderização**. Exige distinguir regras locais por artigos; casos sem consulta são preliminares e declarados. [Release v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5). Instalações continuam sujeitas a testes reais nas oito IAs; espelho do Drive pendente de verificação.
 
