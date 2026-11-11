@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.6 — 11 nov. 2026 (PATCH)
+
+- **Restaura fundamento integral da v2.0.0:** leitura completa do `SKILL.md` e **de todos os arquivos textuais do pacote, um por vez e conforme execução início/A → meio/X → fim/I**, sem uso de resumos em lugar de documentos; marcar limitações de acesso honestamente.
+- **ABNT em todas as explicações ou pesquisas**, mesmo sem navegação (registrar ausência de consulta). Recupera domínio filosófico/metafísico na alternativa compacta, 12 exemplos originais como leitura obrigatória, adaptação editorial sem estereótipos e exemplo útil.
+- **Roteamento visual específico:** ChatGPT → Mermaid com prévia; Gemini → Canvas com SVG e prévia quando realmente integrável, admitindo limitação documental de Skills+Canvas e SVG real como alternativa; Claude → visual personalizado HTML/SVG inline ou Artifact; Grok → SVG inline ou HTML Preview no Projects.
+- **Instaladores por plataforma:** cada um dos 8 ZIPs inclui `INSTALADOR-PLATAFORMA.md` próprio, com tecnologia prioritária, guarda de compatibilidade, leitura completa e fontes ABNT.
+- **Sem falsas garantias de execução:** testes estruturais verificam contrato e empacotamento; uso real de Canvas, Mermaid e outros recursos precisa de homologação. Históricos e C0/C1/C2 v2.2.0-rc2 preservados.
+
 ## v2.3.5 — 11 nov. 2026 (PATCH)
 
 - Corrige a regressão em pesquisa jurídica: quando a consulta descreve procedimento administrativo específico, pesquisar normas locais e dispositivos legais pertinentes **antes de afirmar etapas obrigatórias ou desenhar o fluxo**.

@@ -30,15 +30,16 @@ class ContentPreservationTests(unittest.TestCase):
         self.assertEqual(re.findall(r'^\d+\. \*\*(\w+):\*\*',section,re.M),expected)
         self.assertIn('não',section.casefold())
         self.assertIn('país',section)
-    def test_examples_are_optional_not_mandatory(self):
+    def test_examples_required_for_integral_reading(self):
         body=(SKILL/'SKILL.md').read_text('utf-8')
         self.assertIn('EXEMPLOS-E-TESTES.md',body)
-        self.assertIn('**opcionalmente**',body)
+        self.assertIn('**leitura integral obrigatória**',body)
+        self.assertIn('12 casos T01–T12',(SKILL/'references/FLUXO-LEITURA-INTEGRAL.md').read_text('utf-8'))
     def test_eight_platforms_contain_same_skill_and_historic_material(self):
         from scripts import build
         build.build()
         for platform,prefix in build.PLATFORMS.items():
-            p=ROOT/'dist'/f'axipesquisa-2.3.5-{platform}.zip'
+            p=ROOT/'dist'/f'axipesquisa-2.3.6-{platform}.zip'
             with self.subTest(platform=platform), ZipFile(p) as z:
                 self.assertIsNone(z.testzip())
                 for name in ['SKILL.md','README-INSTALACAO.md','references/EXEMPLOS-E-TESTES.md','references/EDICAO-E-CULTURA.md']:
@@ -55,7 +56,7 @@ class ContentPreservationTests(unittest.TestCase):
             self.assertIn(k,t)
     def test_source_release_consistency(self):
         from scripts.check_release import check_source
-        self.assertEqual(check_source(),'2.3.5')
+        self.assertEqual(check_source(),'2.3.6')
     def test_no_premature_scientific_validation(self):
         t=(ROOT/'README.md').read_text('utf-8')
         self.assertIn('sem execuções comprovadas',t)

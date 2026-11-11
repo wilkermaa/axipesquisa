@@ -22,7 +22,29 @@ PLATFORMS = {
 }
 
 
+PLATFORM_GUIDES = {
+    "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
+    "gemini-web": ("Gemini Web", "Canvas com SVG inline e Prévia real é a rota requerida; a ajuda Google de 11/11/2026 informa que Skills ainda não operam com Canvas. Não alegar que abriu o recurso; se não acionável, produzir SVG visual/arquivo real acessível ou declarar parcial.", "references/GEMINI-DIAGRAMAS.md"),
+    "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
+    "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
+    "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),
+    "claude-code": ("Claude Code", "HTML/SVG local em prévia da IDE ou arquivo visual válido.", "references/PLATAFORMAS-VISUAIS.md"),
+    "antigravity": ("Antigravity", "Mermaid/SVG em prévia de IDE ou arquivo visual realmente criado.", "references/PLATAFORMAS-VISUAIS.md"),
+    "grok-build-cli": ("Grok Build CLI", "Mermaid renderizado em visualização real ou SVG em renderer local.", "references/PLATAFORMAS-VISUAIS.md"),
+}
+
+def platform_guide(platform):
+    name, route, reference = PLATFORM_GUIDES[platform]
+    return (f'# AXI-Pesquisa {VERSION} — {name}\n\n' 
+            f'**Rota visual específica desta instalação:** {route}\n\n'
+            '**Leitura integral obrigatória:** comece por `SKILL.md` completo; continue um arquivo por vez, de A até X e I, conforme `references/FLUXO-LEITURA-INTEGRAL.md`. '
+            'Todas as respostas explicativas ou de pesquisa devem registrar `Fontes consultadas (ABNT)` e fontes efetivamente consultadas ou ausência de consulta.\n\n'
+            f'**Manual da plataforma:** `{reference}`. '
+            'A existência da instrução não prova que a interface abriu a prévia; testar e registrar o estado real. PDF não obrigatório.\n').encode('utf-8')
+
 def info(name):
+
+
     assert not name.startswith("/") and ".." not in Path(name).parts
     zi = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
     zi.create_system = 3
@@ -55,6 +77,7 @@ def build():
     outputs = []
     for platform, prefix in PLATFORMS.items():
         members = {prefix + p.relative_to(SKILL).as_posix(): p.read_bytes() for p in source_files}
+        members[prefix + "INSTALADOR-PLATAFORMA.md"] = platform_guide(platform)
         dest = DIST / f"axipesquisa-{VERSION}-{platform}.zip"
         outputs.append({"platform": platform, **write_zip(dest, members)})
     # Independent portable ChatGPT plugin candidate. Not an approved directory listing.

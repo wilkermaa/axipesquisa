@@ -1,6 +1,6 @@
 # AXI Pesquisa
 
-**Versão 2.3.5 · software experimental; validação científica independente pendente.**
+**Versão 2.3.6 · software experimental; validação científica independente pendente.**
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -10,22 +10,22 @@
 
 ## Baixar a Skill AXI
 
-**v2.3.5 — correção da pesquisa jurídica e ABNT, preservando a microfase Diagramação do Fluxo de Aplicação.** Apenas na fase **I — Integração**, no nível de **Gestão e Coordenação**, exigir um visual real quando houver fluxo fielmente representável, mesmo sem pedido explícito. A IA executora escolhe autonomamente qualquer tecnologia realmente acessível (sem imposição de Mermaid, SVG, HTML, PNG ou ordem fixa). **No Gemini, a IA deve acionar a prévia visual na mesma sessão, priorizando SVG renderizado quando viável; caso contrário, PNG ou gráfico nativo. É necessária ação concreta de renderização, prévia ou imagem real.** Texto ou código isolados não completam entrega visual. **PDF não é obrigatório**: uma figura já exibida na conversa satisfaz o requisito visual, sem necessidade de arquivo adicional.
+**v2.3.6 — restauração dos fundamentos da v2.0.0, com leitura integral progressiva e rotas visuais por IA.** Apenas na fase **I — Integração**, no nível de **Gestão e Coordenação**, exigir um visual real quando houver fluxo fielmente representável, mesmo sem pedido explícito. A IA executora escolhe autonomamente qualquer tecnologia realmente acessível (sem imposição de Mermaid, SVG, HTML, PNG ou ordem fixa). **No Gemini, a rota prioritária solicitada é **Canvas com SVG e prévia aberta**; a documentação Google informa que Skills ainda não trabalham diretamente com Canvas, portanto **não afirmar execução inexistente** e usar alternativa SVG real acessível quando o bloqueio for constatado. **ChatGPT: Mermaid renderizado; Claude: visual HTML/SVG inline ou Artifact; Grok: SVG com cartão inline ou Projects Preview.** É necessária ação concreta de renderização, prévia ou imagem real.** Texto ou código isolados não completam entrega visual. **PDF não é obrigatório**: uma figura já exibida na conversa satisfaz o requisito visual, sem necessidade de arquivo adicional.
 
-**Em temas legais e administrativos específicos, é obrigatório consultar fontes normativas verificáveis quando houver acesso e apresentar referências ABNT reais.** Lei, artigo, competência e procedimento não podem ser presumidos nem afirmados obrigatórios sem fonte; o diagrama não substitui a pesquisa.
+**Toda resposta explicativa ou de pesquisa deve ter `Fontes consultadas (ABNT)`**, registrando as fontes efetivamente consultadas ou `Nenhuma fonte externa consultada nesta resposta.`. **A leitura integral dos materiais da Skill, arquivo por arquivo e na sequência A → X → I, é obrigatória quando ativada.** Em temas legais e administrativos específicos, é obrigatório consultar fontes normativas verificáveis quando houver acesso e apresentar referências ABNT reais. Lei, artigo, competência e procedimento não podem ser presumidos nem afirmados obrigatórios sem fonte; o diagrama não substitui a pesquisa.
 
-**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
+**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5), [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
 
-| Plataforma | Instalador v2.3.5 |
+| Plataforma | Instalador v2.3.6 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/01-CHATGPT-WEB-AXI-v2.3.5.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/02-GEMINI-WEB-AXI-v2.3.5.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/03-CLAUDE-WEB-AXI-v2.3.5.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/04-GROK-WEB-AXI-v2.3.5.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/05-CODEX-AXI-v2.3.5.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/06-CLAUDE-CODE-AXI-v2.3.5.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/07-ANTIGRAVITY-AXI-v2.3.5.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.5/08-GROK-BUILD-AXI-v2.3.5.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/01-CHATGPT-WEB-AXI-v2.3.6.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/02-GEMINI-WEB-AXI-v2.3.6.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/03-CLAUDE-WEB-AXI-v2.3.6.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/04-GROK-WEB-AXI-v2.3.6.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/05-CODEX-AXI-v2.3.6.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/06-CLAUDE-CODE-AXI-v2.3.6.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/07-ANTIGRAVITY-AXI-v2.3.6.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.6/08-GROK-BUILD-AXI-v2.3.6.zip) |
 
 Os links são destinados aos anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
 
