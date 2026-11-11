@@ -1,15 +1,19 @@
-# AXI-Pesquisa v2.3.2 — política de visualização da microfase da Integração
+# AXI-Pesquisa v2.3.3 — política de entrega visual na microfase da Integração
 
-**Hierarquia de competência:** Gestão e Coordenação define **o que deve ser entregue**, exclusivamente na microfase **Diagramação do Fluxo de Aplicação**, fase **I — Integração**. A IA/agente executora decide **como gerar e exibir** o visual com capacidades efetivamente disponíveis.
+**Gestão e Coordenação** da microfase **Diagramação do Fluxo de Aplicação**, exclusivamente na **I — Integração**, define o resultado visual; a IA/agente executora seleciona livremente e **aciona concretamente** o mecanismo disponível (prévia, renderer, artefato, SVG, HTML, PNG ou outro). A exigência aplica-se quando existe fluxo fielmente representável **mesmo sem pedido explícito**. Não é regra universal de imagens nas fases A e X.
 
-1. Se o fluxo de funcionamento/aplicação for representável fielmente, entregar um diagrama visual **mesmo sem pedido explícito**. Não forçar diagrama em conteúdos sem fluxo nem acrescentar etapas inventadas.
-2. Não impor Mermaid, SVG, HTML, Canvas, PNG ou uma linguagem fechada. São exemplos; o agente pode escolher um mecanismo futuro. O requisito é **gráfico visível e fiel**.
-3. Entre alternativas realmente capazes, minimizar tokens, passos, chamadas, dependências e conversões. Uma tentativa principal e uma alternativa útil, sem sondagens pagas cegas.
-4. **Aceite:** visual exibido, prévia verificável ou arquivo gráfico real acessível. Código fonte, wireframe e texto puro isolados são **entrega parcial**. Não presumir que o usuário viu uma janela nem criar links fictícios.
-5. Relatar limitações reais. SVG/PNG para download somente quando pedidos e efetivamente criados; manter unidades, nós, conexões, privacidade e acessibilidade.
-6. **Gemini:** não prometer abertura automática do Canvas em uma Skill. Uma conversa Canvas separada, se necessária, depende de ação manual e não comprova entrega pela Skill.
+## Aceite
 
-Referências: `skill/axipesquisa/references/ROTEAMENTO-VISUAL.md` e guias por plataforma. Documento histórico: `docs/DECISAO-RENDERIZACAO-v2.3.0.md`.
+- **Suficiente:** gráfico realmente exibido no chat, prévia visual gerada ou arquivo gráfico real acessível. Arquivo não é exigido se a tela já mostra o gráfico.
+- **PDF não obrigatório:** no teste anterior o PDF foi uma **evidência exportada**; sua existência, ausência ou formato não integra o requisito da microfase.
+- **Insuficiente:** `graph TD`, código Mermaid/SVG/HTML, frases com setas ou wireframe textual sem figura renderizada.
+- **Recuperação:** após saída apenas textual, uma alternativa visual habilitada; persistindo falha, relatar **entrega parcial**, não fingir sucesso.
+- **Economia:** fidelidade e visual primeiro; entre soluções capazes, menor custo real em tokens, chamadas, conversões e passos. Sem HTML/JS excessivo nem exportações desnecessárias.
+- **Confiabilidade:** preservar nós, decisões, lacunas e fontes. Não inventar fatos administrativos; transparência sobre limitações da sessão e consentimento para serviços externos.
+- **Exceções:** instruções superiores, formatos rigidamente solicitados e ausência de fluxo representável; não quebrar saídas fechadas.
 
-**Status de validação:** regras editoriais e testes de fonte, sem homologação real garantida nas IAs nem redução de custos demonstrada. Preserva C0/C1/C2 v2.2.0-rc2.
+## Red team
 
+Revisão dos 20 riscos documentada em `docs/REDTEAM-MICROFASE-v2.3.3.md`. Os principais riscos eram: falta de ação concreta de renderização, código confundido com figura, referência condicional não carregada, suposição de Canvas, criação fictícia de arquivos, custo desnecessário, detalhes jurídicos não validados, formatos estritos, privacidade e confusão entre teste estrutural e homologação. Mitigações são instruções; **interoperabilidade real com a interface permanece pendente de testes em produto**.
+
+**Referências operacionais:** `skill/axipesquisa/references/ROTEAMENTO-VISUAL.md` e `references/GEMINI-DIAGRAMAS.md`. Histórico preservado: v2.3.2 e protocolo científico v2.2.0-rc2.

@@ -16,13 +16,13 @@ class VisualPolicyTests(unittest.TestCase):
         self.assertIn('mesmo sem pedido explícito', SKILL)
         self.assertIn('autonomamente', SKILL)
     def test_exports_not_promised(self):
-        for item in ('SVG', 'PNG', 'sem afirmar que criou arquivos inexistentes'):
+        for item in ('SVG', 'PNG', 'Não inventar telas abertas'):
             self.assertIn(item, SKILL)
     def test_accessible_status(self):
         for item in ('verde = concluído', 'amarelo = atenção', 'vermelho = bloqueado', 'sempre com rótulo textual'):
             self.assertIn(item, SKILL)
     def test_privacy_and_fallback(self):
-        self.assertIn('renderizadores externos', SKILL)
+        self.assertIn('serviços gráficos não autorizados', SKILL)
         self.assertIn('código Mermaid válido', REF)
     def test_visual_policy_reference(self):
         self.assertIn('docs/POLITICA-VISUAL.md', (ROOT/'README.md').read_text('utf-8'))

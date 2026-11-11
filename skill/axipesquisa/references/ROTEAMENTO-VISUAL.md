@@ -1,25 +1,25 @@
-# Diagramação do Fluxo de Aplicação — gestão visual por resultado (v2.3.2)
+# Microfase Diagramação do Fluxo de Aplicação — contrato de execução e aceite (v2.3.3)
 
-**Escopo exclusivo:** esta política se aplica à microfase **Diagramação do Fluxo de Aplicação**, sob a **fase I — Integração**, nível de **Gestão e Coordenação**. Não obriga imagens nas fases A e X nem altera pedidos explícitos de outros visuais.
+**Exclusividade:** fase I — Integração, nível Gestão e Coordenação. Exigir diagrama **mesmo sem pedido explícito** quando existir fluxo fielmente representável. Não impor nas fases A e X nem fabricar movimento em relações estáticas. Instruções de formato fechado prevalecem.
 
-## Contrato funcional
+## Portas de execução
 
-1. **Acionamento:** se houver fluxo identificável e fielmente representável, exigir tentativa de **diagrama real mesmo sem pedido explícito**. Sem fluxo, não desenhar processo fictício.
-2. **Gestão e Coordenação:** especificar resultado, relações, decisões, atores, fidelidade, acessibilidade, custo e verificação. **Não prescrever tecnologia específica**.
-3. **Execução pela IA:** escolher autonomamente o recurso visual efetivamente disponível na sessão — recurso nativo, Mermaid, SVG, HTML/preview, PNG ou nova tecnologia. **Não obrigar Mermaid, SVG, HTML, Canvas, PNG**, e não impor uma ordem rígida.
-4. **Custo:** entre escolhas funcionais, diminuir tokens, código, chamadas, passos, rede e conversões. Uma tentativa principal mais, quando viável, uma alternativa; sem ferramentas pagas de sondagem.
-5. **Aceite:** visual exibido na interface, prévia verificável ou arquivo gráfico real acessível. Somente código ou somente texto = **saída parcial**, não visual concluído.
-6. **Falha:** registrar recurso efetivamente tentado, impedimento observado e alternativa manual quando cabível. Não inventar ferramentas ou êxito, nem pressupor que o usuário abriu um arquivo.
-7. **Confiabilidade:** preservar nós, arestas, decisões, unidades, privacidade, acessibilidade e estado dos dados; nenhuma transmissão externa não autorizada.
+1. **Detectar:** existe fluxo, decisão, sequência ou dependência funcional representável com elementos confirmados? Se não, encerrar microfase sem diagrama obrigatório.
+2. **Escolher:** a IA/agente usa autonomamente a superfície visual efetivamente acessível nesta sessão (qualquer renderer nativo, Mermaid, SVG, HTML/Preview, imagem, tecnologia futura). São exemplos, não sequência obrigatória. Não inferir capacidade apenas pelo modelo.
+3. **Executar:** realmente invocar a opção de renderização/prévia ou produzir imagem/arquivo, se o recurso permitir; não apenas apresentar `graph TD` como texto.
+4. **Inspecionar:** considerar sucesso **visual exibido inline, prévia efetivamente criada ou arquivo gráfico real acessível**. Uma prévia já basta: **não exigir PDF, PNG, SVG nem download adicional**. PDF de auditoria é evidência opcional, não saída obrigatória.
+5. **Recuperar:** se a primeira tentativa só produzir texto/código, usar **uma alternativa viável** já habilitada. Sem alternativa, descrever a falha como **entrega parcial**; não simular imagem.
+6. **Fidelidade:** checar nós/arestas/condições, legibilidade e incerteza do conteúdo; fontes jurídicas e administrativas não viram fatos por terem sido diagramadas.
+7. **Economia e segurança:** entre opções que entregam visual correto, minimizar tokens, passos, chamadas, dependências e risco. Não enviar dados privados a renderizadores externos sem autorização.
 
-## Matriz conceitual, sem amarras de implementação
+## Oráculo de homologação
 
-| Conteúdo | Resultado | Seleção pela IA |
-|---|---|---|
-| Fluxo fiel | Diagrama de relações/decisões | Qualquer renderizador visual realmente utilizável na sessão |
-| Relações estáticas | Estrutura, sem cronologia falsa | Grafo/representação se útil, sem forçar dinâmica |
-| Valores quantitativos pertinentes | Gráfico fiel, com escalas e unidades | Meio numérico adequado que a IA consiga exibir |
-| Nenhuma ferramenta gráfica | Declaração de limitação + fonte, **saída parcial** | Sem fingir imagem entregue |
+| Saída observável | Estado da microfase |
+|---|---|
+| Diagrama realmente visível no chat ou prévia | Aprovado para entrega visual (ainda requer fidelidade) |
+| Arquivo gráfico real, acessível e válido | Aprovado para produção do visual (abertura pelo usuário não presumida) |
+| Texto `graph TD` ou código Mermaid/SVG/HTML sem visual | Reprovado: apenas fonte |
+| PDF que reproduz código sem figura | Evidência de código exportado, não requisito de PDF |
+| Falha de recurso e explicação honesta | Parcial, não aprovado visualmente |
 
-**Mensuração:** observar visual exibido, prévia, arquivo acessível, custo incremental e falhas nas interfaces reais; testes estáticos não verificam frontends. C0/C1/C2 v2.2.0-rc2 congelado.
-
+**Nota:** a Skill, por si, não abre ferramentas não disponibilizadas e não pode forçar renderer do frontend. Testes do repositório são estruturais; aceitação real requer teste na plataforma e evidência visual. Preservar a amostra científica C0/C1/C2 v2.2.0-rc2.

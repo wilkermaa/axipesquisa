@@ -10,7 +10,7 @@ class ExplicitDiagramTests(unittest.TestCase):
         self.assertIn('Pedido explícito prevalece', SKILL)
         self.assertIn('não considere a tarefa concluída apenas por escrever código Mermaid', SKILL)
     def test_attempt_native_then_available_fallback(self):
-        self.assertIn('visualização nativa, Mermaid', SKILL)
+        self.assertIn('recurso nativo, Mermaid renderizado', SKILL)
         self.assertIn('HTML com prévia', SKILL)
         self.assertIn('tentativa concreta', REF)
     def test_exports_are_real(self):
@@ -24,7 +24,7 @@ class ExplicitDiagramTests(unittest.TestCase):
     def test_wireframes_distinct(self):
         self.assertIn('Wireframe de interface e diagrama de relações', SKILL)
     def test_missing_tools_reported_specifically(self):
-        self.assertIn('qual limitação específica', SKILL)
+        self.assertIn('limitação efetivamente observada', SKILL)
     def test_flow_diagram_without_explicit_request(self):
         self.assertIn('mesmo sem pedido explícito', SKILL)
 

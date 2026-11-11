@@ -2,6 +2,10 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.3.3 — diagrama visual real; PDF opcional
+
+A correção PATCH documenta a obrigatoriedade de uma **ação concreta de renderização** na microfase I, sem obrigatoriedade de PDF/arquivo quando a imagem já é exibida na tela. [Release v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3). A homologação real permanece pendente.
+
 ## Versão v2.3.2 — Gestão e Coordenação visual da microfase I
 
 Oito instaladores da correção estão previstos na [release v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2). A IA executora seleciona autonomamente o meio gráfico; ainda não existe homologação completa nas oito IAs.
