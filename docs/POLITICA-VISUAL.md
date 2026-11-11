@@ -1,4 +1,4 @@
-# AXI-Pesquisa v2.3.9 — política de entrega visual na microfase da Integração
+# AXI-Pesquisa v2.3.10 — política de entrega visual na microfase da Integração
 
 **Imagem obrigatória na entrega AXI Pesquisa:** toda microfase I acionada por um fluxo fiel exige **figura estática real do diagrama visível na resposta ou em prévia aberta**; arquivo apenas criado sem exibição NÃO conclui. Não fabricar imagem de fluxo em objetos estáticos ou quando a saída rígida do usuário a impedir.
 
@@ -21,6 +21,10 @@ A microfase visual **não dispensa consulta à legislação aplicável nem refer
 ## Rotas específicas sem substituir fidelidade e ABNT
 
 **ChatGPT:** Mermaid efetivamente desenhado em prévia como imagem; **Gemini:** **geração direta de imagem SVG/PNG e exibição na conversa**, sem app/HTML por padrão, com fallback estático somente se renderizar de fato; Canvas continua com restrição de Skills documentada; **Claude:** visual personalizado HTML/SVG renderizado inline ou Artifact; **Grok:** SVG real com prévia inline ou Projects HTML Preview. O instalador de cada plataforma descreve seu caminho. **Leitura integral da Skill em início→meio→fim, um arquivo por vez, é fundamento.** A rota específica não permite fingir ferramenta e não afasta referências ABNT em todas as explicações.
+
+## Gemini Web — PNG executado primeiro, estética depois (v2.3.10)
+
+A IA deve **ACIONAR efetivamente o mecanismo de geração de PNG e MOSTRAR o arquivo renderizado na resposta** antes de considerar a microfase concluída. Não devolver blocos de código Mermaid, XML SVG ou HTML nem mesmo intitulados “entrega visual parcial”. A alegação de indisponibilidade não substitui a tentativa observável; fallback visual deve ser realmente exibido. Se todas as rotas falharem, informar em frase curta sem código, sem inventar execução. As restrições de estilo minimalista só são aferidas depois de a imagem ser produzida.
 
 ## Gemini Web — estética minimalista v2.3.9
 
