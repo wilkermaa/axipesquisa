@@ -1,23 +1,17 @@
-# Lote de seis ambientes — roteamento visual da fase I
+# Seis ambientes — microfase I: autonomia do agente visual
 
-Consultar `references/ROTEAMENTO-VISUAL.md` antes da tabela. A presença do nome da plataforma **não** é prova de que a prévia está habilitada. Distinguir chat Web, CLI, terminal e IDE.
+Escopo: exclusivamente **Diagramação do Fluxo de Aplicação**, sob a fase **I — Integração** e o nível de Gestão e Coordenação. Identificar fluxo e tentar gráfico **mesmo sem pedido explícito**. A IA escolhe livremente a tecnologia compatível com a sessão.
 
-| Ambiente | Primeiro caminho quando comprovadamente disponível | Alternativa de menor dependência |
-|---|---|---|
-| **Claude Web** | Visualização nativa ou artefato Mermaid para fluxos; gráfico integrado para dados | Artifact HTML/SVG, sem bibliotecas externas por padrão |
-| **Grok Web** | SVG exibível no chat para gráfico simples; prévia Mermaid em Projects se realmente disponível | Código SVG fiel + instrução curta, reconhecendo saída parcial |
-| **Codex CLI** | Mermaid no terminal compatível para relações; renderizador textual/terminal para casos simples | Arquivo SVG local verificável, se ferramentas de arquivo estiverem habilitadas |
-| **Claude Code** | SVG/HTML gerado e aberto em visualizador local disponível | Mermaid com plugin **já instalado**; não instalar dependências sem autorização |
-| **Antigravity IDE/CLI** | Mermaid no visualizador de artefatos ou CLI compatível | SVG local ou resumo textual fiel se a prévia falhar |
-| **Grok Build CLI** | Mermaid integrado para diagramas; gráfico interativo somente se realmente necessário e suportado | SVG local, evitando dependência de rede |
+| Ambiente | Exemplos não obrigatórios de mecanismos |
+|---|---|
+| Claude Web | Artifact, Mermaid renderizado, HTML/SVG, visual nativo |
+| Grok Web | SVG na tela, Mermaid em Projects ou visual nativo |
+| Codex CLI | Visualização terminal, arquivo gráfico local ou prévia habilitada |
+| Claude Code | HTML/SVG local, visualizador da IDE, Mermaid já instalado |
+| Antigravity IDE/CLI | Prévia de artefato, Mermaid, SVG ou PNG local |
+| Grok Build CLI | Mermaid visível, visual interativo ou renderer nativo |
 
-## Regras comuns do lote
+**Regra:** nenhum nome de ferramenta garante suporte. Preferir visual real, fiel e econômico; apenas código/texto é entrega parcial. Não inventar arquivos, recursos, links ou status. Verificar acesso à prévia antes de alegar sucesso. Preservar privacidade e registrar custo observável. Qualquer solução futura equivalente pode ser usada.
 
-1. Verificar na própria sessão se o visualizador existe; não usar uma capacidade da CLI como prova de suporte no chat Web.
-2. O visual deve corresponder ao pedido: Mermaid para relações, visual numérico para séries/valores, HTML interativo apenas para exploração.
-3. Escolher **uma** saída principal de baixo custo; evitar múltiplas tentativas, instalações, serviços de terceiros e renderizadores remotos não autorizados.
-4. Preservar rótulos, conexões e decisões; cores de status somente com evidência e sempre acompanhadas de texto.
-5. Se SVG/PNG forem pedidos, entregar arquivos reais quando possível, senão declarar a limitação precisa; não prometer links ou renderização imaginários.
-6. Para homologar, executar pelo menos um teste de fluxo e um quantitativo em cada produto real; registrar disponibilidade, custos observáveis (passos/chamadas), sucesso da prévia e exportação.
+**Validação:** duas solicitações, uma de fluxo e uma numérica, em cada frontend real. Testes estruturais não certificam renderização.
 
-**A documentação do fabricante é indício de suporte, não certificação do instalador AXI.**
