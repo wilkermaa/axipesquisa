@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "axipesquisa"
 DIST = ROOT / "dist"
-VERSION = "2.3.9"
+VERSION = "2.3.10"
 
 PLATFORMS = {
     "chatgpt-web": "axipesquisa/",
@@ -24,7 +24,7 @@ PLATFORMS = {
 
 PLATFORM_GUIDES = {
     "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
-    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar geração DIRETA DE IMAGEM SVG/PNG no estilo Mermaid minimalista: cada caixa SOMENTE TÍTULO CURTO (uma linha, até duas curtas), SEM ÍCONES e SEM DESCRIÇÕES internas; setas e decisões curtas. Detalhamento e ABNT fora da imagem. Exibir e conferir a prévia. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.", "references/GEMINI-DIAGRAMAS.md"),
+    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. ACIONAR EFETIVAMENTE a geração de PNG no Gemini ANTES de finalizar; mostrar PNG renderizado e visível. SÓ DEPOIS verificar estilo Mermaid minimalista: caixas SOMENTE TÍTULO CURTO, SEM ÍCONES nem DESCRIÇÕES. NUNCA emitir snippet `mermaid`, `flowchart TD`, SVG/HTML em texto, tabela ou ASCII em lugar da imagem, nem sob rótulo entrega parcial. Se PNG não vier, tentar uma alternativa gráfica com imagem REAL; se não for possível, declarar a falha SEM código. Não alegar ferramenta indisponível sem tentativa observável.", "references/GEMINI-DIAGRAMAS.md"),
     "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
     "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
     "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),
