@@ -14,6 +14,8 @@ A microfase **Diagramação do Fluxo de Aplicação**, nível Gestão e Coordena
 
 Registrados 20 cenários em `docs/REDTEAM-MICROFASE-v2.3.3.md`, inclusive custo, privacidade, fidelidade, linguagem, Canvas e risco de confundir teste estático com prova real. Testes locais/CI verificam contrato e pacotes, **não a renderização em Gemini**. A Issue #4 preserva o teste manual relatado; Rafaell poderá homologar a v2.3.3 em sessão real.
 
+**Homologação funcional:** pendente no Gemini e nas outras plataformas; os testes automatizados não demonstram que a interface exibirá o gráfico.
+
 ## Governança
 
 Não mover/regravar a tag histórica v2.3.2. O protocolo científico C0/C1/C2 permanece congelado na v2.2.0-rc2. SemVer 2.0.0 segue como referência técnica de engenharia, não prova de eficácia didática/cognitiva.
