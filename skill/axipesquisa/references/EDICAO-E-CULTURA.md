@@ -35,54 +35,15 @@ As oito perguntas abaixo foram preservadas da versão 2.0. Elas são um **roteir
 - Não deduzir estilos fixos visual/auditivo/cinestésico; não afirmar que um diagrama melhora toda aprendizagem em todo público.
 
 
-## Diagramas na fase I: Mermaid, renderização real e exportação
+## Microfase I — Diagramação do Fluxo de Aplicação
 
-**Roteamento visual:** aplicar primeiro `references/ROTEAMENTO-VISUAL.md`. Um renderer Mermaid nativo é adequado a fluxos se existir; gráficos de valores podem usar visualização quantitativa integrada. Verificar capacidade local sem pesquisa externa; uma tentativa principal e uma alternativa viável bastam. A ordem abaixo é histórico do fallback e não obriga Mermaid em todas as plataformas.
+**Gestão e Coordenação:** exclusivamente na fase **I — Integração**, a microfase determina quando o fluxo fiel deve ser exibido em um diagrama, **mesmo sem pedido explícito**. Não tornar imagens obrigatórias nas fases A e X.
 
-**Dois cenários distintos**
+**Execução:** a IA/agente escolhe autonomamente como entregar o visual real com o recurso nativo, Mermaid, SVG, HTML com prévia, PNG ou uma solução futura disponível. Fazer **tentativa concreta**, preservar nós, arestas, decisões, acessibilidade, segurança e minimizar custo operacional. Nenhuma tecnologia é obrigatória.
 
-1. **Diagrama sem pedido explícito:** desenhe os fluxos de funcionamento ou aplicação identificados e representáveis com fidelidade. Preserve lacunas e evite esquemas decorativos.
-2. **Diagrama solicitado explicitamente:** o resultado esperado é um gráfico visual real, quando as ferramentas habilitadas permitirem. Um bloco `mermaid` não é, por si só, prova de que o gráfico foi renderizado. Wireframes representam telas; não substituem diagrama de arquitetura, fluxo, decisões ou relações.
+**Aceitação:** gráfico realmente exibido, prévia verificável ou arquivo real acessível. Um **código Mermaid válido**, texto SVG/HTML e descrição de fluxo não são, sozinhos, diagrama renderizado. Na falha, explicar a limitação e declarar entrega parcial. Não confundir wireframe e diagrama de relações; exportações apenas se reais.
 
-**Procedimento objetivo para pedido explícito:**
-
-1. Inspecione os recursos *efetivamente disponíveis na sessão*. Tente o renderer Mermaid nativo, se houver. Caso não esteja disponível, considere Canvas/artefatos ou uma ferramenta habilitada que produza SVG e PNG. Não suponha que a indisponibilidade de um parser Mermaid signifique impossibilidade de gerar qualquer diagrama visual.
-2. Faça uma tentativa concreta, respeitando as ferramentas permitidas. Preserve nós, arestas, condições, ordem e subgrafos. Não crie relações ausentes.
-3. Se a saída não tiver sido produzida com motor Mermaid, apresente-a como **conversão ou reconstrução visual equivalente**, não como Mermaid compilado. Preserve a fonte `.mmd` quando possível.
-4. Quando houver arquivos produzidos e verificados, ofereça **SVG e PNG para download**. Nunca crie links imaginários; não prometa um arquivo que não foi salvo.
-5. Se a visualização/exportação for indisponível ou falhar, descreva especificamente a ferramenta ausente ou a tentativa fracassada e entregue o código Mermaid válido. Não dê uma afirmação genérica de que a plataforma não suporta gráficos.
-
-## Gemini Web: fallback visual verificável sem Mermaid nativo
-
-**Não confundir:** um bloco `mermaid` com destaque de sintaxe não é um gráfico visível. Se o usuário solicitou expressamente um diagrama, use o seguinte fluxo, limitado às ferramentas realmente disponíveis:
-
-1. **Mermaid renderizado**: se existir visualizador nativo nesta sessão, produza o bloco Mermaid e confirme a possibilidade de prévia; não alegue que o usuário o viu se não houver confirmação do frontend.
-2. **SVG autônomo**: se não houver renderer Mermaid, desenhe um **SVG correto** com `<svg xmlns="http://www.w3.org/2000/svg" viewBox="...">`, grupos, retângulos, caminhos, setas, rótulos e, quando pertinente, descrições `<title>` e `<desc>`. Preserve grafo, arestas, ordens e decisões. Não converter labels não confirmados em fatos; usar neutro e `a validar`. Se o Gemini oferecer criação de arquivos, salve `diagrama.svg` e disponibilize link real.
-3. **Gemini Canvas com HTML/SVG**: quando Canvas estiver disponível, solicite ou crie um app/página HTML com SVG inline. Visualização na **prévia do Canvas** é diferente do mero código no chat. Se a ferramenta suportar execução do código, forneça botão `Salvar SVG` (Blob XML) e `Salvar PNG` (serialização SVG em imagem, desenho no `<canvas>`, `toBlob`). Só atribua sucesso à exportação após ela estar disponível e ter sido verificada. Não injete scripts externos, não use CDNs para dados confidenciais nem crie rótulos fictícios.
-4. **Alternativa quando o Canvas não abrir pela Skill**: informe ao usuário que, em Gemini Web, ele pode selecionar **Adicionar arquivos (+) → Canvas**, e então colar o HTML/SVG autossuficiente. Não declare que a interface está aberta sem evidência. Se houver capacidade de criar arquivo SVG/PNG diretamente na tarefa, prefira esses arquivos reais.
-5. **Fallback final**: se nenhuma forma de renderização/exportação existir, forneça o código SVG e Mermaid completos, com instrução curta de visualização no navegador ou Canvas, explicando a limitação comprovada. Não diga genericamente que a plataforma não gera SVG/PNG.
-
-**Formato de retorno para pedido de gráfico:** liste com precisão `Diagrama visível?`, `SVG para download?`, `PNG para download?`, `Código Mermaid?` marcando `sim`, `não`, ou `precisa de ação do usuário` apenas após evidência. Um SVG textual pode ser uma fonte válida, mas não se deve confundir texto SVG com prévia renderizada.
-
-**Segurança e simplicidade:** toda conversão deve ser local/nativa quando possível; jamais envie arquiteturas internas, tokens ou dados pessoais a serviços externos de renderização sem permissão; código executável gerado é sujeito à política de segurança da plataforma. Um wireframe não substitui um diagrama de relações solicitado.
-
-**Cuidados visuais:** hierarquia clara, conexões legíveis, poucos cruzamentos, sem exagero de estilos. Verde = concluído, amarelo = atenção, vermelho = bloqueado **apenas para estados sustentados por dados**, sempre com rótulos legíveis. Estados não comprovados devem permanecer **a validar**, em estilo neutro. Cores não substituem texto.
-
-**Privacidade:** não envie diagramas com dados pessoais, fluxos internos, segredos ou informação restrita a renderizadores externos sem autorização explícita. Prefira recursos locais ou do serviço já autorizado. O diagrama não prova causalidade nem eficácia.
-
-**Critério para revisão:** verifique se o usuário consegue **ver o gráfico** e baixar o arquivo nos formatos solicitados, ou recebe relato preciso da limitação efetiva. A mera sintaxe válida não satisfaz pedido de gráfico visual.
-
-**Exemplo Mermaid ilustrativo (não representa estados reais):**
-
-```mermaid
-flowchart TD
-    A[Receber pedido] --> B{Informações suficientes?}
-    B -- Sim --> C[Analisar e integrar]
-    B -- Não --> D[Revisão necessária: atenção]
-    C --> E[Entregar resposta]
-```
-
-Não reproduza automaticamente este exemplo na resposta: crie um gráfico ajustado às relações confirmadas do caso.
+**Gemini:** não presumir Canvas disponível na sessão da Skill; conversa separada é ação manual, não comprovação de resultado entregue pela Skill.
 
 ## Saída adaptativa
 

@@ -1,6 +1,6 @@
 # AXI Pesquisa
 
-**Versão 2.3.1 · software experimental; validação científica independente pendente.**
+**Versão 2.3.2 · software experimental; validação científica independente pendente.**
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -10,18 +10,20 @@
 
 ## Baixar a Skill AXI
 
-**v2.3.1 — Diagramação do Fluxo de Aplicação.** A Integração inclui um diagrama sempre que houver um fluxo de funcionamento ou aplicação que possa ser representado fielmente, mesmo sem pedido explícito.
+**v2.3.2 — correção do contrato de entrega visual na microfase Diagramação do Fluxo de Aplicação.** Apenas na fase **I — Integração**, no nível de **Gestão e Coordenação**, exigir um visual real quando houver fluxo fielmente representável, mesmo sem pedido explícito. A IA executora escolhe autonomamente qualquer tecnologia realmente acessível (sem imposição de Mermaid, SVG, HTML, PNG ou ordem fixa). Texto ou código isolados não completam entrega visual.
 
-| Plataforma | Instalador v2.3.1 (após publicação do Release) |
+**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). A [v2.3.1 permanece preservada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1). A homologação real nas interfaces continua pendente.
+
+| Plataforma | Instalador v2.3.2 (após publicação do Release) |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/01-CHATGPT-WEB-AXI-v2.3.1.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/02-GEMINI-WEB-AXI-v2.3.1.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/03-CLAUDE-WEB-AXI-v2.3.1.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/04-GROK-WEB-AXI-v2.3.1.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/05-CODEX-AXI-v2.3.1.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/06-CLAUDE-CODE-AXI-v2.3.1.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/07-ANTIGRAVITY-AXI-v2.3.1.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.1/08-GROK-BUILD-AXI-v2.3.1.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/01-CHATGPT-WEB-AXI-v2.3.2.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/02-GEMINI-WEB-AXI-v2.3.2.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/03-CLAUDE-WEB-AXI-v2.3.2.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/04-GROK-WEB-AXI-v2.3.2.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/05-CODEX-AXI-v2.3.2.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/06-CLAUDE-CODE-AXI-v2.3.2.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/07-ANTIGRAVITY-AXI-v2.3.2.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/08-GROK-BUILD-AXI-v2.3.2.zip) |
 
 Os links serão disponibilizados como anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
 

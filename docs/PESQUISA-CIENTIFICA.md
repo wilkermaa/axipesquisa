@@ -66,3 +66,8 @@ MEYER, Erin. *The Culture Map: Breaking Through the Invisible Boundaries of Glob
 STANFORD ENCYCLOPEDIA OF PHILOSOPHY. *Descartes’ method*. [s. d.]. Disponível em: https://plato.stanford.edu/archives/spr2021/entries/descartes-method/. Acesso em: 10 nov. 2026.
 
 STURT, Jackie et al. Neurolinguistic programming: a systematic review of the effects on health outcomes. *British Journal of General Practice*, v. 62, n. 604, p. e757–e764, 2012. DOI: 10.3399/bjgp12X658287. Disponível em: https://pmc.ncbi.nlm.nih.gov/articles/PMC3481516/. Acesso em: 10 nov. 2026.
+
+
+## Norma de engenharia utilizada na governança
+
+O AXI Pesquisa adota **Semantic Versioning (SemVer 2.0.0)** para classificar mudanças MAJOR/MINOR/PATCH, preservar versões e melhorar a rastreabilidade. É **referência técnica de engenharia de software, não fundamentação científica de eficácia** ou resultado de experimento. A distinção e fonte normativa estão documentadas em `docs/FUNDAMENTACAO-TECNICA.md`; o protocolo científico C0/C1/C2 v2.2.0-rc2 não foi modificado.
