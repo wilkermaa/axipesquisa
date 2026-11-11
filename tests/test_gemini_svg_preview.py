@@ -16,7 +16,7 @@ class GeminiSvgPreviewContract(unittest.TestCase):
     def test_svg_priority_not_dogma(self):
         self.assertIn('SVG realmente renderizado',SKILL)
         self.assertIn('PNG ou uma visualização nativa',SKILL)
-        self.assertIn('escolha tecnológica permanece da IA executora',GEMINI)
+        self.assertIn('SVG já renderizado ou PNG',GEMINI)
         self.assertIn('não prescrever tecnologia às outras IAs',POLICY)
     def test_rendering_before_finish(self):
         self.assertIn('Acione a geração ou abertura da prévia',SKILL)
