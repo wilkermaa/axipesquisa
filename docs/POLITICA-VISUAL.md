@@ -14,7 +14,7 @@
 
 ## Gemini Web — execução específica
 
-Na **microfase Diagramação do Fluxo de Aplicação**, o modelo no Gemini deve **acionar a geração ou abertura da prévia visual na própria sessão** antes de concluir. **Priorizar SVG efetivamente renderizado**, quando viável; caso contrário, **PNG ou gráfico nativo**. Um `flowchart TD` em snippet, texto SVG/HTML ou código Mermaid é falha visual mesmo que esteja sintaticamente correto. **Não exigir PDF nem exportação** se a figura já está na interface. Verificar fidelidade, legibilidade e existência da prévia ou arquivo real; sem sucesso, declarar entrega parcial. Não supor que Canvas da conta esteja disponível dentro da mesma sessão com Skill. Esta prioridade é específica do Gemini, sem prescrever tecnologia às outras IAs.
+Na **microfase Diagramação do Fluxo de Aplicação**, o modelo no Gemini deve **acionar a geração ou abertura da prévia visual na própria sessão** antes de concluir. **Priorizar SVG efetivamente renderizado**, quando viável; caso contrário, **PNG ou gráfico nativo**. Um `flowchart TD` em snippet, texto SVG/HTML ou código Mermaid é falha visual mesmo que esteja sintaticamente correto. **Não exigir PDF nem exportação** se a figura já está na interface. Verificar fidelidade, legibilidade e existência da prévia ou arquivo real; sem sucesso, declarar entrega parcial. Não supor que Canvas da conta esteja disponível dentro da mesma sessão com Skill. Esta prioridade é específica do Gemini: **não prescrever tecnologia às outras IAs**.
 
 ## Red team
 
