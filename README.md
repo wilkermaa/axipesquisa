@@ -1,6 +1,6 @@
 # AXI Pesquisa
 
-**Versão 2.3.2 · software experimental; validação científica independente pendente.**
+**Versão 2.3.3 · software experimental; validação científica independente pendente.**
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -10,22 +10,22 @@
 
 ## Baixar a Skill AXI
 
-**v2.3.2 — correção do contrato de entrega visual na microfase Diagramação do Fluxo de Aplicação.** Apenas na fase **I — Integração**, no nível de **Gestão e Coordenação**, exigir um visual real quando houver fluxo fielmente representável, mesmo sem pedido explícito. A IA executora escolhe autonomamente qualquer tecnologia realmente acessível (sem imposição de Mermaid, SVG, HTML, PNG ou ordem fixa). Texto ou código isolados não completam entrega visual.
+**v2.3.3 — correção red team da microfase Diagramação do Fluxo de Aplicação.** Apenas na fase **I — Integração**, no nível de **Gestão e Coordenação**, exigir um visual real quando houver fluxo fielmente representável, mesmo sem pedido explícito. A IA executora escolhe autonomamente qualquer tecnologia realmente acessível (sem imposição de Mermaid, SVG, HTML, PNG ou ordem fixa). **É necessária ação concreta de renderização, prévia ou imagem real.** Texto ou código isolados não completam entrega visual. **PDF não é obrigatório**: uma figura já exibida na conversa satisfaz o requisito visual, sem necessidade de arquivo adicional.
 
-**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). A [v2.3.1 permanece preservada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1). A homologação real nas interfaces continua pendente.
+**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
 
-| Plataforma | Instalador v2.3.2 (após publicação do Release) |
+| Plataforma | Instalador v2.3.3 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/01-CHATGPT-WEB-AXI-v2.3.2.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/02-GEMINI-WEB-AXI-v2.3.2.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/03-CLAUDE-WEB-AXI-v2.3.2.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/04-GROK-WEB-AXI-v2.3.2.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/05-CODEX-AXI-v2.3.2.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/06-CLAUDE-CODE-AXI-v2.3.2.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/07-ANTIGRAVITY-AXI-v2.3.2.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.2/08-GROK-BUILD-AXI-v2.3.2.zip) |
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/01-CHATGPT-WEB-AXI-v2.3.3.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/02-GEMINI-WEB-AXI-v2.3.3.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/03-CLAUDE-WEB-AXI-v2.3.3.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/04-GROK-WEB-AXI-v2.3.3.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/05-CODEX-AXI-v2.3.3.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/06-CLAUDE-CODE-AXI-v2.3.3.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/07-ANTIGRAVITY-AXI-v2.3.3.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.3/08-GROK-BUILD-AXI-v2.3.3.zip) |
 
-Os links serão disponibilizados como anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
+Os links são destinados aos anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
 
 Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas documentadas vão de v1.0 a v2.2.3; a [v2.3.0 tem oito instaladores publicados](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.0). As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.3 — 11 nov. 2026 (PATCH)
+
+- Corrige o acionamento real de renderização na microfase **Diagramação do Fluxo de Aplicação**, fase I — Integração: não basta escrever código; a IA deve tentar uma prévia ou entrega gráfica efetiva.
+- **PDF não é obrigatório:** figura realmente apresentada no chat, prévia visual real ou arquivo gráfico válido atendem ao critério. Arquivo ou exportação não são exigidos quando a interface já mostra a figura.
+- Incorpora 20 cenários de red team, limita tentativas a um mecanismo principal mais uma alternativa viável e registra falhas e capacidades sem inventá-las.
+- Melhora a regra do Gemini: avaliar capacidades da sessão sem presumir Canvas automaticamente disponível ou indisponível, evitar código `graph TD` como saída concluída.
+- Homologação em Gemini e nas demais IAs continua pendente; testes automáticos validam política textual, empacotamento e integridade, não a interface. Sem alterar v2.3.2 nem protocolo científico C0/C1/C2 v2.2.0-rc2.
+
 ## v2.3.2 — 11 nov. 2026 (PATCH)
 
 - Corrige exclusivamente a microfase **Diagramação do Fluxo de Aplicação**, na fase I — Integração, nível **Gestão e Coordenação**: exigir **entrega visual real** para fluxos fiéis, mesmo sem solicitação explícita.
