@@ -1,5 +1,7 @@
 # Gemini Web — PNG primeiro, não snippet Mermaid (v2.3.10)
 
+**Regra de geração DIRETA DE IMAGEM, com acionamento efetivo:**
+
 **REGRA INEGOCIÁVEL:** quando a microfase I — Diagramação do Fluxo de Aplicação — encontrar um fluxo juridicamente fiel, **ACIONAR DE FATO A GERAÇÃO DE IMAGEM PNG, MOSTRAR A FIGURA NO CHAT e SÓ DEPOIS CONCLUIR A RESPOSTA**. O código Mermaid, SVG ou HTML pode ser usado internamente, mas **NUNCA pode ser exibido como substituto do PNG**, nem sob a expressão “Registro de Entrega Visual Parcial”. O objetivo é imagem renderizada, não snippet.
 
 ## Procedimento em ordem obrigatória: EXECUTAR → MOSTRAR → VERIFICAR → FINALIZAR
