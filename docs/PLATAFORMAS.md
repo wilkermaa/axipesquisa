@@ -4,28 +4,28 @@ Esta é a documentação de **caminhos de distribuição**. A leitura de documen
 
 | Ambiente | Instalação/extração proposta | Observações e status |
 |---|---|---|
-| ChatGPT Web | `dist/axipesquisa-2.3.6-chatgpt-web.zip` com pasta `axipesquisa/SKILL.md` | Disponibilidade depende da conta/workspace. A documentação OpenAI confirma carregamento direto do computador para contas elegíveis. **Skill individual é diferente de Plugin de diretório.** Alternativa por instruções personalizadas. **Não testado em conta real.** |
-| Gemini Web | `dist/axipesquisa-2.3.6-gemini-web.zip` com `SKILL.md` na raiz do ZIP e recursos ao lado | Google aceita `SKILL.md`, pasta ou ZIP com arquivo na pasta principal. **Rota AXI: Canvas com SVG e Prévia**, mas documentação oficial Google declara que Skills ainda não operam com Canvas; não anunciar êxito sem evidência. Tentar SVG real com prévia/arquivo como alternativa. Não aceitar apenas snippet. Disponibilidade na conta não prova acionamento pela Skill. |
-| Grok Web | `dist/axipesquisa-2.3.6-grok-web.zip` com `SKILL.md` na raiz e arquivo individual no repositório | xAI diz que cria Skills por conversa/arquivo; aceitação **específica de ZIP não confirmada**. Alternativa: texto do `SKILL.md`. **Rota visual:** SVG real com prévia inline ou Projects HTML Preview; não testado no ambiente real. |
-| Claude Web | `dist/axipesquisa-2.3.6-claude-web.zip` com pasta `axipesquisa/` na raiz | Anthropic instrui enviar ZIP da pasta e ativar em Personalizar > Habilidades. **Rota visual HTML/SVG inline ou Artifact renderizado**; não testado na conta. |
-| Codex CLI/IDE | Extrair `dist/axipesquisa-2.3.6-codex.zip` para `.agents/skills/axipesquisa/SKILL.md` | Pasta do projeto, não upload direto de ZIP. Consulte a documentação do Codex. |
-| Antigravity IDE/CLI | Extrair `dist/axipesquisa-2.3.6-antigravity.zip` para `.agents/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.gemini/config/skills/axipesquisa/`. |
-| Grok Build CLI | Extrair `dist/axipesquisa-2.3.6-grok-build-cli.zip` para `.grok/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.grok/skills/axipesquisa/`. |
-| Claude Code | Extrair `dist/axipesquisa-2.3.6-claude-code.zip` para `.claude/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.claude/skills/axipesquisa/`. |
+| ChatGPT Web | `dist/axipesquisa-2.3.7-chatgpt-web.zip` com pasta `axipesquisa/SKILL.md` | Disponibilidade depende da conta/workspace. A documentação OpenAI confirma carregamento direto do computador para contas elegíveis. **Skill individual é diferente de Plugin de diretório.** Alternativa por instruções personalizadas. **Não testado em conta real.** |
+| Gemini Web | `dist/axipesquisa-2.3.7-gemini-web.zip` com `SKILL.md` na raiz do ZIP e recursos ao lado | Google aceita `SKILL.md`, pasta ou ZIP com arquivo na pasta principal. **Rota AXI: Skill chama/solicita Canvas como ferramenta de saída para SVG e Prévia**, sem executar Skill dentro do Canvas e sem interação posterior. Documentação Google ainda diz que Canvas não funciona com Skills; a possibilidade de chamada automática depende de teste, não de botão visível. Tentar realmente; não anunciar êxito sem evidência. Se for recusada, tentar SVG real/PNG com prévia ou arquivo. Não aceitar snippet como gráfico. |
+| Grok Web | `dist/axipesquisa-2.3.7-grok-web.zip` com `SKILL.md` na raiz e arquivo individual no repositório | xAI diz que cria Skills por conversa/arquivo; aceitação **específica de ZIP não confirmada**. Alternativa: texto do `SKILL.md`. **Rota visual:** SVG real com prévia inline ou Projects HTML Preview; não testado no ambiente real. |
+| Claude Web | `dist/axipesquisa-2.3.7-claude-web.zip` com pasta `axipesquisa/` na raiz | Anthropic instrui enviar ZIP da pasta e ativar em Personalizar > Habilidades. **Rota visual HTML/SVG inline ou Artifact renderizado**; não testado na conta. |
+| Codex CLI/IDE | Extrair `dist/axipesquisa-2.3.7-codex.zip` para `.agents/skills/axipesquisa/SKILL.md` | Pasta do projeto, não upload direto de ZIP. Consulte a documentação do Codex. |
+| Antigravity IDE/CLI | Extrair `dist/axipesquisa-2.3.7-antigravity.zip` para `.agents/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.gemini/config/skills/axipesquisa/`. |
+| Grok Build CLI | Extrair `dist/axipesquisa-2.3.7-grok-build-cli.zip` para `.grok/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.grok/skills/axipesquisa/`. |
+| Claude Code | Extrair `dist/axipesquisa-2.3.7-claude-code.zip` para `.claude/skills/axipesquisa/SKILL.md` | Escopo global documentado: `~/.claude/skills/axipesquisa/`. |
 
-**Todos os oito ZIPs v2.3.6 incluem `INSTALADOR-PLATAFORMA.md` específico** e o fluxo integral `references/FLUXO-LEITURA-INTEGRAL.md`. ChatGPT usa Mermaid com prévia, Claude visual HTML/SVG, Grok SVG inline e Gemini Canvas/SVG somente quando acionável — caso contrário, registrar bloqueio da integração e usar saída visual honesta.
+**Todos os oito ZIPs v2.3.7 incluem `INSTALADOR-PLATAFORMA.md` específico** e o fluxo integral `references/FLUXO-LEITURA-INTEGRAL.md`. ChatGPT usa Mermaid com prévia, Claude visual HTML/SVG, Grok SVG inline e Gemini Canvas/SVG somente quando acionável — caso contrário, registrar bloqueio da integração e usar saída visual honesta.
 
 ## Instalação local (exemplos)
 
 ```bash
 # Codex
-unzip dist/axipesquisa-2.3.6-codex.zip -d /caminho/do/projeto
+unzip dist/axipesquisa-2.3.7-codex.zip -d /caminho/do/projeto
 # Antigravity
-unzip dist/axipesquisa-2.3.6-antigravity.zip -d /caminho/do/projeto
+unzip dist/axipesquisa-2.3.7-antigravity.zip -d /caminho/do/projeto
 # Grok Build
-unzip dist/axipesquisa-2.3.6-grok-build-cli.zip -d /caminho/do/projeto
+unzip dist/axipesquisa-2.3.7-grok-build-cli.zip -d /caminho/do/projeto
 # Claude Code
-unzip dist/axipesquisa-2.3.6-claude-code.zip -d /caminho/do/projeto
+unzip dist/axipesquisa-2.3.7-claude-code.zip -d /caminho/do/projeto
 ```
 
 Para plataformas web, consulte a UI em sua conta, não use a presença do ZIP como prova de aceite. Quando uma plataforma disser que não suporta importação, use as instruções personalizadas, se existirem, ou ajuste a variante conforme a documentação.
