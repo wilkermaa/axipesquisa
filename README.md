@@ -1,8 +1,8 @@
 # AXI Pesquisa
 
-**Versão oficial para uso: v2.3.8 · versão estável do projeto; validação científica independente pendente.**
+**Versão oficial recomendada: [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8) · validação científica independente pendente.**
 
-**Canal de testes:** v2.3.9 (em desenvolvimento; não recomendada como versão oficial). A identificação `beta.1` só deve ser aplicada ao Release/tag correspondente quando publicado com esse identificador.
+**VERSÃO v2.3.9 REPROVADA por decisão expressa do autor em 12/11/2026.** Não homologada, não recomendada para instalação ou uso oficial. A release e seus oito ZIPs permanecem disponíveis exclusivamente como acervo histórico/rastreabilidade. [Registro da reprovação — Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15).
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -12,9 +12,9 @@
 
 ## Baixar a Skill AXI
 
-**Versão oficial recomendada: [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8).** Use os instaladores dessa release para a versão estável. As versões 2.3.9 são destinadas a desenvolvimento e testes até homologação e promoção explícita.
+**Versão oficial recomendada: [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8).** Use os instaladores dessa release para a versão estável. A versão v2.3.9 foi reprovada pelo autor em 12/11/2026 e não deve ser utilizada como versão aprovada.
 
-### Versão em desenvolvimento — v2.3.9 (não oficial)
+### Versão REPROVADA — v2.3.9 (não homologada; acervo histórico)
 
 **v2.3.9 — imagem obrigatória e GEMINI COM CAIXAS SÓ DE TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES.** Mantido o princípio: quando a microfase I identificar fluxo real, a AXI entrega uma imagem visível. A imagem do fluxograma deve aparecer **na própria resposta ou em prévia gráfica aberta**; tabela, ASCII, lista, código Mermaid/SVG/HTML e arquivo não mostrado são **entrega parcial**, não resultado concluído. A regra aplica-se às oito plataformas, sem inventar fluxos em conceitos estáticos ou quebrar formatos estritos.
 
@@ -23,7 +23,7 @@
 
 **Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8), [v2.3.7](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.7), [v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6), [v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5), [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
 
-| Plataforma | Instalador v2.3.9 — testes, não oficial |
+| Plataforma | Instalador v2.3.9 — REPROVADO, uso não recomendado; acervo histórico |
 |---|---|
 | ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/01-CHATGPT-WEB-AXI-v2.3.9.zip) |
 | Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/02-GEMINI-WEB-AXI-v2.3.9.zip) |
