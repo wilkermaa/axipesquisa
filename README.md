@@ -1,8 +1,12 @@
 # AXI Pesquisa
 
-**Versão oficial recomendada: [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8) · validação científica independente pendente.**
+> ### Versão principal e oficial recomendada: **[AXI Pesquisa v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8)**
+> **[BAIXAR A VERSÃO v2.3.8 — 8 instaladores por plataforma](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8)**.
+> A v2.3.9 foi **reprovada pelo autor** em 12/11/2026 e não é recomendada para uso. [Registro da decisão](https://github.com/wilkermaa/axipesquisa/issues/15).
 
-**VERSÃO v2.3.9 REPROVADA por decisão expressa do autor em 12/11/2026.** Não homologada, não recomendada para instalação ou uso oficial. A release e seus oito ZIPs permanecem disponíveis exclusivamente como acervo histórico/rastreabilidade. [Registro da reprovação — Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15).
+
+
+
 
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
@@ -14,27 +18,30 @@
 
 **Versão oficial recomendada: [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8).** Use os instaladores dessa release para a versão estável. A versão v2.3.9 foi reprovada pelo autor em 12/11/2026 e não deve ser utilizada como versão aprovada.
 
-### Versão REPROVADA — v2.3.9 (não homologada; acervo histórico)
+### Versão principal — v2.3.8 (instalação recomendada)
 
-**v2.3.9 — imagem obrigatória e GEMINI COM CAIXAS SÓ DE TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES.** Mantido o princípio: quando a microfase I identificar fluxo real, a AXI entrega uma imagem visível. A imagem do fluxograma deve aparecer **na própria resposta ou em prévia gráfica aberta**; tabela, ASCII, lista, código Mermaid/SVG/HTML e arquivo não mostrado são **entrega parcial**, não resultado concluído. A regra aplica-se às oito plataformas, sem inventar fluxos em conceitos estáticos ou quebrar formatos estritos.
+**AXI Pesquisa v2.3.8 é a versão oficial indicada pelo autor para instalação e uso**, enquanto a pesquisa e a validação funcional independente permanecem em andamento. Esta versão exige fluxograma **realmente visível** na resposta ou em prévia gráfica aberta quando houver um fluxo representável e fiel; apenas código, tabela, ASCII ou arquivo não exibido não substituem a imagem.
 
-**Gemini:** primeiro pedir/acionar **geração direta de imagem (SVG efetivamente renderizado ou PNG exibido)**, com diagrama de blocos e setas **no estilo visual simples do Mermaid: caixas apenas com títulos curtos, sem ícones, sem descrições dentro das caixas**; não pedir HTML, aplicativo ou interatividade por padrão. Canvas/SVG é apenas alternativa quando criar realmente uma figura visível; a documentação do Google ainda restringe Canvas com Skills. **ChatGPT:** Mermaid com prévia desenhada. **Claude:** visual HTML/SVG inline ou Artifact visível. **Grok:** SVG/PNG com prévia inline ou imagem visível no Projects. **PDF e downloads não são obrigatórios**; a figura visual, sim. A criação da imagem no Gemini com Skill ativa precisa de homologação em produto, não é garantida só por esta instrução.
-**Toda resposta explicativa ou de pesquisa deve ter `Fontes consultadas (ABNT)`**, registrando as fontes efetivamente consultadas ou `Nenhuma fonte externa consultada nesta resposta.`. **A leitura integral dos materiais da Skill, arquivo por arquivo e na sequência A → X → I, é obrigatória quando ativada.** Em temas legais e administrativos específicos, é obrigatório consultar fontes normativas verificáveis quando houver acesso e apresentar referências ABNT reais. Lei, artigo, competência e procedimento não podem ser presumidos nem afirmados obrigatórios sem fonte; o diagrama não substitui a pesquisa.
+**Instaladores oficiais da v2.3.8:**
 
-**Referência técnica de engenharia:** o projeto adota **Semantic Versioning (SemVer 2.0.0)** para rastreabilidade e compatibilidade; isso **não comprova eficácia científica** do AXI. Veja [Fundamentação técnica](docs/FUNDAMENTACAO-TECNICA.md). As [v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8), [v2.3.7](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.7), [v2.3.6](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.6), [v2.3.5](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.5), [v2.3.4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.4), [v2.3.3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.3), [v2.3.2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.2) e [v2.3.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.1) permanecem preservadas. A homologação real nas interfaces continua pendente.
-
-| Plataforma | Instalador v2.3.9 — REPROVADO, uso não recomendado; acervo histórico |
+| Plataforma | Instalador recomendado — v2.3.8 |
 |---|---|
-| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/01-CHATGPT-WEB-AXI-v2.3.9.zip) |
-| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/02-GEMINI-WEB-AXI-v2.3.9.zip) |
-| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/03-CLAUDE-WEB-AXI-v2.3.9.zip) |
-| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/04-GROK-WEB-AXI-v2.3.9.zip) |
-| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/05-CODEX-AXI-v2.3.9.zip) |
-| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/06-CLAUDE-CODE-AXI-v2.3.9.zip) |
-| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/07-ANTIGRAVITY-AXI-v2.3.9.zip) |
-| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.9/08-GROK-BUILD-AXI-v2.3.9.zip) |
+| ChatGPT Web | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/01-CHATGPT-WEB-AXI-v2.3.8.zip) |
+| Gemini Web | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/02-GEMINI-WEB-AXI-v2.3.8.zip) |
+| Claude Web | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/03-CLAUDE-WEB-AXI-v2.3.8.zip) |
+| Grok Web | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/04-GROK-WEB-AXI-v2.3.8.zip) |
+| Codex | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/05-CODEX-AXI-v2.3.8.zip) |
+| Claude Code | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/06-CLAUDE-CODE-AXI-v2.3.8.zip) |
+| Antigravity | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/07-ANTIGRAVITY-AXI-v2.3.8.zip) |
+| Grok Build | [Baixar ZIP v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/download/v2.3.8/08-GROK-BUILD-AXI-v2.3.8.zip) |
 
-Os links são destinados aos anexos do Release correspondente. Para instalar, veja [o guia dentro da Skill](skill/axipesquisa/README-INSTALACAO.md). O experimento C0/C1/C2 permanece congelado na v2.2.0-rc2, sem execuções comprovadas.
+A instalação depende da compatibilidade da plataforma e das orientações do [guia de instalação](skill/axipesquisa/README-INSTALACAO.md). Testes estruturais e integridade de ZIPs não comprovam renderização funcional em todas as IAs nem eficácia científica.
+
+### Versão reprovada — v2.3.9 (somente histórico)
+
+**REPROVADA / NÃO HOMOLOGADA, por decisão do autor em 12/11/2026.** Não instalar nem recomendar a v2.3.9 como versão principal. O histórico permanece documentado na [Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15), no [CHANGELOG](CHANGELOG.md) e no [catálogo de versões](docs/INSTALADORES.md). A existência da release antiga não representa aprovação.
+
+A investigação C0/C1/C2 continua congelada na v2.2.0-rc2; não substituir silenciosamente sua condição experimental por instaladores recentes.
 
 Para recuperar uma versão anterior, consulte o [catálogo de instaladores e estado de publicação de cada versão](docs/INSTALADORES.md). **Já estão disponíveis downloads por IA para [v2.2.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.1), [v2.2.0-rc4](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc4), [v2.2.0-rc3](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc3), [v2.2.0-rc2](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.2.0-rc2) e [v2.0.0 sanitizada](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.0.0).** As versões históricas documentadas vão de v1.0 a v2.2.3; a [v2.3.0 tem oito instaladores publicados](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.0). As versões v1.0 e v2.1.0-rc1 permanecem registros documentais parciais, sem instaladores completos identificados no respectivo snapshot. A área de [GitHub Releases](https://github.com/wilkermaa/axipesquisa/releases) é o destino previsto para futuras distribuições versionadas com assets e tags próprias.
 
