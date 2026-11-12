@@ -2,7 +2,11 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
-## Versão v2.3.9 — Gemini minimalista, caixas apenas com títulos
+## Versão v2.3.9 — REPROVADA; não instalar como versão oficial
+
+**DECISÃO DO AUTOR (12/11/2026): REPROVADA / NÃO HOMOLOGADA.** Não recomendar para instalação ou uso oficial. Os oito ZIPs, o release e a tag são preservados como acervo histórico; a existência dos downloads não significa aprovação. A versão oficial recomendada continua **v2.3.8**. [Registro da decisão — Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15).
+
+### Descrição histórica — Gemini minimalista, caixas apenas com títulos
 
 Preserva a **imagem de fluxograma obrigatória** e estabelece, especificamente no Gemini, **caixas SOMENTE COM TÍTULOS CURTOS, SEM ÍCONES NEM DESCRIÇÕES**, estilo visual simples do Mermaid. Apenas setas, decisões e rótulos breves; detalhes jurídicos e ABNT fora da imagem. [Release v2.3.9](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.9). Homologação no Gemini e espelhamento Drive sujeitos a evidência.
 
