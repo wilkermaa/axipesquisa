@@ -1,5 +1,13 @@
 # Changelog
 
+## Decisão de governança — 12 nov. 2026: v2.3.9 REPROVADA
+
+- **Status: REPROVADA por decisão expressa do autor.** A v2.3.9 não está homologada e não deve ser indicada como versão oficial ou recomendada.
+- Preservados tag, release, oito instaladores e histórico imutável, apenas para rastreabilidade. Sua existência no GitHub não significa aprovação.
+- **Versão oficial recomendada permanece v2.3.8**, conforme README. O motivo técnico detalhado da reprovação não foi informado; não atribuir falhas específicas sem evidências.
+- Registro: [Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15). Sem alegação de novos testes funcionais.
+
+
 ## v2.3.9 — 11 nov. 2026 (PATCH)
 
 - **Gemini: caixas do diagrama APENAS COM TÍTULOS CURTOS**, sem ícones, descrições internas, subtítulos, microtextos ou parágrafos. Visual minimalista equivalente ao Mermaid, sem exigir Mermaid.js na plataforma.
