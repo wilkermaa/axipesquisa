@@ -4,10 +4,6 @@
 > **[BAIXAR A VERSÃO v2.3.8 — 8 instaladores por plataforma](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8)**.
 > A v2.3.9 foi **reprovada pelo autor** em 12/11/2026 e não é recomendada para uso. [Registro da decisão](https://github.com/wilkermaa/axipesquisa/issues/15).
 
-
-
-
-
 **Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
 
 > **Projeto experimental e pesquisa em andamento.** O método completo ainda não possui eficácia científica demonstrada. O repositório reúne instaladores, código, histórico e documentação de avaliação.
