@@ -1,14 +1,31 @@
 # AXI Pesquisa
 
-> ### Versão principal e oficial recomendada: **[AXI Pesquisa v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8)**
-> **[BAIXAR A VERSÃO v2.3.8 — 8 instaladores por plataforma](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8)**.
-> A v2.3.9 foi **reprovada pelo autor** em 12/11/2026 e não é recomendada para uso. [Registro da decisão](https://github.com/wilkermaa/axipesquisa/issues/15).
+**“Os empréstimos da biblioteca cresceram 30%. Mais gente está lendo?”**
 
-**Análise · eXpansão · Integração** — método autoral de Wilker M. de Araujo Alexandre para organizar explicações, comparações e relações práticas com apoio de inteligência artificial.
+Imagine que os empréstimos passaram de 200 para 260. Os mesmos leitores podem ter levado mais livros. Para descobrir se a biblioteca alcançou mais pessoas, compare quantas pessoas diferentes retiraram livros em cada período. Saber se elas leram os livros é outra pergunta.
 
-> **Projeto experimental e pesquisa em andamento.** O método completo ainda não possui eficácia científica demonstrada. O repositório reúne instaladores, código, histórico e documentação de avaliação.
+A **AXI Pesquisa** ajuda você a investigar uma pergunta com IA, entender o que as informações permitem concluir e descobrir o que vale conferir antes de decidir.
 
-**Acesso rápido:** [Baixar instaladores](#baixar-a-skill-axi) · [Todas as versões e situação dos downloads](docs/INSTALADORES.md) · [Pesquisa científica](docs/PESQUISA-CIENTIFICA.md) · [Histórico e rastreabilidade](INDICE-ORIGEM.md)
+**[Experimentar a AXI v2.3.8 na minha plataforma ↓](#baixar-a-skill-axi)**
+
+## Quando usar
+
+- **No dia a dia** · As fotos apareceram no celular novo. O que preciso conferir antes de apagar as antigas?
+- **No trabalho** · A cooperativa tem 90 cestas no depósito. Quantas pode prometer depois de descontar as reservas e avarias?
+
+## Como funciona
+
+Wilker M. de Araujo Alexandre organizou o método em três movimentos. Na **Análise**, você identifica as partes da pergunta. Na **eXpansão**, usa uma comparação quando ela ajuda a entender a relação entre essas partes. Na **Integração**, volta à pergunta inicial e aplica o que descobriu. No caso da biblioteca, contar empréstimos é como contar entradas em um ônibus: a mesma pessoa pode aparecer várias vezes.
+
+## O que isso pode mudar para uma comunidade?
+
+Imagine um aviso de mudança no local de retirada de alimentos. Com a AXI, a equipe pode revisar o texto a partir da dúvida de quem vai sair de casa: **“Onde retiro minha cesta na quinta-feira? E se a minha rua não estiver na lista?”** O benefício pode ser testado pedindo a moradores que encontrem essas duas respostas antes da publicação.
+
+> **Experimente com uma pergunta sua.** Depois de instalar a skill, copie e complete o pedido abaixo.
+>
+> “Use a AXI Pesquisa para me ajudar a entender ____. O que já posso concluir com as informações que tenho? O que ainda vale conferir?”
+
+A versão recomendada pelo autor é a **v2.3.8**. A eficácia do método está em investigação. [Programa de pesquisa](docs/PESQUISA-CIENTIFICA.md) · [Versões e instaladores](docs/INSTALADORES.md) · [Histórico do projeto](INDICE-ORIGEM.md)
 
 ## Baixar a Skill AXI
 
