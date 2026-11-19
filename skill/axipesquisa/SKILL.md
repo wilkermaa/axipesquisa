@@ -6,7 +6,7 @@ metadata:
   status: "experimental-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.4.0 (candidata)
+# axipesquisa | método AXI, versão 2.4.0
 
 ## Ativação e contrato
 

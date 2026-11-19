@@ -1,4 +1,4 @@
-# Contrato de leitura integral e progressiva — fundamento AXI v2.4.0 (candidata)
+# Contrato de leitura integral e progressiva — fundamento AXI v2.4.0
 
 **Regra obrigatória quando `axipesquisa` estiver ativa:** executar o método ao mesmo tempo que lê **todo o pacote textual instalado** de forma sequencial e integral. Não ler apenas sumário, seções convenientes, pesquisa por trechos, uma versão lembrada ou parte inicial. A leitura de cada arquivo indicado deve alcançar até sua última linha antes de marcar `lido integralmente`. Usar as ferramentas da plataforma para abrir os arquivos como instruções; a Skill não cria permissões.
 

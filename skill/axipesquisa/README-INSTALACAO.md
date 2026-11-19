@@ -1,4 +1,4 @@
-# Instalação da Skill AXI-Pesquisa v2.4.0 (candidata)
+# Instalação da Skill AXI-Pesquisa v2.4.0
 
 **Objeto:** instalar o método editorial AXI-Pesquisa. **Não é o ZIP do repositório nem o pacote de benchmark experimental.**
 

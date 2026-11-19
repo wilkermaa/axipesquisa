@@ -2,6 +2,21 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.4.0 — Markmap Tree + Cards na fase A e Mermaid preservado na fase I
+
+Adiciona na **fase A (Análise)** a prioridade de visualização hierárquica com **Markmap** (`layout: tree`, `theme: cards`, leitura esquerda→direita) efetivamente renderizado na tela ou em prévia aberta, fallback gráfico equivalente (`SVG`/`PNG`/visual nativo) e declaração explícita de **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`** quando nenhum meio visual estiver disponível, preservando integralmente **Mermaid / imagem obrigatória na fase I**. Os testes automatizados (`124/124`) são estruturais/determinísticos; a homologação nas interfaces externas permanece pendente (`SKIP` em `docs/RELATORIO-TESTES-v2.4.0.md`). [Release v2.4.0](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.4.0).
+
+| Plataforma | Instalador v2.4.0 |
+|---|---|
+| ChatGPT Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/01-CHATGPT-WEB-AXI-v2.4.0.zip) |
+| Gemini Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/02-GEMINI-WEB-AXI-v2.4.0.zip) |
+| Claude Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/03-CLAUDE-WEB-AXI-v2.4.0.zip) |
+| Grok Web | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/04-GROK-WEB-AXI-v2.4.0.zip) |
+| Codex | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/05-CODEX-AXI-v2.4.0.zip) |
+| Claude Code | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/06-CLAUDE-CODE-AXI-v2.4.0.zip) |
+| Antigravity | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/07-ANTIGRAVITY-AXI-v2.4.0.zip) |
+| Grok Build | [Baixar ZIP](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.0/08-GROK-BUILD-AXI-v2.4.0.zip) |
+
 ## Versão v2.3.8 — IMAGEM OBRIGATÓRIA na microfase I
 
 A Skill deve mostrar **imagem de fluxograma realmente visível na resposta ou em prévia aberta** quando houver fluxo representável. No Gemini, o instalador prioriza **geração direta de imagem SVG renderizado/PNG**, não aplicativo HTML/Canvas como primeira opção; tabela, ASCII, código ou arquivo sem prévia são falha/entrega parcial. ChatGPT mantém Mermaid com prévia, Claude/Grok seus recursos visuais. Testes de fonte e empacotamento não comprovam suporte do Gemini à chamada de Imagens com Skill ativa. [Release v2.3.8](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.3.8). Homologação na Issue #4, Drive Issue #6.

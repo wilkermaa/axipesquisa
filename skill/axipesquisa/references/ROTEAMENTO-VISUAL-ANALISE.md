@@ -1,4 +1,4 @@
-# Roteamento visual da Análise — AXI Pesquisa v2.4.0 (candidata)
+# Roteamento visual da Análise — AXI Pesquisa v2.4.0
 
 **Microfase da A, independente da Diagramação do Fluxo de Aplicação da I.** Quando a análise identificar uma decomposição hierárquica fiel e relevante, entregar mapa visual do todo às partes.
 
