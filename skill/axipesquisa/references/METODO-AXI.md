@@ -18,6 +18,8 @@ Interpretar: para quê, o que entregar, situação/contexto e formato de saída.
 
 **Critério de parada:** pare quando uma divisão adicional não ajudar a resolver o pedido. Uma decomposição é um **modelo útil**, não a única ontologia possível. Em termos disputados, apresentar definições alternativas e a escolhida.
 
+**Microfase visual da A (v2.4.0):** com hierarquia fiel, priorizar e exibir **Markmap Tree + Cards realmente renderizado**. Sem Markmap acessível, usar visual equivalente e conferir a prévia; sem recursos gráficos, entregar a árvore em texto e registrar **ENTREGA PARCIAL**. Não confundir código-fonte do mapa com imagem. A representação funcional em Mermaid pertence à I.
+
 ### X — eXpansão
 
 Comparar aspectos da análise com um sistema de outra área **porque compartilham uma relação relevante**, não apenas uma aparência. Dar para cada comparação: (1) domínio de origem e alvo, (2) mapeamento, (3) onde falha, (4) insight resultante. Essa cautela é coerente com a teoria de mapeamento de estrutura de Gentner (1983), sem declarar que AXI é extensão validada dela.

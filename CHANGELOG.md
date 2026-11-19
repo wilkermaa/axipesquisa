@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.4.0 — EM DESENVOLVIMENTO (MINOR, não publicada)
+
+- Fase A: exige Markmap **Tree + Cards** como padrão prioritário e obrigatório na hierarquia fiel, com desenho realmente exibido; código Markmap sozinho não satisfaz.
+- Fallback A: figura equivalente visível; se impossível, texto e aviso de **ENTREGA PARCIAL**.
+- Fase I: mantém Mermaid realmente renderizado para fluxos reais, com as normas da v2.3.8 intactas.
+- Roteamento por plataforma, testes independentes, QA, autorização e release estão pendentes (#18–#22).
+
 ## v2.3.8 — 11 nov. 2026 (PATCH)
 
 - **Fundamento aprovado pelo autor:** quando a microfase I identificar fluxo real e fiel, **a AXI Pesquisa deve ENTREGAR IMAGEM do diagrama realmente visível na tela ou em prévia aberta**; sem figura, apenas entrega parcial. O requisito vale para as oito plataformas e independe de pedido explícito de fluxograma.
