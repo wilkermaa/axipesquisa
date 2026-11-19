@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.4.0 — 19 nov. 2026 (MINOR)
+
+- **Fase A (Análise):** exige **Markmap** no padrão `layout: tree` + `theme: cards` (leitura esquerda→direita em cartões) como visualização prioritária e obrigatória quando o objeto justificar decomposição hierárquica fiel, com figura efetivamente renderizada/exibida na tela ou em prévia aberta; código Markdown/YAML ou arquivo sem prévia não satisfazem (`references/ROTEAMENTO-VISUAL-ANALISE.md`).
+- **Fallback A:** figura visual equivalente (`SVG`/`PNG`/visual nativo) identificada como equivalente; na indisponibilidade de qualquer meio visual após tentativa viável, decomposição textual com aviso obrigatório **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`**.
+- **Fase I (Integração):** mantém integralmente **Mermaid** / imagem obrigatória para fluxos funcionais reais e demais normas da `v2.3.8`, sem confusão de gatilhos nem regressões.
+- **Guias e pacotes das 8 plataformas:** atualizados para rotas de Fase A e Fase I (`ChatGPT Web`, `Gemini Web`, `Claude Web`, `Grok Web`, `Codex CLI`, `Claude Code`, `Antigravity IDE/CLI`, `Grok Build CLI`), sem alegar suporte nativo não testado e sem exigir app interativo.
+- **Qualidade, testes e preservação:** `124/124` testes automatizados `PASS` (estruturais/determinísticos); ensaio gráfico local PNG confirmado no `Antigravity` e `7` UIs externas registradas como `SKIP` (homologação pendente); protocolo científico `C0/C1/C2` (`v2.2.0-rc2`) e tags históricas (`v2.3.8`, `v2.3.9` e anteriores) preservados intactos.
+
 ## v2.3.8 — 11 nov. 2026 (PATCH)
 
 - **Fundamento aprovado pelo autor:** quando a microfase I identificar fluxo real e fiel, **a AXI Pesquisa deve ENTREGAR IMAGEM do diagrama realmente visível na tela ou em prévia aberta**; sem figura, apenas entrega parcial. O requisito vale para as oito plataformas e independe de pedido explícito de fluxograma.

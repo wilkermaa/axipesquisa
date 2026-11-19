@@ -1,6 +1,6 @@
 # Microfase Diagramação do Fluxo de Aplicação — contrato de execução e aceite (v2.3.8)
 
-**Exclusividade:** fase I — Integração, nível Gestão e Coordenação. **Quando houver fluxo fiel, IMAGEM VISÍVEL É OBRIGATÓRIA NA ENTREGA AXI**; produzir arquivo sem exibição, tabela, ASCII ou somente código não conclui. Exigir diagrama **mesmo sem pedido explícito** quando existir fluxo fielmente representável. Não impor nas fases A e X nem fabricar movimento em relações estáticas. Instruções de formato fechado prevalecem.
+**Exclusividade desta microfase de fluxo:** fase I — Integração, nível Gestão e Coordenação. A possui microfase distinta em `references/ROTEAMENTO-VISUAL-ANALISE.md`. **Quando houver fluxo fiel, IMAGEM VISÍVEL É OBRIGATÓRIA NA ENTREGA AXI**; produzir arquivo sem exibição, tabela, ASCII ou somente código não conclui. Exigir diagrama **mesmo sem pedido explícito** quando existir fluxo fielmente representável. Não impor **fluxogramas da I** nas fases A e X nem fabricar movimento em relações estáticas; a árvore da A tem outro gatilho. Instruções de formato fechado prevalecem.
 
 ## Portas de execução
 

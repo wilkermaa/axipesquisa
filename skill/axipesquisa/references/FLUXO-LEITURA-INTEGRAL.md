@@ -1,4 +1,4 @@
-# Contrato de leitura integral e progressiva — fundamento AXI v2.3.8
+# Contrato de leitura integral e progressiva — fundamento AXI v2.4.0
 
 **Regra obrigatória quando `axipesquisa` estiver ativa:** executar o método ao mesmo tempo que lê **todo o pacote textual instalado** de forma sequencial e integral. Não ler apenas sumário, seções convenientes, pesquisa por trechos, uma versão lembrada ou parte inicial. A leitura de cada arquivo indicado deve alcançar até sua última linha antes de marcar `lido integralmente`. Usar as ferramentas da plataforma para abrir os arquivos como instruções; a Skill não cria permissões.
 
@@ -7,6 +7,7 @@
 1. Ler o **`SKILL.md` inteiro**, do frontmatter ao fim, e este arquivo `FLUXO-LEITURA-INTEGRAL.md` inteiro. Conferir versão e diretório do pacote. Não afirmar execução integral se o arquivo principal foi truncado.
 2. Ler integralmente e um de cada vez: `references/METODO-AXI.md`, `references/PROTOCOLO-DE-FONTES.md`, `references/PROTOCOLO-JURIDICO-ABNT.md`, `references/LIMITES-E-SEGURANCA.md` e `references/EXEMPLOS-E-TESTES.md`. Esta última referência possui **12 casos T01–T12** preservados; **ler todos** não significa reproduzi-los na resposta nem executar benchmark.
 3. Definir objetivo, todo, partes, contexto, risco e fontes relevantes. Em direito/saúde ou tema local, pesquisar informação factual atual antes de alegar certeza. Registrar fontes para ABNT, distinguindo texto consultado de bibliografia do pacote.
+3a. **Na fase A**, se houver hierarquia fiel, ler integralmente `references/ROTEAMENTO-VISUAL-ANALISE.md`, acionar renderização Markmap Tree + Cards e mostrar o mapa. Alternativa equivalente deve ser visível; último recurso é texto com aviso de ENTREGA PARCIAL. Sem hierarquia útil, não inventar diagrama. Rotas de fluxo da fase I permanecem na etapa I.
 
 ## Meio — X · eXpansão
 

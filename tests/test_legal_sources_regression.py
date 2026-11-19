@@ -36,7 +36,7 @@ class LegalResearchRegression(unittest.TestCase):
         self.assertIn('fonte secundária',SOURCES)
         self.assertIn('confirmação oficial',SOURCES)
     def test_version_and_release(self):
-        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.3.8')
+        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.4.0')
         self.assertIn('homologação real',(ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8').lower())
 
 if __name__=='__main__': unittest.main()

@@ -26,7 +26,7 @@ def version_tuple(value: str) -> tuple[int, int, int]:
     return tuple(map(int, value.split('.')))
 
 
-def check_source() -> str:
+def check_source(allow_candidate: bool = False) -> str:
     version = (ROOT / 'VERSION').read_text(encoding='utf-8').strip()
     version_tuple(version)
     build = (ROOT / 'scripts/build.py').read_text(encoding='utf-8')
@@ -34,13 +34,25 @@ def check_source() -> str:
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     rafaell = (ROOT / 'docs/ENCAMINHAMENTO-RAFAELL.md').read_text(encoding='utf-8')
     contrib = (ROOT / 'CONTRIBUTING.md').read_text(encoding='utf-8')
+    is_candidate = '(candidata)' in skill.casefold()
+    allow_baseline_docs = allow_candidate and is_candidate
     for label, condition in {
         'build.py': f'VERSION = "{version}"' in build,
         'frontmatter SKILL': f'version: "{version}"' in skill,
         'title SKILL': f'método AXI, versão {version}' in skill,
-        'README current version': f'**Versão {version}' in readme,
-        'Rafaell current version': f'a distribuição atual é {version}' in rafaell,
-        'release notes': (ROOT/f'docs/RELEASE-v{version}.md').is_file(),
+        'skill not marked candidate': True if allow_candidate else not is_candidate,
+        'README current version': (
+            f'**Versão {version}' in readme
+            or (allow_baseline_docs and '**Versão 2.3.8' in readme)
+        ),
+        'Rafaell current version': (
+            f'a distribuição atual é {version}' in rafaell
+            or (allow_baseline_docs and 'a distribuição atual é 2.3.8' in rafaell)
+        ),
+        'release notes': (
+            (ROOT / f'docs/RELEASE-v{version}.md').is_file()
+            or (allow_baseline_docs and (ROOT / 'docs/RELEASE-v2.3.8.md').is_file())
+        ),
         'org policy': 'toda modificação' in (ROOT/'docs/POLITICA-ORGANIZACIONAL-VERSOES.md').read_text(encoding='utf-8').lower(),
         'contribution policy': 'tag anotada' in contrib,
         'release and method distinct': '2.2.0-rc2' in rafaell,
@@ -50,7 +62,8 @@ def check_source() -> str:
     }.items():
         if not condition:
             raise AssertionError(f'Release source policy failure: {label}')
-    print(f'[PASS] source release parity v{version}')
+    mode = 'candidate' if allow_baseline_docs else 'release'
+    print(f'[PASS] source {mode} parity v{version}')
     return version
 
 

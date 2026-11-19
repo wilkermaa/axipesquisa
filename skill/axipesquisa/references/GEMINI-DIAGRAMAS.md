@@ -26,5 +26,12 @@
 
 **Homologação funcional pendente:** registrar versão da Skill ativa, modelo, data, prompt, ferramenta invocada, figura na tela/captura, fidelidade das conexões e fontes ABNT. Testes estáticos **não demonstram renderização real** no Gemini.
 
+## Microfase A — Árvore hierárquica Markmap Tree + Cards no Gemini Web (v2.4.0)
+
+Quando a fase **A — Análise** identificar hierarquia fiel, **priorizar Markmap (`layout: tree`, `theme: cards`, esquerda→direita)** se a sessão realmente possuir renderer visual compatível; caso contrário (comportamento usual documentado no Gemini Web, sem suporte nativo presumido a Markmap), **solicitar/acionar a geração DIRETA DE IMAGEM estática** (SVG renderizado ou PNG com prévia na própria conversa) representando a árvore hierárquica esquerda→direita em cartões, identificando-a como **representação visual equivalente**.
+
+- **Proibições preservadas:** não entregar apenas Markdown/YAML, snippet Markmap, tabela, ASCII, arquivo criado sem prévia ou aplicativo HTML interativo por padrão; não depender de upload a serviços externos com dados sigilosos; não confundir Canvas indisponível com Skills como sucesso garantido.
+- **Fallback final:** se nem Markmap nem imagem estática puderem ser exibidos após tentativa real, registrar a decomposição textual com aviso **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`** e a limitação observada. Esta regra na fase A **não substitui** a entrega de fluxograma na microfase I.
+
 GOOGLE. *Gerar e editar imagens com os apps do Gemini*. [s.d.]. Disponível em: https://support.google.com/gemini/answer/14286560?hl=pt-BR. Acesso em: 11 nov. 2026.
 GOOGLE. *Sobre a transição dos Gems para habilidades*. 2026. Disponível em: https://support.google.com/gemini/answer/18560919?hl=pt-BR. Acesso em: 11 nov. 2026.

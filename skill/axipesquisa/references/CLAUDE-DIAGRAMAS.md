@@ -10,5 +10,12 @@
 
 **Aceite:** imagem do diagrama realmente desenhada inline ou em prévia Artifact aberta. **Não aceito:** bloco de HTML/SVG textual, tabela, ASCII, widget sem figura ou arquivo criado sem exibição. Interatividade só a pedido explícito; preferir figura estática simples.
 
+## Microfase A — Markmap Tree + Cards e equivalente HTML/SVG no Claude Web (v2.4.0)
+
+Quando a fase **A — Análise** exigir árvore hierárquica fiel:
+1. Priorizar **Markmap (`layout: tree`, `theme: cards`, esquerda→direita)** se houver renderer compatível ativo na sessão, sem presumir disponibilidade nativa universal no Claude Web.
+2. Na indisponibilidade de Markmap nativo, usar **visual personalizado HTML/SVG inline** ou **Artifact HTML/SVG com prévia realmente renderizada** reproduzindo a árvore esquerda→direita em cartões arredondados (preferindo figura estática, sem script externo com dados privados e sem app interativo desnecessário), identificando como **equivalente visual**.
+3. Bloco Markdown/YAML/SVG textual ou arquivo oculto sem prévia = não conforme. Sem visualização real após fallback, entregar texto com **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`**. Mantém intacta a microfase I.
+
 **Fonte técnica consultada na elaboração, não repetir automaticamente como fonte de respostas:** ANTHROPIC. *Visuais personalizados no chat e Cowork*. 2026. Disponível em: https://support.claude.com/pt/articles/13979539-visuais-personalizados-no-chat-e-cowork. Acesso em: 11 nov. 2026.
 
