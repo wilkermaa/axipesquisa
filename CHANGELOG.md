@@ -1,21 +1,5 @@
 # Changelog
 
-## Decisão de governança — 12 nov. 2026: v2.3.9 REPROVADA
-
-- **Status: REPROVADA por decisão expressa do autor.** A v2.3.9 não está homologada e não deve ser indicada como versão oficial ou recomendada.
-- Preservados tag, release, oito instaladores e histórico imutável, apenas para rastreabilidade. Sua existência no GitHub não significa aprovação.
-- **Versão oficial recomendada permanece v2.3.8**, conforme README. O motivo técnico detalhado da reprovação não foi informado; não atribuir falhas específicas sem evidências.
-- Registro: [Issue #15](https://github.com/wilkermaa/axipesquisa/issues/15). Sem alegação de novos testes funcionais.
-
-
-## v2.3.9 — 11 nov. 2026 (PATCH)
-
-- **Gemini: caixas do diagrama APENAS COM TÍTULOS CURTOS**, sem ícones, descrições internas, subtítulos, microtextos ou parágrafos. Visual minimalista equivalente ao Mermaid, sem exigir Mermaid.js na plataforma.
-- Preserva imagem visível obrigatória da v2.3.8. Somente conectores, decisões e rótulos curtos podem acompanhar os títulos. Explicações legais e referências ABNT permanecem fora da imagem.
-- Se o desenho vier carregado, solicitar uma única simplificação visual, sem alterar o fluxo nem inventar fatos. Não produzir aplicativo HTML interativo sem pedido explícito.
-- Mantém leitura integral A→X→I, requisitos jurídicos/ABNT, demais rotas específicas por IA, PDF opcional, preservação dos exemplos históricos e C0/C1/C2 v2.2.0-rc2 congelado.
-- CI testa instruções e instaladores; **a aderência estética e jurídica da figura do Gemini exige homologação funcional real**.
-
 ## v2.3.8 — 11 nov. 2026 (PATCH)
 
 - **Fundamento aprovado pelo autor:** quando a microfase I identificar fluxo real e fiel, **a AXI Pesquisa deve ENTREGAR IMAGEM do diagrama realmente visível na tela ou em prévia aberta**; sem figura, apenas entrega parcial. O requisito vale para as oito plataformas e independe de pedido explícito de fluxograma.
