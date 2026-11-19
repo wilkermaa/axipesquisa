@@ -23,24 +23,59 @@ PLATFORMS = {
 
 
 PLATFORM_GUIDES = {
-    "chatgpt-web": ("ChatGPT Web", "Mermaid renderizado em Prévia, não apenas código `flowchart TD`.", "references/CHATGPT-DIAGRAMAS.md"),
-    "gemini-web": ("Gemini Web", "IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar/acionar a geração DIRETA DE IMAGEM do Gemini (PNG ou SVG já desenhado), exibir na própria conversa e conferir blocos, setas e rótulos. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.", "references/GEMINI-DIAGRAMAS.md"),
-    "claude-web": ("Claude Web", "Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.", "references/CLAUDE-DIAGRAMAS.md"),
-    "grok-web": ("Grok Web", "Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.", "references/GROK-DIAGRAMAS.md"),
-    "codex": ("Codex CLI/IDE", "Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.", "references/PLATAFORMAS-VISUAIS.md"),
-    "claude-code": ("Claude Code", "HTML/SVG local em prévia da IDE ou arquivo visual válido.", "references/PLATAFORMAS-VISUAIS.md"),
-    "antigravity": ("Antigravity", "Mermaid/SVG em prévia de IDE ou arquivo visual realmente criado.", "references/PLATAFORMAS-VISUAIS.md"),
-    "grok-build-cli": ("Grok Build CLI", "Mermaid renderizado em visualização real ou SVG em renderer local.", "references/PLATAFORMAS-VISUAIS.md"),
+    "chatgpt-web": (
+        "ChatGPT Web",
+        "Fase A: Markmap (layout: tree, theme: cards, esquerda->direita) renderizado em prévia se suportado na sessão, ou fallback visual equivalente (SVG/PNG/Mermaid em prévia), sem alegar suporte nativo não testado. Fase I: Mermaid renderizado em Prévia, não apenas código `flowchart TD`.",
+        "references/CHATGPT-DIAGRAMAS.md",
+    ),
+    "gemini-web": (
+        "Gemini Web",
+        "Fase A: priorizar Markmap (layout: tree, theme: cards) se acionável na sessão ou solicitar geração DIRETA DE IMAGEM estática (SVG renderizado/PNG) equivalente em árvore esquerda->direita com cartões; sem app interativo por padrão. Fase I: IMAGEM VISÍVEL OBRIGATÓRIA na microfase I quando houver fluxo fiel. Solicitar/acionar a geração DIRETA DE IMAGEM do Gemini (PNG ou SVG já desenhado), exibir na própria conversa e conferir blocos, setas e rótulos. Não substituir por tabela, ASCII, Mermaid puro, HTML/app interativo ou arquivo sem prévia. Canvas com SVG é apenas fallback quando gerar realmente imagem visível, sem presumir compatibilidade Skill+Canvas. Se não houver figura exibida, marcar entrega parcial; nunca declarar concluído.",
+        "references/GEMINI-DIAGRAMAS.md",
+    ),
+    "claude-web": (
+        "Claude Web",
+        "Fase A: Markmap Tree + Cards se habilitado na sessão ou fallback equivalente em visual personalizado HTML/SVG inline / Artifact com prévia renderizada (sem exigir app interativo). Fase I: Visual personalizado HTML/SVG inline, com Artifact renderizado como alternativa.",
+        "references/CLAUDE-DIAGRAMAS.md",
+    ),
+    "grok-web": (
+        "Grok Web",
+        "Fase A: Markmap Tree + Cards se habilitado na sessão ou fallback equivalente em arquivo SVG real com cartão de prévia inline / HTML Preview em Projects. Fase I: Arquivo SVG com cartão de prévia inline; HTML Preview em Projects como alternativa.",
+        "references/GROK-DIAGRAMAS.md",
+    ),
+    "codex": (
+        "Codex CLI/IDE",
+        "Fase A: Markmap Tree + Cards ou SVG/PNG estático local aberto em prévia da IDE/visualizador autorizado; terminal puro sem figura declara ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO. Fase I: Renderer Mermaid/visual local realmente disponível, com prévia ou arquivo real.",
+        "references/PLATAFORMAS-VISUAIS.md",
+    ),
+    "claude-code": (
+        "Claude Code",
+        "Fase A: Markmap Tree + Cards ou HTML/SVG/PNG estático local em prévia do visualizador da IDE (arquivo sem prévia não conclui). Fase I: HTML/SVG local em prévia da IDE ou arquivo visual válido.",
+        "references/PLATAFORMAS-VISUAIS.md",
+    ),
+    "antigravity": (
+        "Antigravity",
+        "Fase A: Markmap Tree + Cards se suportado ou SVG/PNG estático local exibido/inspecionado em prévia inline na IDE; sem app extra obrigatório. Fase I: Mermaid/SVG/PNG em prévia de IDE ou arquivo visual realmente criado e aberto.",
+        "references/PLATAFORMAS-VISUAIS.md",
+    ),
+    "grok-build-cli": (
+        "Grok Build CLI",
+        "Fase A: renderer visual local de Markmap Tree + Cards ou SVG/PNG equivalente com prévia aberta; terminal textual sem imagem declara ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO. Fase I: Mermaid renderizado em visualização real ou SVG em renderer local.",
+        "references/PLATAFORMAS-VISUAIS.md",
+    ),
 }
 
 def platform_guide(platform):
     name, route, reference = PLATFORM_GUIDES[platform]
-    return (f'# AXI-Pesquisa {VERSION} — {name}\n\n' 
+    return (f'# AXI-Pesquisa {VERSION} — {name}\n\n'
             f'**Rota visual específica desta instalação:** {route}\n\n'
             '**Leitura integral obrigatória:** comece por `SKILL.md` completo; continue um arquivo por vez, de A até X e I, conforme `references/FLUXO-LEITURA-INTEGRAL.md`. '
+            'Na fase A com hierarquia fiel, leia também `references/ROTEAMENTO-VISUAL-ANALISE.md`. '
             'Todas as respostas explicativas ou de pesquisa devem registrar `Fontes consultadas (ABNT)` e fontes efetivamente consultadas ou ausência de consulta.\n\n'
             f'**Manual da plataforma:** `{reference}`. '
-            '**Critério de aceite:** fluxo representável exige IMAGEM renderizada na tela ou em prévia; arquivo não aberto, tabela, ASCII, HTML, código ou só promessa não bastam. A instrução não prova execução, testar e registrar o estado real. PDF não obrigatório.\n').encode('utf-8')
+            '**Critério de aceite:** hierarquia fiel na A e fluxo representável na I exigem IMAGEM renderizada na tela ou em prévia efetivamente aberta; arquivo não aberto, tabela, ASCII, HTML, código ou só promessa não bastam. '
+            'Se nenhum meio visual funcionar, entregar texto estruturado com aviso `ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO` (A) ou entrega parcial (I). '
+            'Não enviar dados privados a serviços gráficos externos sem autorização; não presumir suporte nativo nem exigir app interativo. A instrução não prova execução, testar e registrar o estado real. PDF não obrigatório.\n').encode('utf-8')
 
 def info(name):
 

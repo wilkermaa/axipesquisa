@@ -10,6 +10,13 @@
 
 **Aceite:** IMAGEM SVG/PNG do fluxograma exibida inline no cartão visual ou prévia aberta no Projects. **Não aceito:** XML/HTML isolado como texto, tabela, ASCII, HTML/app sem solicitação ou arquivo sem prévia. Interatividade só a pedido explícito.
 
+## Microfase A — Markmap Tree + Cards e cartão SVG/Projects no Grok Web (v2.4.0)
+
+Quando a fase **A — Análise** exigir decomposição hierárquica fiel:
+1. Priorizar **Markmap (`layout: tree`, `theme: cards`, esquerda→direita)** somente se a sessão dispuser de renderização visual Markmap efetiva (não presumir suporte nativo no Grok Web).
+2. Como fallback visual equivalente, gerar **arquivo SVG real em cartão com prévia inline** ou **HTML Preview em Projects** desenhando a árvore esquerda→direita com cartões estáticos (sem dependências remotas nem envio de dados privados), identificando como **representação visual equivalente**.
+3. Código Markdown/SVG textual ou arquivo criado sem prévia visível não conclui. Na ausência de qualquer meio visual viável, entregar texto com **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`**. A microfase I permanece preservada.
+
 **Fontes técnicas consultadas na elaboração, não replicar automaticamente nas respostas:**
 GROK. *Release Notes — Sep 19, 2026*. 2026. Disponível em: https://grok.com/release-notes/sep-19-2026. Acesso em: 11 nov. 2026.
 GROK. *Release Notes — Oct 03, 2026*. 2026. Disponível em: https://grok.com/release-notes/oct-03-2026. Acesso em: 11 nov. 2026.

@@ -1,4 +1,15 @@
-# ChatGPT Web — Mermaid como caminho padrão da microfase I
+# ChatGPT Web — Mermaid na I e Markmap Tree + Cards na A
+
+## Microfase A — Visualização do Todo e das Partes (v2.4.0)
+
+Quando a análise identificar decomposição hierárquica fiel (`todo → partes → subpartes`), **priorizar Markmap com `layout: tree` e `theme: cards`** (leitura esquerda→direita com cartões) **efetivamente renderizado e visível** na sessão, caso a interface/ferramenta ativa disponibilize renderização Markmap.
+
+1. **Sem suposição de suporte nativo:** o ChatGPT Web suporta prévia de Mermaid e execução de código/arquivos conforme a conta, mas **não possui garantia universal de renderização nativa de Markmap**; nunca declarar suporte nativo sem observação real.
+2. **Fallback visual equivalente:** se Markmap não renderizar visualmente na sessão, produzir **e exibir** árvore gráfica equivalente esquerda→direita (ex.: `SVG`/`PNG` renderizado na conversa ou diagrama equivalente em prévia aberta), identificando-a como **representação visual equivalente** (não Markmap nativo). **Não enviar dados privados a renderizadores externos sem autorização.**
+3. **Reprovação de texto isolado:** bloco Markdown/YAML, snippet Markmap, lista ou arquivo `.svg`/`.png` criado sem prévia visível **não** satisfaz a entrega visual.
+4. **Fallback textual honesto:** se nem Markmap nem imagem equivalente puderem ser exibidos, entregar decomposição textual explícita com **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`** e a limitação observada. Sem app interativo nem instalação extra por padrão.
+
+## Microfase I — Mermaid como caminho padrão da microfase I
 
 Na microfase **Diagramação do Fluxo de Aplicação**, fase I — Integração, **preferir Mermaid renderizado e com prévia visual verificada** para fluxos reais, **mesmo sem pedido explícito**. Preservar A/X/I, leitura integral progressiva e fontes ABNT. O usuário escolheu Mermaid como padrão do ChatGPT.
 
