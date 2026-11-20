@@ -25,6 +25,8 @@
 | **I — Integração** | 7. Integrar o todo | Como os achados das partes recompõem o conjunto? |
 | **I — Integração** | 8. Integrar cada parte | Como a visão atualizada do todo muda as partes? |
 
+**Referência operacional:** [Investigação recursiva do todo e das partes](skill/axipesquisa/references/INVESTIGACAO-RECURSIVA.md).
+
 **Integração bidirecional:** ascendente (**partes → todo**) e descendente (**todo → partes**). Cada parte relevante pode tornar-se **novo todo** e repetir o ciclo A → X → I, preservando referências ao todo-pai, fontes, funções e relações. Parar quando o aprofundamento não trouxer ganho relevante; não inventar decomposição ou vínculos.
 
 **Padrão visual da AXI v2.4.0 preservado:** a imagem nesta página é um SVG equivalente a uma árvore da esquerda para a direita em cartões; não afirma suporte nativo a Markmap no GitHub. Na Skill, priorizar Markmap Tree + Cards na fase A quando houver hierarquia fiel e renderer disponível; na fase I, preservar a exigência independente de diagrama visual de fluxo real.

@@ -41,7 +41,15 @@ class VisualRoutingContract(unittest.TestCase):
         for name in ('Claude Web','Grok Web','Codex CLI','Claude Code','Antigravity','Grok Build'):
             self.assertIn(name,REST)
     def test_version_and_scientific_limits(self):
-        self.assertEqual((ROOT/'VERSION').read_text('utf-8').strip(),'2.4.0')
+        version=(ROOT/'VERSION').read_text('utf-8').strip()
+        self.assertRegex(version,r'^\d+\.\d+\.\d+
+        self.assertTrue((ROOT/'docs/RELEASE-v2.3.8.md').is_file())
+        self.assertIn('não constitui evidência experimental',(ROOT/'docs/FUNDAMENTACAO-TECNICA.md').read_text('utf-8'))
+        self.assertIn('homologação',(ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8').casefold())
+
+if __name__=='__main__': unittest.main()
+)
+        self.assertTrue((ROOT/f'docs/RELEASE-v{version}.md').is_file())
         self.assertTrue((ROOT/'docs/RELEASE-v2.3.8.md').is_file())
         self.assertIn('não constitui evidência experimental',(ROOT/'docs/FUNDAMENTACAO-TECNICA.md').read_text('utf-8'))
         self.assertIn('homologação',(ROOT/'docs/RELEASE-v2.3.8.md').read_text('utf-8').casefold())

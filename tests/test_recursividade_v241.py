@@ -4,7 +4,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[1]
 S=(R/"skill/axipesquisa/SKILL.md").read_text("utf-8")
-M=(R/"skill/axipesquisa/references/METODO-AXI.md").read_text("utf-8")
+M=(R/"skill/axipesquisa/references/INVESTIGACAO-RECURSIVA.md").read_text("utf-8")
 class RecursaoAXI(unittest.TestCase):
     def test_oito_movimentos(self):
         for t in (S,M):
