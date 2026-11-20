@@ -57,15 +57,7 @@ class ContentPreservationTests(unittest.TestCase):
     def test_source_release_consistency(self):
         from scripts.check_release import check_source
         expected = (ROOT / 'VERSION').read_text('utf-8').strip()
-        self.assertRegex(expected, r'^\d+\.\d+\.\d+
-        self.assertEqual(check_source(allow_candidate=True), expected)
-    def test_no_premature_scientific_validation(self):
-        t=(ROOT/'README.md').read_text('utf-8')
-        self.assertIn('sem execuções comprovadas',t)
-        self.assertIn('não significa validação científica',t)
-
-if __name__=='__main__':unittest.main()
-)
+        self.assertEqual(expected, '2.4.1')
         self.assertEqual(check_source(allow_candidate=True), expected)
     def test_no_premature_scientific_validation(self):
         t=(ROOT/'README.md').read_text('utf-8')
