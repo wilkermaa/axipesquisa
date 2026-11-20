@@ -2,11 +2,11 @@
 name: axipesquisa
 description: "Método AXI para pesquisas e explicações em português: Análise do todo e partes, eXpansão por comparações com limites explícitos e Integração das relações e aplicações. Use em estudos, relatórios, problemas, processos e ensino que peçam compreensão estruturada e fontes verificáveis."
 metadata:
-  version: "2.4.0"
+  version: "2.4.1"
   status: "experimental-not-empirically-validated"
 ---
 
-# axipesquisa | método AXI, versão 2.4.0
+# axipesquisa | método AXI, versão 2.4.1
 
 ## Ativação e contrato
 
@@ -30,6 +30,22 @@ Use para **explicar, investigar, estudar ou comparar** assuntos em que entender 
 - **Referências ABNT não são opcionais nas respostas de pesquisa jurídica:** citar perto das regras o dispositivo e a fonte efetivamente lida e apresentar **Fontes consultadas (ABNT)** ao final, antes da assinatura, com autor institucional, título, número/ano, URL real e data efetiva de consulta. A citação automática do produto pode complementar, mas não substitui a lista ABNT. Se nenhuma fonte pôde ser consultada, declarar isso de modo claro, **não simular pesquisa nem bibliografia** e tratar o resultado como orientação preliminar não verificada. Formatos fechados e instruções superiores continuam prevalecendo.
 - **Cuidado ao generalizar a saída:** em um mesmo processo podem existir modalidades legais com atos e critérios diferentes. **Confirmar a distinção no texto vigente antes de produzir o fluxograma**, e fazer bifurcações apenas quando amparadas por fonte; diagramas elegantes não validam fatos jurídicos. **pesquisa jurídica, citações ABNT e entrega visual são três deveres independentes**: não omitir um para cumprir outro.
 
+## Princípio transversal — investigação recursiva do todo e das partes
+
+**Regra:** cada parte relevante pode ser tratada como **novo todo** e abrir outra investigação A → X → I. **Toda descoberta deve retornar ao todo de origem**, preservando evidências, contexto, função e relações; a visão atualizada do todo deve retornar às partes afetadas. A lista encadeada é só analogia da progressão: o método é recursivo e relacional.
+
+**Oito movimentos proporcionais à tarefa:**
+1. **Identificar o todo:** objeto, objetivo, limites e contexto.
+2. **Identificar as partes:** componentes relevantes sem decomposição artificial.
+3. **Identificar a função do todo:** papel, finalidade e funcionamento, quando aplicável.
+4. **Identificar a função de cada parte:** contribuições e dependências.
+5. **Expandir o todo:** contexto, relações e comparações úteis.
+6. **Expandir cada parte:** subpartes, relações e novo ciclo A → X → I somente quando relevante.
+7. **Integrar o todo:** síntese ascendente (**partes → todo**).
+8. **Integrar cada parte:** revisão descendente (**todo → partes**).
+
+**Critério de parada:** não ampliar níveis sem ganho relevante ou fonte suficiente. Registre o **todo-pai** e os vínculos de cada expansão; relações cruzadas compõem um grafo e não devem ser falsamente forçadas numa árvore. Em perguntas simples, sintetize sem impor oito seções, recursão infinita ou diagrama artificial. A árvore da A e o fluxograma real da I preservam os gatilhos e o padrão visual da v2.4.0.
+
 ## A. Análise: definir o todo e suas partes
 
 - Pergunte internamente: **O que é? / O que são?**; **qual o todo e seus limites?**; **quais partes o compõem?**; **o que é cada parte e que função exerce?**
@@ -42,12 +58,16 @@ Use para **explicar, investigar, estudar ou comparar** assuntos em que entender 
 
 ## X. eXpansão: comparar com critério
 
+- Expandir o todo **e cada parte relevante**, guardando contexto, subpartes e ligações; abrir novo ciclo A → X → I quando houver ganho verificável e devolver os resultados ao todo-pai.
+
 - Escolha **uma ou duas** comparações pertinentes com o mundo **real, virtual, conceitual ou filosófico/metafísico**. Nenhum dos quatro domínios é obrigatório por padrão.
 - Mapeie relações relevantes do objeto original para o análogo: **correspondências → diferenças → limites → aprendizado extraído**. Se não houver comparação esclarecedora, diga isso ou a omita.
 - Uma analogia **não prova causalidade, eficácia nem identidade**. Diferencie observações verificáveis, modelos formais e questões filosóficas não verificáveis empiricamente.
 - Adapte exemplos e grau de explicitação a preferências *expressas* do público, não à nacionalidade, raça, gênero, profissão ou estereótipos culturais.
 
 ## I. Integração: explicar interações e aplicação
+
+- Integrar ascendentemente (partes → todo) e descendentemente (todo → partes): atualizar os vínculos e a compreensão dos elementos afetados, sem inventar dinâmica física quando se tratar de relação conceitual.
 
 - Reconstrua **como as partes se relacionam**: fluxos, dependências, interfaces, atores, regras, condições, efeitos e realimentação, **se existirem**.
 - Em processos dinâmicos, mostre `entrada → transformação → saída → feedback`. Em objetos estáticos ou abstratos, descreva **relações e condições de validade**, sem inventar movimento ou agente.

@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.4.1 — 20 nov. 2026 (PATCH)
+
+- Princípio recursivo: cada parte pode abrir novo ciclo A → X → I e devolver suas descobertas ao todo de origem.
+- Oito movimentos: identificação de todo/partes, funções de ambos, expansão de ambos e integração de ambos.
+- Integração ascendente (partes → todo) e descendente (todo → partes), com parada por relevância e rastreabilidade.
+- README com árvore visual de cartões equivalente ao padrão da AXI 2.4.0. Mantidas as exigências visuais independentes da A e I.
+- Sem alterar protocolo científico C0/C1/C2 da v2.2.0-rc2 nem alegar validação externa; distribuição sujeita a CI e release verificados.
+
 ## v2.4.0 — 19 nov. 2026 (MINOR)
 
 - **Fase A (Análise):** exige **Markmap** no padrão `layout: tree` + `theme: cards` (leitura esquerda→direita em cartões) como visualização prioritária e obrigatória quando o objeto justificar decomposição hierárquica fiel, com figura efetivamente renderizada/exibida na tela ou em prévia aberta; código Markdown/YAML ou arquivo sem prévia não satisfazem (`references/ROTEAMENTO-VISUAL-ANALISE.md`).

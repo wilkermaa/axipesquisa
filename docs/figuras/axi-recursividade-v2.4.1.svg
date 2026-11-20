@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="510" viewBox="0 0 1020 510" role="img" aria-labelledby="titulo descricao">
+<title id="titulo">AXI Pesquisa — Todo, partes, novos todos e reintegração</title><desc id="descricao">Diagrama em árvore da esquerda à direita com cartões: um todo possui duas partes; cada parte torna-se novo todo e abre subpartes. Setas de integração ascendente e descendente fecham o ciclo.</desc>
+<defs><marker id="seta" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#53778d"/></marker>
+<style>.titulo{font:700 25px Arial,sans-serif;fill:#18374b}.txt{font:14px Arial,sans-serif;fill:#426075}.card{font:700 16px Arial,sans-serif;fill:#18374b}.link{fill:none;stroke:#7190a3;stroke-width:2.5;stroke-linecap:round}</style></defs>
+<rect width="1020" height="510" rx="20" fill="#fff"/>
+<text x="32" y="44" class="titulo">AXI · O todo e suas partes</text><text x="32" y="71" class="txt">Uma parte pode abrir outro ciclo A → X → I; cada descoberta retorna ao conjunto.</text>
+<path class="link" d="M238 223H330V138H380M330 223V303H380 M620 138H705V108H745M705 138V193H745 M620 303H705V273H745M705 303V358H745"/>
+<rect x="32" y="180" width="206" height="87" rx="15" fill="#1d6070"/><text x="135" y="212" text-anchor="middle" font="700 20px Arial,sans-serif" fill="white">TODO</text><text x="135" y="242" text-anchor="middle" font="14px Arial,sans-serif" fill="white">objeto e função</text>
+<rect x="380" y="99" width="240" height="76" rx="14" fill="#eef5f8" stroke="#7998aa" stroke-width="2"/><text x="500" y="128" text-anchor="middle" class="card">PARTE 1 · NOVO TODO</text><text x="500" y="152" text-anchor="middle" class="txt">se útil, repetir A → X → I</text>
+<rect x="380" y="264" width="240" height="76" rx="14" fill="#eef5f8" stroke="#7998aa" stroke-width="2"/><text x="500" y="293" text-anchor="middle" class="card">PARTE 2 · NOVO TODO</text><text x="500" y="317" text-anchor="middle" class="txt">se útil, repetir A → X → I</text>
+<rect x="745" y="76" width="240" height="63" rx="13" fill="#f4f9fa" stroke="#98b4c1" stroke-width="2"/><text x="865" y="102" text-anchor="middle" class="card">SUBPARTE 1.1</text><text x="865" y="125" text-anchor="middle" class="txt">função e relações</text>
+<rect x="745" y="161" width="240" height="63" rx="13" fill="#f4f9fa" stroke="#98b4c1" stroke-width="2"/><text x="865" y="187" text-anchor="middle" class="card">SUBPARTE 1.2</text><text x="865" y="210" text-anchor="middle" class="txt">função e relações</text>
+<rect x="745" y="241" width="240" height="63" rx="13" fill="#f4f9fa" stroke="#98b4c1" stroke-width="2"/><text x="865" y="267" text-anchor="middle" class="card">SUBPARTE 2.1</text><text x="865" y="290" text-anchor="middle" class="txt">função e relações</text>
+<rect x="745" y="326" width="240" height="63" rx="13" fill="#f4f9fa" stroke="#98b4c1" stroke-width="2"/><text x="865" y="352" text-anchor="middle" class="card">SUBPARTE 2.2</text><text x="865" y="375" text-anchor="middle" class="txt">função e relações</text>
+<path d="M911 422H103" stroke="#1d6070" stroke-width="2.5" marker-end="url(#seta)"/><text x="509" y="413" text-anchor="middle" class="txt">Integração ascendente · partes → todo</text>
+<path d="M103 474H911" stroke="#7190a3" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#seta)"/><text x="509" y="465" text-anchor="middle" class="txt">Integração descendente · todo → partes</text>
+<text x="32" y="501" class="txt">Aprofundar somente quando houver ganho relevante; preservar contexto, evidências e vínculos.</text>
+</svg>

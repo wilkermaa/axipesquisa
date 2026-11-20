@@ -2,6 +2,21 @@
 
 **Objetivo:** oferecer pacotes destinados à instalação da Skill AXI, e não pacotes de código, fotografias do repositório ou arquivos de benchmark. Autor: Wilker M. de Araujo Alexandre.
 
+## Versão v2.4.1 — o todo, as partes e a integração recursiva
+
+Formaliza os oito movimentos e a integração bidirecional, preservando o padrão visual Markmap Tree + Cards da v2.4.0 e o fluxograma real da fase I. **Publicação:** conferir a existência da [release v2.4.1](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.4.1) e seus oito anexos antes de declarar que os downloads estão disponíveis.
+
+| Plataforma | Instalador v2.4.1 |
+|---|---|
+| ChatGPT Web | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/01-CHATGPT-WEB-AXI-v2.4.1.zip) |
+| Gemini Web | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/02-GEMINI-WEB-AXI-v2.4.1.zip) |
+| Claude Web | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/03-CLAUDE-WEB-AXI-v2.4.1.zip) |
+| Grok Web | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/04-GROK-WEB-AXI-v2.4.1.zip) |
+| Codex | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/05-CODEX-AXI-v2.4.1.zip) |
+| Claude Code | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/06-CLAUDE-CODE-AXI-v2.4.1.zip) |
+| Antigravity | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/07-ANTIGRAVITY-AXI-v2.4.1.zip) |
+| Grok Build | [ZIP previsto](https://github.com/wilkermaa/axipesquisa/releases/download/v2.4.1/08-GROK-BUILD-AXI-v2.4.1.zip) |
+
 ## Versão v2.4.0 — Markmap Tree + Cards na fase A e Mermaid preservado na fase I
 
 Adiciona na **fase A (Análise)** a prioridade de visualização hierárquica com **Markmap** (`layout: tree`, `theme: cards`, leitura esquerda→direita) efetivamente renderizado na tela ou em prévia aberta, fallback gráfico equivalente (`SVG`/`PNG`/visual nativo) e declaração explícita de **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`** quando nenhum meio visual estiver disponível, preservando integralmente **Mermaid / imagem obrigatória na fase I**. Os testes automatizados (`124/124`) são estruturais/determinísticos; a homologação nas interfaces externas permanece pendente (`SKIP` em `docs/RELATORIO-TESTES-v2.4.0.md`). [Release v2.4.0](https://github.com/wilkermaa/axipesquisa/releases/tag/v2.4.0).

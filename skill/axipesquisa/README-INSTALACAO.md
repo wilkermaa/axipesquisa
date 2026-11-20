@@ -1,4 +1,4 @@
-# Instalação da Skill AXI-Pesquisa v2.4.0
+# Instalação da Skill AXI-Pesquisa v2.4.1
 
 **Objeto:** instalar o método editorial AXI-Pesquisa. **Não é o ZIP do repositório nem o pacote de benchmark experimental.**
 
@@ -11,7 +11,7 @@
 7. **Critério visual em A e I (sem exigir app interativo ou instalação extra):** na **fase A**, havendo hierarquia fiel, priorizar **Markmap `layout: tree` + `theme: cards`** visível ou imagem equivalente; sem imagem visível após tentativa real, entregar texto com **`ENTREGA PARCIAL — MAPA VISUAL NÃO EXIBIDO`**. Na **fase I**, manter a obrigação de **IMAGEM efetivamente visível na tela ou em prévia aberta** para fluxos reais (no Gemini, solicitar/acionar a geração de **IMAGEM DIRETA** para desenhar SVG já renderizado ou PNG, sem app HTML/Canvas por padrão; Canvas é fallback restrito se gerar figura real, pois o Google documenta incompatibilidade com Skills). **Tabela, ASCII, lista, código isolado, arquivo criado sem prévia e HTML/app interativo não solicitado não são entrega visual concluída.** PDF e download são opcionais. Nunca enviar dados privados a serviços públicos externos sem autorização. Teste real em conta continua pendente.
 8. **Regressão jurídica ABNT:** peça o procedimento de mudança de lotação em Matinhos. A resposta deve efetivamente pesquisar a legislação local, identificar o artigo 57 da Lei 1.165/2008 com distinção Portaria/Ofício **quando confirmado na fonte**, apresentar fontes ABNT e tentar a figura. **ABNT, pesquisa e diagramação não se substituem.** O protocolo jurídico complementar está em `references/PROTOCOLO-JURIDICO-ABNT.md`; manter o protocolo original de fontes sem alterações.
 9. **ABNT sempre:** toda resposta explicativa ou de pesquisa deve trazer `Fontes consultadas (ABNT)`, inclusive `Nenhuma fonte externa consultada nesta resposta.` quando não houve consulta. **ChatGPT:** Mermaid com prévia; **Claude:** visual personalizado/Artifact; **Grok:** SVG inline/Projects.
-10. Verifique em teste simples o identificador `2.4.0` e as fases A, X e I (incluindo hierarquia Markmap Tree + Cards na A e fluxo Mermaid na I), sem presumir que a Skill tenha sido acionada apenas por estar instalada.
+10. Verifique em teste simples o identificador `2.4.1` e o ciclo recursivo com integração em duas direções e as fases A, X e I (incluindo hierarquia Markmap Tree + Cards na A e fluxo Mermaid na I), sem presumir que a Skill tenha sido acionada apenas por estar instalada.
 11. Para experimentos C0/C1/C2 comparativos, **não deixe a Skill AXI ativável nas condições de controle**. O benchmark original usa texto congelado da versão 2.2.0-rc2.
 
 **Fontes de apoio:** documentação de plataformas em `docs/PLATAFORMAS.md` no repositório-fonte. Não há garantia de funcionamento nas interfaces sem teste real.
